@@ -1,0 +1,794 @@
+/* Article packs — the foil, the tear, the reveal.
+   Every animation here is gated on prefers-reduced-motion at the bottom of the
+   file: the reduced-motion reader gets the same cards, laid out flat, with no
+   movement at all. The mechanic is the reveal, not the motion. */
+
+.rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 74%;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* The foil glow bleeds past the card edge; the padding keeps it from being
+     clipped by the scroll container. */
+  padding: 10px 2px 18px;
+  margin-inline: -2px;
+  scrollbar-width: none;
+}
+
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .rail {
+    grid-auto-columns: 42%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rail {
+    grid-auto-columns: 26%;
+  }
+}
+
+/* ---------- sealed pack ---------- */
+
+.pack {
+  position: relative;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px;
+  text-align: left;
+  /* THE EDGE, AND IT IS BOX-SHADOW BECAUSE BOTH PSEUDO-ELEMENTS ARE TAKEN —
+     ::before is the foil sweep, ::after is the glint, which is the exact
+     collision rail-kit warns about when it says a component "cannot fight a
+     border or a ring drawn on ::before or ::after".
+
+     A flat 1px grey line is what a flat card gets. This one tilts and takes
+     light, so it gets the edge an object has: a hairline along the top where
+     the light falls, a dark line along the bottom sitting in its own shadow,
+     and a cast underneath. That pair is what reads as thickness; the border
+     itself drops to almost nothing so the two hairlines are the edge rather
+     than competing with a third line. */
+  border: 1px solid rgba(245, 241, 235, 0.07);
+  border-radius: 16px;
+  box-shadow:
+    inset 0 1px 0 rgba(245, 241, 235, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.55),
+    0 10px 24px rgba(0, 0, 0, 0.34);
+  /* THE SHEEN IS A LAYER HERE, NOT A SEPARATE RULE.
+     [data-rail-tilt-sheen] paints via background-image, and this shorthand
+     sets background-image too — so the kit's rule was being overridden and the
+     specular highlight never rendered once. The pointer variables were
+     updating correctly the whole time (measured: --rail-tilt-lx moved 20% to
+     80% across the card), which is what makes this kind of defect invisible:
+     everything is working except the paint.
+
+     The kit's own note explains why it belongs in the card's background at
+     all: the sheen is "painted by the card's own background so the component
+     costs no extra element and cannot fight a border or a ring drawn on
+     ::before or ::after — both of which are already spoken for". */
+  background:
+    radial-gradient(
+      var(--rail-tilt-sheen-size, 60% 55%) at var(--rail-tilt-lx, 50%)
+        var(--rail-tilt-ly, 0%),
+      color-mix(in srgb, #fff 10%, transparent) 0%,
+      color-mix(in srgb, var(--rail-tilt-sheen-color, #e04b4b) 10%, transparent) 40%,
+      transparent 74%
+    ),
+    radial-gradient(
+      120% 80% at 50% -10%,
+      rgba(224, 75, 75, 0.22) 0%,
+      rgba(224, 75, 75, 0) 60%
+    ),
+    linear-gradient(180deg, #1a1012 0%, #0c0a0a 100%);
+  color: var(--bone);
+  cursor: pointer;
+  transition:
+    transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1),
+    border-color 220ms ease;
+}
+
+/* The kit's tilt rule already transitions box-shadow next to the transform,
+   which is it expecting the site to supply the lift. Under the pointer the
+   cast deepens and a faint cherry ring comes up — the card leaves the page
+   rather than just leaning on it. */
+.pack:global(.is-tilting) {
+  border-color: rgba(224, 75, 75, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 241, 235, 0.2),
+    inset 0 0 0 1px rgba(224, 75, 75, 0.16),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.6),
+    0 22px 46px rgba(0, 0, 0, 0.5);
+}
+
+/* Pressed, the cast collapses: the card is against the surface, not above it.
+   Without this the shadow stays deep and the press reads as nothing moving. */
+.pack:global(.is-pressed) {
+  box-shadow:
+    inset 0 1px 0 rgba(245, 241, 235, 0.16),
+    inset 0 0 0 1px rgba(224, 75, 75, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* NO TRANSFORM HERE. This rule used to lift the card with
+   translateY(-4px), and `.pack:hover` (0,2,0) beats the kit's
+   `[data-rail-tilt]` (0,1,0) on the transform property — so the 3D rotation
+   was being overridden on the exact interaction that is supposed to produce
+   it. Measured: the computed transform read matrix(1,0,0,1,0,-4) at both ends
+   of the card, identical, while the tilt variables updated correctly behind
+   it. It looked like it worked because the SHEEN moves, and a moving specular
+   highlight on a flat card is very close to a tilt at a glance.
+
+   The lift now comes from the tilt system instead: the shadow deepens in
+   .is-tilting and the photo rises on data-rail-tilt-lift, which is what the
+   kit means by "a few children coming FORWARD in Z". */
+.pack:hover,
+.pack:focus-visible {
+  border-color: rgba(224, 75, 75, 0.3);
+}
+
+.pack:focus-visible {
+  outline: 2px solid var(--cloud-text);
+  outline-offset: 3px;
+}
+
+/* The foil sweep. Idle-slow so the rail reads alive at rest, quicker on hover. */
+.pack::before {
+  content: "";
+  position: absolute;
+  /* Inset 0, never negative: a pseudo-element that hangs past the bottom or
+     right edge grows the scrollable overflow area, and an overflow:hidden box
+     with scrollable overflow is a scroll container the browser will scroll on
+     focus, which silently hid the "Sealed" badge. The sweep travels by moving
+     its background, not by moving the box. */
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 38%,
+    rgba(245, 241, 235, 0.16) 48%,
+    rgba(224, 75, 75, 0.3) 52%,
+    rgba(245, 241, 235, 0.14) 56%,
+    transparent 66%
+  );
+  background-size: 260% 100%;
+  animation: foilSweep 5.5s linear infinite;
+  pointer-events: none;
+}
+
+.pack:hover::before,
+.pack:focus-visible::before {
+  animation-duration: 2.2s;
+}
+
+@keyframes foilSweep {
+  from {
+    background-position: 160% 0;
+  }
+  to {
+    background-position: -60% 0;
+  }
+}
+
+.packTop {
+  position: absolute;
+  inset: 16px 16px auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.packSeal {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cloud-text);
+}
+
+.packCount {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--mute2);
+}
+
+.packName {
+  display: block;
+  position: relative;
+  font-size: 21px;
+  line-height: 1.12;
+  font-weight: 600;
+}
+
+.packPromise {
+  display: block;
+  position: relative;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--mute);
+}
+
+.packAction {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bone);
+}
+
+.packOpened {
+  background: linear-gradient(180deg, #131313 0%, #0b0b0b 100%);
+}
+
+/* Slower rather than stopped. A frozen sweep next to a live one on the same
+   rail read as broken rather than as "already opened" — Gonzalo: "make also
+   the booster... nicer looking", looking straight at an opened tile that had
+   gone flat and dark next to sealed ones still catching light. */
+.packOpened::before {
+  animation-duration: 9s;
+  opacity: 0.4;
+}
+
+/* The glyph that fills the dead middle of the card: a box, open once the
+   pack has been torn. Texture, not a thing to read, so it still sits under
+   the name/promise text in contrast and never competes with the foil sweep
+   running over the same area. First pass sized this at 30% with a 46%
+   glow ring — on a real phone it read as a giant glowing blob dominating
+   the card ("still looks ugly"). Second pass shrank it but centered it via
+   inset:0/margin:auto, which fixes it at the card's true vertical middle —
+   the text block at the bottom is variable height (a two-line promise runs
+   longer than one line), so on a long promise the glyph crowded right into
+   it ("illustration too close to text"). Anchored to one fixed point at 30%
+   down instead of the geometric center: it now sits in a zone the bottom
+   text block never reaches regardless of how many lines it wraps to, and
+   both mark and glow share the exact same anchor via translate(-50%,-50%)
+   so sizing one can never drift it off-center from the other. */
+/* KRIS, NOT A GLYPH.
+   The card is 3:4 with two short text blocks and a dead middle; the box mark
+   was filling that middle. A photograph fills it better, and there were good
+   ones — 19 real-camera frames in the Drive folder 01_KRIS_BOTTOM_PROOF,
+   separated from 51 phone selfies by cameraModel (the vault's note says
+   cameraMake, which does not work: iPhones write it too and 71 of 78 match).
+
+   TEXT IS NEVER ON THE FACE — the kit's RailCover rule, learned the hard way
+   ("the single most-repeated correction in this repo's history"). So this is a
+   band, not a backdrop: the photo occupies the middle, the words keep their own
+   zones above and below it, and the gradient at its foot hands off to the card
+   rather than running under the title. */
+.packPhoto {
+  position: absolute;
+  /* BELOW THE TOP ROW, not under it. The band started at 0 and put "SEALED"
+     and "5 cards" — small, low-contrast type — straight onto a bright gym
+     background, which is the RailCover rule ("the text is never on the face")
+     broken in the other direction: I had not laid copy over a portrait, I had
+     slid a portrait under existing copy. The row keeps the card's own dark
+     surface and the photograph starts underneath it. */
+  top: 44px;
+  left: 0;
+  right: 0;
+  height: 50%;
+  object-fit: cover;
+  /* TOP, not 22%. The source frames are now cropped so the top of his hair
+     sits 6% below the frame edge — found per image with a Haar cascade (the
+     frontal one for five, the profile one for IMG_2151, where he is
+     three-quarter and the frontal cascade returns nothing). A second offset
+     here would undo that and reintroduce the gap the crop removed. */
+  object-position: center top;
+  opacity: 0.85;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+}
+
+.packHasPhoto .packGlyphBacking,
+.packHasPhoto .packGlyph { display: none; }
+
+.packGlyphBacking {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(224, 75, 75, 0.14) 0%,
+    rgba(224, 75, 75, 0) 72%
+  );
+  pointer-events: none;
+}
+
+.packGlyph {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26%;
+  height: 26%;
+  color: var(--bone);
+  opacity: 0.24;
+  pointer-events: none;
+}
+
+.packOpened .packGlyph {
+  color: var(--cloud-text);
+  opacity: 0.5;
+}
+
+/* ---------- opening overlay ---------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px 16px 40px;
+  background: rgba(6, 6, 6, 0.93);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 180ms ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.overlayInner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.overlayBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.closeButton {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line2);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: var(--bone);
+  background: transparent;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  border-color: rgba(245, 241, 235, 0.32);
+}
+
+/* ---------- the tear ---------- */
+
+.tearStage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 46vh;
+  perspective: 900px;
+}
+
+.tearPack {
+  position: relative;
+  width: 210px;
+  aspect-ratio: 3 / 4;
+  border: 1px solid rgba(224, 75, 75, 0.4);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      120% 80% at 50% -10%,
+      rgba(224, 75, 75, 0.3) 0%,
+      rgba(224, 75, 75, 0) 60%
+    ),
+    linear-gradient(180deg, #1a1012 0%, #0c0a0a 100%);
+  animation: packShake 620ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes packShake {
+  0%,
+  100% {
+    transform: translateX(0) scale(1);
+  }
+  15% {
+    transform: translateX(-5px) scale(1.02);
+  }
+  30% {
+    transform: translateX(5px) scale(1.03);
+  }
+  45% {
+    transform: translateX(-4px) scale(1.04);
+  }
+  60% {
+    transform: translateX(4px) scale(1.05);
+  }
+  80% {
+    transform: translateX(0) scale(1.08);
+  }
+}
+
+/* Top half of the foil peels away. */
+.tearLid {
+  position: absolute;
+  inset: 0 0 62% 0;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(180deg, #2a1416 0%, #150f10 100%);
+  border-bottom: 2px dashed rgba(224, 75, 75, 0.55);
+  transform-origin: top center;
+  animation: lidTear 560ms 560ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes lidTear {
+  0% {
+    transform: rotateX(0deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(-96deg) translateY(-34px);
+    opacity: 0;
+  }
+}
+
+.burst {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 241, 235, 0.85) 0%,
+    rgba(224, 75, 75, 0.55) 34%,
+    rgba(224, 75, 75, 0) 70%
+  );
+  animation: burst 700ms 700ms ease-out both;
+  pointer-events: none;
+}
+
+@keyframes burst {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.1);
+  }
+}
+
+/* ---------- revealed cards ---------- */
+
+.cardGrid {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+  perspective: 1000px;
+}
+
+@media (min-width: 720px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #131313 0%, #0d0d0d 100%);
+  color: var(--bone);
+  text-decoration: none;
+  animation: cardDeal 460ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: var(--deal-delay, 0ms);
+}
+
+@keyframes cardDeal {
+  0% {
+    opacity: 0;
+    transform: translateY(26px) rotateX(38deg) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0) scale(1);
+  }
+}
+
+.card:hover {
+  border-color: rgba(245, 241, 235, 0.3);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--cloud-text);
+  outline-offset: 3px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardTitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.28;
+}
+
+.cardHook {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--mute);
+}
+
+.cardGo {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cloud-text);
+}
+
+.rarity {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line2);
+  color: var(--mute);
+}
+
+.rarityRare {
+  color: #8fc7ff;
+  border-color: rgba(143, 199, 255, 0.4);
+}
+
+.rarityEpic {
+  color: #c6a3ff;
+  border-color: rgba(198, 163, 255, 0.45);
+}
+
+.rarityLegendary {
+  color: #ffd27a;
+  border-color: rgba(255, 210, 122, 0.5);
+}
+
+/* Legendary cards get the holo sheen. Nothing else does, or it stops meaning
+   anything. */
+.cardLegendary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 42%,
+    rgba(255, 210, 122, 0.16) 50%,
+    rgba(245, 241, 235, 0.12) 54%,
+    transparent 62%
+  );
+  background-size: 260% 100%;
+  animation: foilSweep 4s linear infinite;
+  pointer-events: none;
+}
+
+.readMark {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--mute2);
+}
+
+.newMark {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cloud-text);
+}
+
+/* ---------- progress ---------- */
+
+.progressTrack {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(245, 241, 235, 0.1);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--cloud) 0%, var(--cloud-text) 100%);
+  transition: width 420ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pack,
+  .pack::before,
+  .pack:hover::before,
+  .tearPack,
+  .tearLid,
+  .burst,
+  .card,
+  .cardLegendary::after,
+  .overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .pack::before,
+  .cardLegendary::after {
+    display: none;
+  }
+
+  .progressFill {
+    transition: none;
+  }
+}
+
+/* ---------- the stamp on a finished pack ---------- */
+
+/* Rotated, like something pressed by hand rather than laid out by a grid, and
+   sitting over the photo's top-right where no title or counter reaches. */
+.packStamp {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  gap: 1px;
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgba(224, 75, 75, 0.85);
+  border-radius: 999px;
+  transform: rotate(-11deg);
+  background: rgba(12, 10, 10, 0.55);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  color: #e8a0a0;
+  pointer-events: none;
+}
+
+.packStampMark { font-size: 18px; line-height: 1; }
+
+.packStampWord {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ---------- the foil ----------
+   What makes a booster read as a booster, and the layer that was missing: the
+   tilt and the glare were there, but a card without prismatic foil is a
+   tilting photograph, not a pull.
+
+   LEARNED FROM `simeydotme/pokemon-cards-css`, NOT INSTALLED FROM IT. That
+   repo is in the vault's motion-intel alive list with the lane's own reason
+   attached — it stays listed "because it is pure CSS the reader copies rather
+   than installs". Nothing is vendored here; the technique is three layers and
+   a blend mode.
+
+   IT IS A REAL ELEMENT, not ::before or ::after, because both are already
+   spoken for on this card — the foil sweep and the glint. That is the exact
+   collision rail-kit warns about.
+
+   THE PARALLAX IS THE POINT. A fixed rainbow is a sticker. The bands move
+   against the card at a different rate to the pointer, which is what reads as
+   light refracting off a surface rather than a texture printed on it. */
+.packFoil {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background-image:
+    /* the prismatic bands */
+    repeating-linear-gradient(
+      -22deg,
+      rgba(255, 119, 115, 0.5) 4%,
+      rgba(255, 237, 95, 0.45) 10%,
+      rgba(168, 255, 95, 0.45) 16%,
+      rgba(131, 255, 247, 0.45) 22%,
+      rgba(120, 148, 255, 0.45) 28%,
+      rgba(216, 117, 255, 0.5) 34%,
+      rgba(255, 119, 115, 0.5) 40%
+    ),
+    /* the glitter: a fine cross-hatch that only shows where the bands are hot */
+    repeating-linear-gradient(
+      122deg,
+      rgba(255, 255, 255, 0.18) 0px,
+      rgba(255, 255, 255, 0.18) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  background-size: 220% 220%, 150% 150%;
+  background-blend-mode: screen;
+  /* OVERLAY, NOT COLOR-DODGE. Dodge over a photograph blows it out: the first
+     version tinted his face green and magenta and the picture stopped being
+     readable, which on a card whose whole job is a portrait is the wrong
+     trade. Overlay keeps the luminance of what is underneath and only bends
+     the hue. */
+  /* COLOR-DODGE, BUT ONLY WHERE THE CARD IS DARK — which is the compromise
+     between the two failed passes. Dodge at 0.42 over the whole card blew the
+     portrait out to green and magenta. Overlay at 0.16 protected the portrait
+     and produced no visible foil at all: a card that was slightly redder in
+     one corner.
+     
+     Dodge is what makes holo read as holo, and it sings on dark pixels and
+     destroys bright ones. This card is dark everywhere except the photograph,
+     so the mask below does the separating and dodge can stay. */
+  mix-blend-mode: color-dodge;
+  filter: saturate(1.2) contrast(1.15);
+  /* AND IT STAYS OFF HIS FACE. Strongest at the edges, fading to nothing
+     through the middle third, so the foil reads as light coming off the
+     surface around the portrait rather than as a filter applied to him. */
+  /* Two masks multiplied: the portrait band is held back, and within it his
+     face is held back harder. Everything else — the foil sweep at the top,
+     the title zone, the corners — takes the full effect. */
+  -webkit-mask-image:
+    linear-gradient(180deg, #000 0%, rgba(0,0,0,0.25) 26%, rgba(0,0,0,0.25) 52%, #000 74%),
+    radial-gradient(52% 34% at 50% 38%, transparent 0%, transparent 45%, #000 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(180deg, #000 0%, rgba(0,0,0,0.25) 26%, rgba(0,0,0,0.25) 52%, #000 74%),
+    radial-gradient(52% 34% at 50% 38%, transparent 0%, transparent 45%, #000 100%);
+  mask-composite: intersect;
+}
+
+/* Only while the card is being pointed at. A foil that burns at rest is a
+   gradient; a foil that arrives under the finger is foil. */
+.pack:global(.is-tilting) .packFoil {
+  /* 0.42 was a colour wash. Foil is a hint that the surface is not matte. */
+  opacity: 0.34;
+  /* The multipliers used to be 1.4 and -0.6, which drove background-position
+     past 100% and produced a hard vertical seam where the repeating gradient
+     wrapped — visible as a straight edge down the card at the far right of
+     the travel. Kept inside 0-100% on both layers, moving in opposite
+     directions so the two still separate. */
+  background-position:
+    calc(20% + var(--rail-tilt-lx, 50%) * 0.6) calc(20% + var(--rail-tilt-ly, 50%) * 0.6),
+    calc(80% - var(--rail-tilt-lx, 50%) * 0.6) calc(80% - var(--rail-tilt-ly, 50%) * 0.6);
+}
+
+/* A finished pack keeps a trace of it at rest: the one card in the row that
+   has earned something looks different from across the page. */
+.pack.packOpened .packFoil { opacity: 0.05; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* No pointer-driven refraction. The card keeps its photograph and its edge;
+     what it loses is a moving rainbow, which is the part somebody asking for
+     less motion is asking to lose. */
+  .packFoil { display: none; }
+}

@@ -1,0 +1,49 @@
+{
+ "groups": {
+  "chest": 1,
+  "shoulders": 2,
+  "triceps": 3,
+  "biceps": 4,
+  "forearms": 5,
+  "abs": 6,
+  "hamstrings": 7,
+  "glutes": 8,
+  "quads": 9,
+  "calves": 10,
+  "traps": 11,
+  "back": 12,
+  "lower-back": 13
+ },
+ "pixels": {
+  "front": {
+   "chest": 15435,
+   "shoulders": 6072,
+   "triceps": 777,
+   "biceps": 7718,
+   "forearms": 16875,
+   "abs": 33299,
+   "hamstrings": 290,
+   "glutes": 308,
+   "quads": 41325,
+   "calves": 14640,
+   "traps": 613,
+   "back": 1713,
+   "lower-back": 23
+  },
+  "back": {
+   "chest": 0,
+   "shoulders": 8753,
+   "triceps": 9282,
+   "biceps": 150,
+   "forearms": 15591,
+   "abs": 1617,
+   "hamstrings": 23122,
+   "glutes": 18179,
+   "quads": 2938,
+   "calves": 21490,
+   "traps": 17448,
+   "back": 27129,
+   "lower-back": 1861
+  }
+ }
+}

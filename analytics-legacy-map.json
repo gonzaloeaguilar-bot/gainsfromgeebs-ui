@@ -1,0 +1,835 @@
+{
+  "_README": {
+    "purpose": "Legacy GA4 event name -> cross-brand contract event (~/.claude/durable/ANALYTICS_CONTRACT.md).",
+    "why_dual_emit": "GA4 property 538698079 (Geebs Coaching, stream G-R1VQZXY7Q1) has key events keyed to legacy names, read live from the Admin API on 2026-09-19: purchase, close_convert_lead, qualify_lead, application_submitted, apply_form_qualified_submit_attempt, calendar_booking_click, site_application_submitted, booking_started. Renaming any of them in place would silently zero a configured conversion, so the legacy leg keeps flowing untouched and the contract leg rides alongside under a DIFFERENT name.",
+    "fields": {
+      "event": "contract event emitted alongside the legacy name",
+      "params": "static params merged into the contract leg only",
+      "rename": "legacy param name -> contract param name, applied to the contract leg only",
+      "mirror": "true = legacy leg only. The interaction already produced this contract event via another legacy name (or via the shared delegated layer), so emitting it again would write the same counter twice."
+    }
+  },
+  "already_subscribed": {
+    "event": "form_error",
+    "params": {
+      "form_id": "newsletter",
+      "error_code": "already_subscribed",
+      "field": "email"
+    }
+  },
+  "application_contact_saved": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply",
+      "step": "contact"
+    }
+  },
+  "application_goals_saved": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply",
+      "step": "goals"
+    }
+  },
+  "application_started": {
+    "event": "form_start",
+    "params": {
+      "form_id": "apply"
+    }
+  },
+  "application_submit_attempted": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "apply"
+    },
+    "mirror": true
+  },
+  "application_submitted": {
+    "event": "lead",
+    "params": {
+      "form_id": "apply",
+      "lead_type": "apply"
+    }
+  },
+  "apply_cta_clicked": {
+    "event": "cta_click"
+  },
+  "apply_field_": {
+    "event": "cta_click"
+  },
+  "apply_form_downsell_submit_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "apply"
+    },
+    "mirror": true
+  },
+  "apply_form_impression": {
+    "event": "section_view",
+    "params": {
+      "section_id": "apply_form"
+    },
+    "mirror": true
+  },
+  "apply_form_qualified_submit_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "apply"
+    },
+    "mirror": true
+  },
+  "apply_form_submit_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "apply"
+    }
+  },
+  "apply_form_submit_incomplete": {
+    "event": "form_error",
+    "params": {
+      "form_id": "apply",
+      "error_code": "missing_required_fields",
+      "field": "required"
+    }
+  },
+  "apply_page_scroll": {
+    "event": "scroll_depth",
+    "mirror": true
+  },
+  "apply_step3_selection": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply",
+      "step": "step3"
+    }
+  },
+  "apply_step_continue": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply"
+    },
+    "rename": {
+      "apply_step": "step"
+    }
+  },
+  "apply_step_continue_incomplete": {
+    "event": "form_error",
+    "params": {
+      "form_id": "apply",
+      "error_code": "missing_step_fields",
+      "field": "step_required"
+    }
+  },
+  "apply_variant_assigned": {
+    "event": "experiment_exposure",
+    "params": {
+      "experiment_id": "apply_variant"
+    }
+  },
+  "article_cta_click": {
+    "event": "cta_click"
+  },
+  "article_pack_card_click": {
+    "event": "item_click",
+    "params": {
+      "list_name": "article_pack"
+    },
+    "rename": {
+      "article_slug": "item_id"
+    }
+  },
+  "article_pack_open": {
+    "event": "cta_click"
+  },
+  "begin_checkout": {
+    "event": "cta_click",
+    "mirror": true
+  },
+  "blog_lane_select": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "blog_lane"
+    },
+    "rename": {
+      "lane": "filter_value"
+    }
+  },
+  "blog_page_scroll": {
+    "event": "scroll_depth",
+    "mirror": true
+  },
+  "book_appointment": {
+    "event": "lead",
+    "params": {
+      "form_id": "calendly",
+      "lead_type": "booking"
+    }
+  },
+  "booking_started": {
+    "event": "contact_click",
+    "params": {
+      "method": "booking"
+    }
+  },
+  "brand_moment_complete": {
+    "event": "cta_click",
+    "params": {
+      "cta_id": "day_one_dismiss",
+      "cta_text": "Day One brand moment",
+      "cta_position": "overlay"
+    }
+  },
+  "brand_moment_shown": {
+    "event": "section_view",
+    "params": {
+      "section_id": "day_one_brand_moment"
+    }
+  },
+  "calculator_completed": {
+    "event": "cta_click"
+  },
+  "calculator_engagement": {
+    "event": "form_start",
+    "params": {
+      "form_id": "calculator"
+    }
+  },
+  "grocery_list_apply_click": {
+    "event": "cta_click",
+    "params": {
+      "cta_id": "costco_exact_list"
+    }
+  },
+  "grocery_list_completed": {
+    "event": "form_step",
+    "params": {
+      "form_id": "grocery_exact_list",
+      "step": "complete"
+    }
+  },
+  "grocery_list_started": {
+    "event": "form_start",
+    "params": {
+      "form_id": "grocery_exact_list"
+    }
+  },
+  "calendly_link_clicked": {
+    "event": "contact_click",
+    "params": {
+      "method": "booking"
+    },
+    "mirror": true
+  },
+  "chat_widget_cta_clicked": {
+    "event": "cta_click"
+  },
+  "chat_widget_character_tapped": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_character",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_closed": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_close",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_disqualified": {
+    "event": "cta_click"
+  },
+  "chat_widget_error": {
+    "event": "error_shown",
+    "params": {
+      "surface": "website_chat"
+    }
+  },
+  "chat_widget_input_started": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_input",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_jump_latest_clicked": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_jump_latest",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_message_sent": {
+    "event": "cta_click"
+  },
+  "chat_widget_opened": {
+    "event": "cta_click"
+  },
+  "chat_widget_qualified": {
+    "event": "cta_click"
+  },
+  "chat_widget_quick_reply_clicked": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_quick_reply",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_response_received": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_response",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_scrolled": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_scroll",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_source_clicked": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_source",
+      "interaction_type": "sheet"
+    }
+  },
+  "commercial_active_dwell": {
+    "event": "page_dwell",
+    "mirror": true
+  },
+  "commercial_scroll_depth": {
+    "event": "scroll_depth",
+    "mirror": true
+  },
+  "commercial_section_view": {
+    "event": "section_view",
+    "mirror": true
+  },
+  "community_interest_submit": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "community_interest"
+    }
+  },
+  "consult_checkout_click": {
+    "event": "cta_click"
+  },
+  "custom_habit_added": {
+    "event": "cta_click"
+  },
+  "daily_habit_check_in": {
+    "event": "cta_click"
+  },
+  "daily_habit_toggled": {
+    "event": "cta_click"
+  },
+  "daily_habits_reset": {
+    "event": "cta_click"
+  },
+  "daily_habits_summary_copied": {
+    "event": "cta_click"
+  },
+  "daily_step_tracker_logged": {
+    "event": "cta_click"
+  },
+  "daily_step_tracker_copied": {
+    "event": "cta_click"
+  },
+  "daily_tip_pack_pick": {
+    "event": "cta_click"
+  },
+  "daily_tip_reveal": {
+    "event": "cta_click"
+  },
+  "daily_tip_signup": {
+    "event": "lead",
+    "params": {
+      "form_id": "daily_tip",
+      "lead_type": "newsletter"
+    }
+  },
+  "daily_tip_signup_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "daily_tip"
+    }
+  },
+  "discovery_select": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "discovery"
+    },
+    "rename": {
+      "value": "filter_value"
+    }
+  },
+  "form_abandoned": {
+    "event": "form_error",
+    "params": {
+      "error_code": "abandoned",
+      "field": "unknown"
+    }
+  },
+  "form_field_completed": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply"
+    },
+    "rename": {
+      "field_name": "step"
+    },
+    "mirror": true
+  },
+  "form_field_invalid": {
+    "event": "form_error",
+    "params": {
+      "form_id": "apply",
+      "error_code": "field_invalid"
+    },
+    "rename": {
+      "field_name": "field"
+    }
+  },
+  "form_field_started": {
+    "event": "form_step",
+    "params": {
+      "form_id": "apply"
+    },
+    "rename": {
+      "field_name": "step"
+    }
+  },
+  "free_resource_signup": {
+    "event": "lead",
+    "params": {
+      "form_id": "free_resource",
+      "lead_type": "resource"
+    }
+  },
+  "free_resource_signup_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "free_resource"
+    }
+  },
+  "generate_lead": {
+    "event": "lead"
+  },
+  "goal_tracker_download_click": {
+    "event": "cta_click"
+  },
+  "goal_tracker_open_click": {
+    "event": "cta_click"
+  },
+  "goal_tracker_signup": {
+    "event": "lead",
+    "params": {
+      "form_id": "goal_tracker",
+      "lead_type": "resource"
+    }
+  },
+  "goal_tracker_signup_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "goal_tracker"
+    }
+  },
+  "honeypot": {
+    "event": "form_error",
+    "params": {
+      "form_id": "newsletter",
+      "error_code": "honeypot",
+      "field": "hidden"
+    }
+  },
+  "hydration_tracker_quick_add": {
+    "event": "cta_click"
+  },
+  "hydration_tracker_reset_day": {
+    "event": "cta_click"
+  },
+  "hydration_tracker_summary_copied": {
+    "event": "cta_click"
+  },
+  "link_rail_select": {
+    "event": "cta_click"
+  },
+  "membership_checkout_click": {
+    "event": "cta_click"
+  },
+  "newsletter_signup": {
+    "event": "lead",
+    "params": {
+      "form_id": "newsletter",
+      "lead_type": "newsletter"
+    }
+  },
+  "newsletter_signup_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "newsletter"
+    }
+  },
+  "offer_card_view": {
+    "event": "item_view",
+    "params": {
+      "item_category": "offer"
+    },
+    "rename": {
+      "offer_id": "item_id"
+    }
+  },
+  "offer_rail_impression": {
+    "event": "section_view",
+    "params": {
+      "section_id": "offer_rail"
+    },
+    "mirror": true
+  },
+  "offer_select": {
+    "event": "item_click",
+    "params": {
+      "list_name": "offer_rail"
+    },
+    "rename": {
+      "offer_id": "item_id"
+    }
+  },
+  "outbound_calendly": {
+    "event": "outbound_click",
+    "params": {
+      "destination_domain": "calendly.com",
+      "link_context": "calendly_cta"
+    }
+  },
+  "packages_keep_in_touch": {
+    "event": "lead",
+    "params": {
+      "form_id": "packages_keep_in_touch",
+      "lead_type": "inquiry"
+    }
+  },
+  "program_checkout_click": {
+    "event": "cta_click"
+  },
+  "program_cta_click": {
+    "event": "cta_click"
+  },
+  "proof_card_view": {
+    "event": "item_view",
+    "params": {
+      "item_category": "proof"
+    },
+    "rename": {
+      "proof_id": "item_id"
+    }
+  },
+  "proof_rail_impression": {
+    "event": "section_view",
+    "params": {
+      "section_id": "proof_rail"
+    },
+    "mirror": true
+  },
+  "proof_select": {
+    "event": "item_click",
+    "params": {
+      "list_name": "proof_rail"
+    },
+    "rename": {
+      "proof_id": "item_id"
+    }
+  },
+  "protein_tracker_quick_add": {
+    "event": "cta_click"
+  },
+  "protein_tracker_reset_day": {
+    "event": "cta_click"
+  },
+  "protein_tracker_summary_copied": {
+    "event": "cta_click"
+  },
+  "readiness_tracker_saved": {
+    "event": "cta_click"
+  },
+  "readiness_tracker_summary_copied": {
+    "event": "cta_click"
+  },
+  "reading_path_completed": {
+    "event": "cta_click"
+  },
+  "reading_path_finish_click": {
+    "event": "cta_click"
+  },
+  "reading_path_step_click": {
+    "event": "cta_click"
+  },
+  "reading_path_step_read": {
+    "event": "section_view",
+    "rename": {
+      "step_id": "section_id"
+    },
+    "params": {
+      "section_id": "reading_path_step"
+    },
+    "mirror": true
+  },
+  "resource_result_click": {
+    "event": "item_click",
+    "params": {
+      "list_name": "resource_search_results"
+    },
+    "dual_emit": true
+  },
+  "resource_search_clear": {
+    "event": "cta_click",
+    "params": {
+      "cta_kind": "resource_search_clear"
+    },
+    "dual_emit": true
+  },
+  "resource_search_submit": {
+    "event": "search",
+    "params": {},
+    "dual_emit": true
+  },
+  "resource_topic_select": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "resource_topic"
+    },
+    "dual_emit": true
+  },
+  "science_study_result_click": {
+    "event": "item_click",
+    "params": {
+      "list_name": "science_studies"
+    },
+    "rename": {
+      "study_id": "item_id"
+    }
+  },
+  "science_study_search_clear": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "science_search",
+      "filter_value": "cleared"
+    }
+  },
+  "science_study_search_submit": {
+    "event": "search",
+    "rename": {
+      "query": "search_term"
+    }
+  },
+  "science_study_show_all": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "science_show_all",
+      "filter_value": "all"
+    }
+  },
+  "science_study_source_click": {
+    "event": "outbound_click",
+    "params": {
+      "link_context": "study_source"
+    },
+    "rename": {
+      "host": "destination_domain",
+      "source_domain": "destination_domain"
+    }
+  },
+  "science_study_topic_select": {
+    "event": "filter_apply",
+    "params": {
+      "filter_name": "science_topic"
+    },
+    "rename": {
+      "topic": "filter_value"
+    }
+  },
+  "shopify_product_click": {
+    "event": "outbound_click",
+    "params": {
+      "destination_domain": "shop.gainsfromgeebs.com",
+      "link_context": "shopify_product"
+    }
+  },
+  "spotify_playlist_click": {
+    "event": "outbound_click",
+    "params": {
+      "destination_domain": "open.spotify.com",
+      "link_context": "playlist"
+    }
+  },
+  "start_apply": {
+    "event": "form_start",
+    "params": {
+      "form_id": "apply"
+    },
+    "mirror": true
+  },
+  "submit_apply": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "apply"
+    },
+    "mirror": true
+  },
+  "supplement_rail_impression": {
+    "event": "section_view",
+    "params": {
+      "section_id": "supplement_rail"
+    },
+    "mirror": true
+  },
+  "text_size_changed": {
+    "event": "cta_click"
+  },
+  "toc_link_clicked": {
+    "event": "cta_click"
+  },
+  "tool_email_capture": {
+    "event": "lead",
+    "params": {
+      "form_id": "tool_email",
+      "lead_type": "resource"
+    }
+  },
+  "tool_email_capture_attempt": {
+    "event": "form_submit",
+    "params": {
+      "form_id": "tool_email"
+    }
+  },
+  "tool_variation_requested": {
+    "event": "cta_click"
+  },
+  "training_video_click": {
+    "event": "outbound_click",
+    "params": {
+      "destination_domain": "youtube.com",
+      "link_context": "training_video"
+    }
+  },
+  "view_apply": {
+    "event": "section_view",
+    "params": {
+      "section_id": "apply_form"
+    },
+    "mirror": true
+  },
+  "view_calculator": {
+    "event": "section_view",
+    "params": {
+      "section_id": "calculator"
+    },
+    "mirror": true
+  },
+  "tip_capture_open": {
+    "event": "form_start",
+    "params": {
+      "form_id": "tip_capture"
+    }
+  },
+  "site_search_open": {
+    "event": "search",
+    "params": {
+      "search_stage": "open"
+    }
+  },
+  "site_search_submit": {
+    "event": "search",
+    "params": {
+      "search_stage": "submit"
+    }
+  },
+  "site_search_result_click": {
+    "event": "item_click",
+    "params": {
+      "list_name": "site_search"
+    }
+  },
+  "offer_detail_open": {
+    "event": "item_view",
+    "params": {
+      "item_category": "offer",
+      "surface": "detail_sheet"
+    },
+    "rename": {
+      "offer_id": "item_id"
+    }
+  },
+  "apply_sheet_open": {
+    "event": "form_start",
+    "params": {
+      "form_id": "apply",
+      "surface": "sheet"
+    }
+  },
+  "fit_card_open": {
+    "event": "item_view",
+    "params": {
+      "item_category": "package",
+      "surface": "fit_card"
+    }
+  },
+  "page_fold_open": {
+    "event": "section_view",
+    "params": {
+      "surface": "fold"
+    }
+  },
+  "page_map_jump": {
+    "event": "item_click",
+    "params": {
+      "list_name": "page_map"
+    }
+  },
+  "resource_hub_toggle": {
+    "event": "section_view",
+    "params": {
+      "surface": "resource_hub"
+    }
+  },
+  "resource_hub_click": {
+    "event": "item_click",
+    "params": {
+      "list_name": "resource_hub"
+    }
+  },
+  "kris_chat_card_impression": {
+    "event": "section_view",
+    "params": {
+      "section_id": "kris_chat_card"
+    }
+  },
+  "kris_chat_card_clicked": {
+    "event": "cta_click",
+    "params": {
+      "cta_id": "kris_chat_card",
+      "cta_text": "Chat with Kris"
+    },
+    "rename": {
+      "surface": "cta_position"
+    }
+  },
+  "chat_widget_outfit_selected": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_outfit",
+      "interaction_type": "sheet"
+    }
+  },
+  "chat_widget_intro_started": {
+    "event": "content_interaction",
+    "params": {
+      "interaction_id": "website_chat_intro",
+      "interaction_type": "sheet"
+    }
+  }
+}

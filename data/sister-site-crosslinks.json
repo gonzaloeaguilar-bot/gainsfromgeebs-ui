@@ -1,0 +1,654 @@
+{
+ "note": "Deterministic topical pairings computed from both live sitemaps. source_path is on gainsfromgeebs.com; targets are on titanforgefit.com. All targets verified HTTP 200.",
+ "generated": "2026-08-21",
+ "pairs": [
+  {
+   "source_path": "/guides/body-recomposition-for-beginners",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/guides/online-fitness-coach-vs-nutritionist",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/weekly-digest/cardio-dose-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/weekly-digest/muscle-retention-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/sleep-and-fat-loss-studies",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/how-much-protein-for-body-recomposition",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/cardio-or-weights-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/does-strength-training-help-you-age-better",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/can-pre-workout-at-night-hurt-sleep",
+   "targets": [
+    "https://titanforgefit.com/products/nitric-shock-pre-workout-powder-fruit-punch"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/should-men-over-30-take-creatine",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/how-much-cardio-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/are-ultra-processed-foods-bad-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/is-hiit-better-than-steady-cardio-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/is-cardio-or-weights-better-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/is-time-restricted-eating-better-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/do-ultra-processed-foods-make-fat-loss-harder",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/does-eating-speed-matter-for-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/questions/is-plant-protein-as-good-as-animal-protein-for-muscle",
+   "targets": [
+    "https://titanforgefit.com/products/plant-protein-vanilla",
+    "https://titanforgefit.com/products/plant-protein-chocolate"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/concurrent-resistance-aerobic-fat-loss-meta-2025",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/whey-protein-sarcopenia-rct-meta-2024",
+   "targets": [
+    "https://titanforgefit.com/products/advanced-100-whey-protein-isolate-vanilla",
+    "https://titanforgefit.com/products/advanced-100-whey-protein-isolate-chocolate"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/plant-animal-protein-muscle-meta-2025",
+   "targets": [
+    "https://titanforgefit.com/products/plant-protein-vanilla",
+    "https://titanforgefit.com/products/plant-protein-chocolate"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/omega3-strength-training-neuro-biomarkers-rct-2025",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/reduced-training-frequency-strength-morphology-2024",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/science/studies/time-restricted-eating-fat-loss-meta-2024",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/guides/what-does-an-online-fitness-coach-do",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/guides/how-much-does-an-online-fitness-coach-cost",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-for-women",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/strength-training-for-women-beginners",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/is-online-fitness-coaching-worth-it",
+   "targets": [
+    "https://titanforgefit.com/collections/online-coaching"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-denver",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/strength-training-for-desk-workers",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-coach-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting",
+    "https://titanforgefit.com/collections/busy-professional-fitness-and-nutrition"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-before-and-after-men",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-vs-personal-trainer",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-coach-denver",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-macros",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-for-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery",
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/protein-intake-for-weight-loss-and-muscle-gain",
+   "targets": [
+    "https://titanforgefit.com/collections/muscle-gain-and-hypertrophy"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/nutrition-coach-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/busy-professional-fitness-and-nutrition"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-coach-for-software-engineers",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/sleep-and-fat-loss-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-accountability-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/beginner-strength-training-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training",
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-build-confidence-in-the-gym",
+   "targets": [
+    "https://titanforgefit.com/collections/beginner-strength-and-gym-confidence"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/diet-soda-and-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/creatine-for-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fat-loss-plateau-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-find-an-online-fitness-coach-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/questions-to-ask-an-online-fitness-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-get-the-most-from-online-coaching",
+   "targets": [
+    "https://titanforgefit.com/collections/online-coaching"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-hire-an-online-fitness-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/pre-post-workout-nutrition-men",
+   "targets": [
+    "https://titanforgefit.com/products/nitric-shock-pre-workout-powder-fruit-punch",
+    "https://titanforgefit.com/products/bcaa-post-workout-powder-honeydew-watermelon"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/intermittent-fasting-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-much-cardio-for-fat-loss-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/tools/body-recomposition-calculator",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/guides/body-recomposition-program-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/guides/strength-training-plateau",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-get-the-most-from-online-coaching",
+   "targets": [
+    "https://titanforgefit.com/collections/online-coaching"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/questions-to-ask-an-online-fitness-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-find-an-online-fitness-coach-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-much-cardio-for-fat-loss-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/intermittent-fasting-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/creatine-for-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fat-loss-plateau-men",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-hire-an-online-fitness-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/pre-post-workout-nutrition-men",
+   "targets": [
+    "https://titanforgefit.com/products/nitric-shock-pre-workout-powder-fruit-punch",
+    "https://titanforgefit.com/products/bcaa-post-workout-powder-honeydew-watermelon"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/beginner-strength-training-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training",
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/best-online-fitness-coaches-for-busy-men",
+   "targets": [
+    "https://titanforgefit.com/collections/busy-professional-fitness-and-nutrition"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-before-and-after-men",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-coach-denver",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-for-men",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-for-women",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/body-recomposition-macros",
+   "targets": [
+    "https://titanforgefit.com/collections/body-recomposition-and-progress"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/diet-soda-and-fat-loss",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-accountability-coach",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-coach-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting",
+    "https://titanforgefit.com/collections/busy-professional-fitness-and-nutrition"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/fitness-coach-for-software-engineers",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/how-to-build-confidence-in-the-gym",
+   "targets": [
+    "https://titanforgefit.com/collections/beginner-strength-and-gym-confidence"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/is-online-fitness-coaching-worth-it",
+   "targets": [
+    "https://titanforgefit.com/collections/online-coaching"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/nutrition-coach-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/busy-professional-fitness-and-nutrition"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-denver",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-for-men-over-30",
+   "targets": [
+    "https://titanforgefit.com/collections/men-over-40-strength-and-recovery",
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/online-fitness-coach-vs-personal-trainer",
+   "targets": [
+    "https://titanforgefit.com/collections/fitness-coach-credentials-and-vetting"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/protein-intake-for-weight-loss-and-muscle-gain",
+   "targets": [
+    "https://titanforgefit.com/collections/muscle-gain-and-hypertrophy"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/sleep-and-fat-loss-for-busy-professionals",
+   "targets": [
+    "https://titanforgefit.com/collections/fat-loss",
+    "https://titanforgefit.com/collections/beginner-nutrition-and-fat-loss-foundations"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/strength-training-for-desk-workers",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  },
+  {
+   "source_path": "/blog/strength-training-for-women-beginners",
+   "targets": [
+    "https://titanforgefit.com/collections/strength-training"
+   ],
+   "topic_overlap": 2
+  }
+ ]
+}

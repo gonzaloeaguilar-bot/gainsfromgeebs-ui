@@ -1,0 +1,3447 @@
+{
+  "doi:10.1001/jama.2020.1382": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:45.481Z"
+  },
+  "doi:10.1001/jamainternmed.2019.0899": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:45.985Z"
+  },
+  "doi:10.1001/jamainternmed.2021.8098": {
+    "checkedAt": "2026-08-10T16:02:51.793Z",
+    "ok": true
+  },
+  "doi:10.1001/jamanetworkopen.2019.19462": {
+    "checkedAt": "2026-08-10T17:37:21.014Z",
+    "ok": true
+  },
+  "doi:10.1001/jamanetworkopen.2024.52185": {
+    "checkedAt": "2026-08-10T16:02:15.631Z",
+    "ok": true
+  },
+  "doi:10.1001/jamanetworkopen.2025.44439": {
+    "checkedAt": "2026-08-10T16:02:54.515Z",
+    "ok": true
+  },
+  "doi:10.1001/jamaneurol.2022.2672": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:46.534Z"
+  },
+  "doi:10.1002/14651858.CD015610.pub2": {
+    "checkedAt": "2026-08-10T16:02:19.763Z",
+    "ok": true
+  },
+  "doi:10.1002/jcsm.12922": {
+    "checkedAt": "2026-08-10T16:02:00.386Z",
+    "ok": true
+  },
+  "doi:10.1002/oby.24336": {
+    "checkedAt": "2026-08-10T16:02:22.980Z",
+    "ok": true
+  },
+  "doi:10.1002/osp4.772": {
+    "checkedAt": "2026-08-10T16:02:50.890Z",
+    "ok": true
+  },
+  "doi:10.1002/ptr.7806": {
+    "checkedAt": "2026-08-10T16:00:38.349Z",
+    "ok": true
+  },
+  "doi:10.1007/978-3-030-56153-6_2": {
+    "checkedAt": "2026-08-10T16:01:18.294Z",
+    "ok": true
+  },
+  "doi:10.1007/s00421-025-05888-x": {
+    "checkedAt": "2026-08-10T16:02:25.287Z",
+    "ok": true
+  },
+  "doi:10.1007/s00779-022-01694-w": {
+    "checkedAt": "2026-08-10T16:01:55.393Z",
+    "ok": true
+  },
+  "doi:10.1007/s12011-010-8676-3": {
+    "checkedAt": "2026-08-10T16:29:03.361Z",
+    "ok": true
+  },
+  "doi:10.1007/s12011-022-03162-1": {
+    "checkedAt": "2026-08-10T16:00:56.785Z",
+    "ok": true
+  },
+  "doi:10.1007/s13197-022-05499-w": {
+    "checkedAt": "2026-08-10T16:00:58.228Z",
+    "ok": true
+  },
+  "doi:10.1007/s13668-025-00628-1": {
+    "checkedAt": "2026-08-10T16:01:05.923Z",
+    "ok": true
+  },
+  "doi:10.1007/s40279-025-02341-z": {
+    "checkedAt": "2026-08-10T16:02:30.784Z",
+    "ok": true
+  },
+  "doi:10.1007/s40279-025-02344-w": {
+    "checkedAt": "2026-08-10T16:02:18.386Z",
+    "ok": true
+  },
+  "doi:10.1016/j.advnut.2024.100262": {
+    "checkedAt": "2026-08-10T16:02:20.675Z",
+    "ok": true
+  },
+  "doi:10.1016/j.ajcnut.2025.11.012": {
+    "checkedAt": "2026-08-10T16:02:28.502Z",
+    "ok": true
+  },
+  "doi:10.1016/j.amjmed.2014.02.007": {
+    "ok": true,
+    "checkedAt": "2026-08-10T19:21:58.523Z"
+  },
+  "doi:10.1016/j.archger.2024.105530": {
+    "checkedAt": "2026-08-10T16:02:00.835Z",
+    "ok": true
+  },
+  "doi:10.1016/j.arr.2022.101596": {
+    "checkedAt": "2026-08-10T16:00:59.909Z",
+    "ok": true
+  },
+  "doi:10.1016/j.bbcan.2023.189063": {
+    "checkedAt": "2026-08-10T16:01:00.371Z",
+    "ok": true
+  },
+  "doi:10.1016/j.clnesp.2025.01.022": {
+    "checkedAt": "2026-08-10T16:02:49.545Z",
+    "ok": true
+  },
+  "doi:10.1016/j.clnesp.2026.103323": {
+    "checkedAt": "2026-08-10T16:02:11.582Z",
+    "ok": true
+  },
+  "doi:10.1016/j.cmet.2019.05.008": {
+    "checkedAt": "2026-08-10T16:01:59.009Z",
+    "ok": true
+  },
+  "doi:10.1016/j.cyto.2023.156144": {
+    "checkedAt": "2026-08-10T16:01:17.837Z",
+    "ok": true
+  },
+  "doi:10.1016/j.diabres.2025.112941": {
+    "checkedAt": "2026-08-10T16:02:26.666Z",
+    "ok": true
+  },
+  "doi:10.1016/j.exger.2026.113122": {
+    "checkedAt": "2026-08-10T16:02:11.134Z",
+    "ok": true
+  },
+  "doi:10.1016/j.explore.2024.103062": {
+    "checkedAt": "2026-08-10T16:00:33.944Z",
+    "ok": true
+  },
+  "doi:10.1016/j.foodchem.2021.129697": {
+    "checkedAt": "2026-08-10T16:01:11.440Z",
+    "ok": true
+  },
+  "doi:10.1016/j.ijchp.2025.100559": {
+    "checkedAt": "2026-08-10T16:02:56.829Z",
+    "ok": true
+  },
+  "doi:10.1016/j.jacc.2023.07.029": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:44.413Z"
+  },
+  "doi:10.1016/j.jnha.2024.100184": {
+    "checkedAt": "2026-08-10T16:02:16.546Z",
+    "ok": true
+  },
+  "doi:10.1016/j.juro.2008.10.015": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:30.299Z"
+  },
+  "doi:10.1016/j.lanhl.2026.100835": {
+    "checkedAt": "2026-08-10T16:02:28.956Z",
+    "ok": true
+  },
+  "doi:10.1016/j.maturitas.2020.12.002": {
+    "checkedAt": "2026-08-10T16:00:36.388Z",
+    "ok": true
+  },
+  "doi:10.1016/j.metabol.2008.01.013": {
+    "checkedAt": "2026-08-10T16:00:38.794Z",
+    "ok": true
+  },
+  "doi:10.1016/j.metabol.2024.156113": {
+    "checkedAt": "2026-08-10T16:02:12.927Z",
+    "ok": true
+  },
+  "doi:10.1016/j.psyneuen.2017.01.021": {
+    "checkedAt": "2026-08-10T16:00:25.819Z",
+    "ok": true
+  },
+  "doi:10.1016/j.repbio.2019.07.005": {
+    "ok": true,
+    "checkedAt": "2026-08-11T11:46:44.775Z"
+  },
+  "doi:10.1016/j.reprotox.2020.12.019": {
+    "checkedAt": "2026-08-10T16:01:14.889Z",
+    "ok": true
+  },
+  "doi:10.1016/j.smrv.2023.101764": {
+    "checkedAt": "2026-08-10T16:02:15.177Z",
+    "ok": true
+  },
+  "doi:10.1016/j.xcrm.2026.102665": {
+    "checkedAt": "2026-08-10T16:02:24.372Z",
+    "ok": true
+  },
+  "doi:10.1016/s0899-9007(96)80058-x": {
+    "checkedAt": "2026-08-10T16:07:08.148Z",
+    "ok": true
+  },
+  "doi:10.1016/s1096-6374(00)80011-8": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:18.254Z"
+  },
+  "doi:10.1016/S2468-2667(21)00302-9": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:43.910Z"
+  },
+  "doi:10.1016/S2468-2667(25)00164-1": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:43.458Z"
+  },
+  "doi:10.1017/jns.2012.10": {
+    "ok": true,
+    "checkedAt": "2026-08-11T05:17:39.569Z"
+  },
+  "doi:10.1017/jns.2017.36": {
+    "ok": true,
+    "checkedAt": "2026-08-11T05:17:39.086Z"
+  },
+  "doi:10.1017/S0007114518002416": {
+    "checkedAt": "2026-08-10T16:00:43.755Z",
+    "ok": true
+  },
+  "doi:10.1038/s43587-020-00013-3": {
+    "checkedAt": "2026-08-10T16:00:52.032Z",
+    "ok": true
+  },
+  "doi:10.1038/sj.ejcn.1602899": {
+    "checkedAt": "2026-08-10T16:07:08.592Z",
+    "ok": true
+  },
+  "doi:10.1038/sj.ijir.3901570": {
+    "ok": true,
+    "checkedAt": "2026-08-11T05:17:37.670Z"
+  },
+  "doi:10.1046/j.1464-410x.1998.00683.x": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:31.210Z"
+  },
+  "doi:10.1055/a-2802-8363": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:46.161Z"
+  },
+  "doi:10.1055/s-0030-1269854": {
+    "checkedAt": "2026-08-10T16:29:03.807Z",
+    "ok": true
+  },
+  "doi:10.1056/NEJMoa1800389": {
+    "ok": true,
+    "checkedAt": "2026-08-10T19:21:59.764Z"
+  },
+  "doi:10.1073/pnas.1418490112": {
+    "checkedAt": "2026-08-10T16:01:55.840Z",
+    "ok": true
+  },
+  "doi:10.1080/02640414.2020.1763077": {
+    "ok": true,
+    "checkedAt": "2026-08-19T05:13:03.581Z"
+  },
+  "doi:10.1080/14656566.2024.2343092": {
+    "checkedAt": "2026-08-10T16:02:13.827Z",
+    "ok": true
+  },
+  "doi:10.1080/15402002.2026.2648510": {
+    "checkedAt": "2026-08-10T16:02:49.991Z",
+    "ok": true
+  },
+  "doi:10.1080/15502783.2022.2097018": {
+    "checkedAt": "2026-08-10T16:00:45.326Z",
+    "ok": true
+  },
+  "doi:10.1080/15502783.2023.2171314": {
+    "checkedAt": "2026-08-10T16:00:54.201Z",
+    "ok": true
+  },
+  "doi:10.1080/15502783.2025.2481127": {
+    "checkedAt": "2026-08-10T16:02:58.218Z",
+    "ok": true
+  },
+  "doi:10.1080/15502783.2025.2507949": {
+    "checkedAt": "2026-08-10T16:02:16.080Z",
+    "ok": true
+  },
+  "doi:10.1080/17461391.2016.1223173": {
+    "checkedAt": "2026-08-10T16:02:09.761Z",
+    "ok": true
+  },
+  "doi:10.1080/19490976.2023.2197837": {
+    "checkedAt": "2026-08-10T16:01:09.363Z",
+    "ok": true
+  },
+  "doi:10.1093/ajcn/87.5.1558S": {
+    "checkedAt": "2026-08-10T16:01:58.098Z",
+    "ok": true
+  },
+  "doi:10.1093/ajcn/nqy181": {
+    "ok": true,
+    "checkedAt": "2026-08-11T11:46:43.875Z"
+  },
+  "doi:10.1093/eurjpc/zwad229": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:44.941Z"
+  },
+  "doi:10.1093/jn/nxy197": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:07.828Z"
+  },
+  "doi:10.1093/nutrit/nuae055": {
+    "checkedAt": "2026-08-10T16:02:49.083Z",
+    "ok": true
+  },
+  "doi:10.1093/nutrit/nuae200": {
+    "checkedAt": "2026-08-10T16:02:34.334Z",
+    "ok": true
+  },
+  "doi:10.1093/nutrit/nuaf053": {
+    "checkedAt": "2026-08-10T16:02:19.299Z",
+    "ok": true
+  },
+  "doi:10.1093/nutrit/nuaf083": {
+    "checkedAt": "2026-08-10T16:02:27.594Z",
+    "ok": true
+  },
+  "doi:10.1093/nutrit/nuaf135": {
+    "checkedAt": "2026-08-10T16:02:25.747Z",
+    "ok": true
+  },
+  "doi:10.1095/biolreprod.112.101634": {
+    "ok": true,
+    "checkedAt": "2026-08-11T11:46:43.401Z"
+  },
+  "doi:10.1096/fj.202504783R": {
+    "checkedAt": "2026-08-10T16:02:48.157Z",
+    "ok": true
+  },
+  "doi:10.1097/JSM.0b013e3181b8b52f": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:21.734Z"
+  },
+  "doi:10.1097/MCO.0000000000001130": {
+    "checkedAt": "2026-08-10T16:02:23.433Z",
+    "ok": true
+  },
+  "doi:10.1097/MD.0000000000017186": {
+    "checkedAt": "2026-08-10T16:00:34.391Z",
+    "ok": true
+  },
+  "doi:10.1097/MED.0000000000000934": {
+    "checkedAt": "2026-08-10T16:02:22.489Z",
+    "ok": true
+  },
+  "doi:10.1111/andr.12911": {
+    "ok": true,
+    "checkedAt": "2026-08-11T11:46:44.325Z"
+  },
+  "doi:10.1111/andr.13498": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:31.850Z"
+  },
+  "doi:10.1111/cob.70070": {
+    "checkedAt": "2026-08-10T16:02:34.784Z",
+    "ok": true
+  },
+  "doi:10.1111/dom.15922": {
+    "checkedAt": "2026-08-10T16:02:21.132Z",
+    "ok": true
+  },
+  "doi:10.1111/dom.16275": {
+    "checkedAt": "2026-08-10T16:02:13.373Z",
+    "ok": true
+  },
+  "doi:10.1111/dom.70666": {
+    "checkedAt": "2026-08-10T16:02:32.163Z",
+    "ok": true
+  },
+  "doi:10.1111/dom.70884": {
+    "checkedAt": "2026-08-10T16:02:32.617Z",
+    "ok": true
+  },
+  "doi:10.1111/ggi.70607": {
+    "ok": true,
+    "checkedAt": "2026-11-06T02:48:36.167Z"
+  },
+  "doi:10.1111/j.1755-5949.2008.00052.x": {
+    "checkedAt": "2026-08-10T16:00:55.224Z",
+    "ok": true
+  },
+  "doi:10.1111/joim.12543": {
+    "checkedAt": "2026-08-10T16:01:10.985Z",
+    "ok": true
+  },
+  "doi:10.1111/jpi.13011": {
+    "checkedAt": "2026-08-10T16:01:01.887Z",
+    "ok": true
+  },
+  "doi:10.1111/liv.14393": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:48.690Z"
+  },
+  "doi:10.1111/obr.12255": {
+    "checkedAt": "2026-08-10T16:00:26.272Z",
+    "ok": true
+  },
+  "doi:10.1111/obr.12354": {
+    "checkedAt": "2026-08-10T16:01:58.556Z",
+    "ok": true
+  },
+  "doi:10.1111/sms.14739": {
+    "checkedAt": "2026-08-10T16:02:53.148Z",
+    "ok": true
+  },
+  "doi:10.1113/JP285675": {
+    "checkedAt": "2026-08-10T16:02:52.250Z",
+    "ok": true
+  },
+  "doi:10.1123/ijsnem.2015-0078": {
+    "checkedAt": "2026-08-10T16:02:12.026Z",
+    "ok": true
+  },
+  "doi:10.1126/science.283.5399.212": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:47.031Z"
+  },
+  "doi:10.1136/bjsports-2016-097333": {
+    "checkedAt": "2026-08-10T16:00:47.709Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2017-097608": {
+    "checkedAt": "2026-08-10T16:00:50.083Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2020-102955": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:48.602Z"
+  },
+  "doi:10.1136/bjsports-2021-105061": {
+    "checkedAt": "2026-08-10T16:02:01.284Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2023-107849": {
+    "checkedAt": "2026-08-10T16:02:29.886Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2024-108589": {
+    "checkedAt": "2026-08-10T16:02:17.461Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2024-108748": {
+    "checkedAt": "2026-08-10T16:02:30.331Z",
+    "ok": true
+  },
+  "doi:10.1136/bjsports-2025-110503": {
+    "checkedAt": "2026-08-10T16:01:59.457Z",
+    "ok": true
+  },
+  "doi:10.1136/bmjmed-2025-001513": {
+    "checkedAt": "2026-08-10T16:01:59.922Z",
+    "ok": true
+  },
+  "doi:10.1136/bmjnph-2023-000823ret": {
+    "checkedAt": "2026-08-10T16:00:33.492Z",
+    "ok": true
+  },
+  "doi:10.1136/bmjopen-2026-116911": {
+    "checkedAt": "2026-08-10T16:02:23.892Z",
+    "ok": true
+  },
+  "doi:10.1136/bmjsem-2024-002363": {
+    "checkedAt": "2026-08-10T16:02:33.524Z",
+    "ok": true
+  },
+  "doi:10.1136/gutjnl-2021-326789": {
+    "checkedAt": "2026-08-10T16:01:08.349Z",
+    "ok": true
+  },
+  "doi:10.1152/ajpendo.00102.2007": {
+    "checkedAt": "2026-08-10T16:02:12.478Z",
+    "ok": true
+  },
+  "doi:10.1152/japplphysiol.00076.2009": {
+    "checkedAt": "2026-08-10T16:01:15.335Z",
+    "ok": true
+  },
+  "doi:10.1155/2016/9104792": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:08.282Z"
+  },
+  "doi:10.1155/2021/8254344": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:48.169Z"
+  },
+  "doi:10.1155/tsm2/5557511": {
+    "checkedAt": "2026-08-10T16:02:28.050Z",
+    "ok": true
+  },
+  "doi:10.1159/000540068": {
+    "checkedAt": "2026-08-10T16:00:51.581Z",
+    "ok": true
+  },
+  "doi:10.1161/JAHA.119.013543": {
+    "ok": true,
+    "checkedAt": "2026-08-10T19:22:00.682Z"
+  },
+  "doi:10.1172/JCI113450": {
+    "checkedAt": "2026-08-10T16:00:49.626Z",
+    "ok": true
+  },
+  "doi:10.1177/02601060251363647": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:46.609Z"
+  },
+  "doi:10.1177/03635465251357593": {
+    "checkedAt": "2026-08-10T16:02:22.041Z",
+    "ok": true
+  },
+  "doi:10.1177/10998004251348605": {
+    "checkedAt": "2026-08-10T16:02:29.405Z",
+    "ok": true
+  },
+  "doi:10.1177/15563316251355551": {
+    "checkedAt": "2026-08-10T16:02:21.585Z",
+    "ok": true
+  },
+  "doi:10.1177/1557988319835985": {
+    "checkedAt": "2026-08-10T16:00:35.932Z",
+    "ok": true
+  },
+  "doi:10.1179/147683010X12611460764840": {
+    "checkedAt": "2026-08-10T16:00:53.748Z",
+    "ok": true
+  },
+  "doi:10.1186/1476-511X-10-145": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:03.365Z"
+  },
+  "doi:10.1186/1479-5868-8-79": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:48.075Z"
+  },
+  "doi:10.1186/s11556-025-00384-9": {
+    "checkedAt": "2026-08-10T16:02:26.205Z",
+    "ok": true
+  },
+  "doi:10.1186/s11556-025-00392-9": {
+    "ok": true,
+    "checkedAt": "2026-11-06T02:48:35.676Z"
+  },
+  "doi:10.1186/s12877-026-07413-x": {
+    "checkedAt": "2026-08-10T16:02:10.678Z",
+    "ok": true
+  },
+  "doi:10.1186/s12906-021-03297-z": {
+    "checkedAt": "2026-08-10T16:00:57.234Z",
+    "ok": true
+  },
+  "doi:10.1186/s12937-025-01178-6": {
+    "checkedAt": "2026-08-10T16:02:20.213Z",
+    "ok": true
+  },
+  "doi:10.1186/s12944-015-0015-4": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:02.919Z"
+  },
+  "doi:10.1186/s12944-015-0109-z": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:02.444Z"
+  },
+  "doi:10.1186/s12967-016-1044-0": {
+    "checkedAt": "2026-08-10T16:02:09.315Z",
+    "ok": true
+  },
+  "doi:10.1186/s12967-024-05849-6": {
+    "checkedAt": "2026-08-10T16:02:57.773Z",
+    "ok": true
+  },
+  "doi:10.1186/s12970-017-0173-z": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:22.736Z"
+  },
+  "doi:10.1186/s12970-017-0192-9": {
+    "checkedAt": "2026-08-10T16:01:06.378Z",
+    "ok": true
+  },
+  "doi:10.1186/s12970-020-00345-w": {
+    "ok": true,
+    "checkedAt": "2026-08-11T05:17:38.633Z"
+  },
+  "doi:10.1186/s12970-020-00383-4": {
+    "checkedAt": "2026-08-10T16:00:41.385Z",
+    "ok": true
+  },
+  "doi:10.1186/s12970-021-00412-w": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:22.238Z"
+  },
+  "doi:10.1210/jc.2017-01428": {
+    "checkedAt": "2026-08-10T16:29:04.283Z",
+    "ok": true
+  },
+  "doi:10.1249/JSR.0000000000000385": {
+    "checkedAt": "2026-08-10T16:01:16.329Z",
+    "ok": true
+  },
+  "doi:10.1249/MSS.0000000000003897": {
+    "checkedAt": "2026-08-10T16:02:17.923Z",
+    "ok": true
+  },
+  "doi:10.1249/MSS.0b013e3181eb6265": {
+    "ok": true,
+    "checkedAt": "2026-11-06T02:48:34.740Z"
+  },
+  "doi:10.1371/journal.pone.0228756": {
+    "checkedAt": "2026-08-10T16:01:56.286Z",
+    "ok": true
+  },
+  "doi:10.14814/phy2.14660": {
+    "checkedAt": "2026-08-10T16:02:51.342Z",
+    "ok": true
+  },
+  "doi:10.1519/JSC.0000000000004536": {
+    "checkedAt": "2026-08-10T16:00:27.619Z",
+    "ok": true
+  },
+  "doi:10.1519/JSC.0000000000004862": {
+    "checkedAt": "2026-08-10T16:02:17.012Z",
+    "ok": true
+  },
+  "doi:10.1519/JSC.0b013e31823a3e2d": {
+    "checkedAt": "2026-08-10T16:02:08.862Z",
+    "ok": true
+  },
+  "doi:10.2147/CIA.S43837": {
+    "ok": true,
+    "checkedAt": "2026-09-23T03:38:47.556Z"
+  },
+  "doi:10.2147/OAJSM.S123529": {
+    "checkedAt": "2026-08-10T16:02:10.219Z",
+    "ok": true
+  },
+  "doi:10.2147/VHRM.S85165": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:11:03.872Z"
+  },
+  "doi:10.2165/11593180-000000000-00000": {
+    "checkedAt": "2026-08-10T16:00:26.725Z",
+    "ok": true
+  },
+  "doi:10.2174/1570159X13666141210215655": {
+    "checkedAt": "2026-08-10T16:00:41.832Z",
+    "ok": true
+  },
+  "doi:10.2337/dc25-2083": {
+    "checkedAt": "2026-08-10T16:02:31.687Z",
+    "ok": true
+  },
+  "doi:10.2337/dci23-0100": {
+    "checkedAt": "2026-08-10T16:02:14.278Z",
+    "ok": true
+  },
+  "doi:10.3109/09637486.2013.775228": {
+    "checkedAt": "2026-08-10T16:29:02.912Z",
+    "ok": true
+  },
+  "doi:10.3389/fnagi.2025.1673786": {
+    "checkedAt": "2026-08-10T16:02:55.914Z",
+    "ok": true
+  },
+  "doi:10.3389/fnut.2025.1645346": {
+    "checkedAt": "2026-08-10T16:01:12.916Z",
+    "ok": true
+  },
+  "doi:10.3389/fnut.2025.1701520": {
+    "checkedAt": "2026-08-10T16:02:54.057Z",
+    "ok": true
+  },
+  "doi:10.3389/fphys.2012.00260": {
+    "ok": true,
+    "checkedAt": "2026-11-06T02:48:34.283Z"
+  },
+  "doi:10.3389/fphys.2025.1544286": {
+    "checkedAt": "2026-08-10T16:02:24.828Z",
+    "ok": true
+  },
+  "doi:10.3389/fpsyg.2025.1599861": {
+    "checkedAt": "2026-08-10T16:02:56.361Z",
+    "ok": true
+  },
+  "doi:10.3389/fpsyt.2025.1708244": {
+    "checkedAt": "2026-08-10T16:02:54.966Z",
+    "ok": true
+  },
+  "doi:10.3389/fpubh.2025.1735899": {
+    "checkedAt": "2026-08-10T16:02:27.125Z",
+    "ok": true
+  },
+  "doi:10.3390/biomedicines9080984": {
+    "checkedAt": "2026-08-10T16:01:02.345Z",
+    "ok": true
+  },
+  "doi:10.3390/ijms19030686": {
+    "checkedAt": "2026-08-10T16:01:03.878Z",
+    "ok": true
+  },
+  "doi:10.3390/jfmk10010037": {
+    "checkedAt": "2026-08-10T16:02:53.597Z",
+    "ok": true
+  },
+  "doi:10.3390/jfmk11010080": {
+    "checkedAt": "2026-08-10T16:02:18.838Z",
+    "ok": true
+  },
+  "doi:10.3390/jfmk8030088": {
+    "checkedAt": "2026-08-10T16:00:45.787Z",
+    "ok": true
+  },
+  "doi:10.3390/nu13082861": {
+    "checkedAt": "2026-08-10T16:01:13.368Z",
+    "ok": true
+  },
+  "doi:10.3390/nu15143123": {
+    "checkedAt": "2026-08-10T16:01:07.894Z",
+    "ok": true
+  },
+  "doi:10.3390/nu15153377": {
+    "checkedAt": "2026-08-10T16:01:57.188Z",
+    "ok": true
+  },
+  "doi:10.3390/nu16193247": {
+    "checkedAt": "2026-08-10T16:00:39.817Z",
+    "ok": true
+  },
+  "doi:10.3390/nu16193390": {
+    "checkedAt": "2026-08-10T16:02:57.305Z",
+    "ok": true
+  },
+  "doi:10.3390/nu16193403": {
+    "checkedAt": "2026-08-10T16:02:14.731Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17061022": {
+    "checkedAt": "2026-08-10T16:02:58.670Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17111843": {
+    "checkedAt": "2026-08-10T16:01:04.329Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17132070": {
+    "checkedAt": "2026-08-10T16:02:31.235Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17132088": {
+    "checkedAt": "2026-08-10T16:02:48.606Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17132093": {
+    "checkedAt": "2026-08-10T16:00:47.263Z",
+    "ok": true
+  },
+  "doi:10.3390/nu17183000": {
+    "checkedAt": "2026-08-10T16:00:33.040Z",
+    "ok": true
+  },
+  "doi:10.3390/sports10080120": {
+    "checkedAt": "2026-08-10T16:00:27.172Z",
+    "ok": true
+  },
+  "doi:10.3390/sports12070198": {
+    "checkedAt": "2026-08-10T16:02:52.699Z",
+    "ok": true
+  },
+  "doi:10.3390/sports7010005": {
+    "checkedAt": "2026-08-10T16:00:43.303Z",
+    "ok": true
+  },
+  "doi:10.3945/ajcn.115.119339": {
+    "checkedAt": "2026-08-10T16:02:01.738Z",
+    "ok": true
+  },
+  "doi:10.3945/ajcn.2008.26574": {
+    "checkedAt": "2026-08-10T16:01:57.642Z",
+    "ok": true
+  },
+  "doi:10.4103/0253-7176.106022": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:47.119Z"
+  },
+  "doi:10.5664/jcsm.3170": {
+    "checkedAt": "2026-08-10T16:01:56.731Z",
+    "ok": true
+  },
+  "doi:10.7150/ijms.73645": {
+    "ok": true,
+    "checkedAt": "2026-08-11T05:17:38.146Z"
+  },
+  "doi:10.7326/0003-4819-153-7-201010050-00006": {
+    "ok": true,
+    "checkedAt": "2026-11-06T02:48:35.190Z"
+  },
+  "doi:10.7326/ANNALS-25-00478": {
+    "checkedAt": "2026-08-10T16:02:33.069Z",
+    "ok": true
+  },
+  "doi:10.7326/ANNALS-25-01660": {
+    "checkedAt": "2026-08-10T16:02:50.437Z",
+    "ok": true
+  },
+  "doi:10.7717/peerj.16777": {
+    "ok": true,
+    "checkedAt": "2026-08-19T05:13:04.034Z"
+  },
+  "doi:10.7759/cureus.61951": {
+    "ok": true,
+    "checkedAt": "2026-08-11T04:36:30.766Z"
+  },
+  "doi:10.7759/cureus.6466": {
+    "ok": true,
+    "checkedAt": "2026-10-08T20:25:47.638Z"
+  },
+  "pmid:10722779": {
+    "ok": true,
+    "year": "2000",
+    "firstAuthor": "Poortmans JR",
+    "title": "Do regular high protein diets have potential health risks on kidney function in athletes?",
+    "checkedAt": "2026-08-11T04:11:05.527Z"
+  },
+  "pmid:10904038": {
+    "ok": true,
+    "year": "2000",
+    "firstAuthor": "Janssen I",
+    "title": "Skeletal muscle mass and distribution in 468 men and women aged 18-88 yr.",
+    "checkedAt": "2026-10-14T00:39:59.272Z"
+  },
+  "pmid:10952093": {
+    "ok": true,
+    "year": "2000",
+    "firstAuthor": "Fowke JH",
+    "title": "Brassica vegetable consumption shifts estrogen metabolism in healthy postmenopausal women.",
+    "checkedAt": "2026-08-11T04:36:23.868Z"
+  },
+  "pmid:10984255": {
+    "ok": true,
+    "year": "2000",
+    "firstAuthor": "Van Cauter E",
+    "title": "Interrelationships between growth hormone and sleep.",
+    "checkedAt": "2026-08-11T04:36:17.724Z"
+  },
+  "pmid:11173715": {
+    "ok": true,
+    "year": "2000",
+    "firstAuthor": "Boudou P",
+    "title": "Effects of a single bout of exercise and exercise training on steroid levels in middle-aged type 2 diabetic men: relationship to abdominal adipose tissue distribution and metabolic status.",
+    "checkedAt": "2026-08-11T04:53:24.313Z"
+  },
+  "pmid:11836290": {
+    "ok": true,
+    "year": "2002",
+    "firstAuthor": "Feldman HA",
+    "title": "Age trends in the level of serum testosterone and other hormones in middle-aged men: longitudinal results from the Massachusetts male aging study.",
+    "checkedAt": "2026-10-14T00:40:01.887Z"
+  },
+  "pmid:12711931": {
+    "ok": true,
+    "year": "2003",
+    "firstAuthor": "Sarkola T",
+    "title": "Testosterone increases in men after a low dose of alcohol.",
+    "checkedAt": "2026-08-10T19:22:04.210Z"
+  },
+  "pmid:12740311": {
+    "ok": true,
+    "year": "2003",
+    "firstAuthor": "Burke LM",
+    "title": "Effect of alcohol intake on muscle glycogen storage after prolonged exercise.",
+    "checkedAt": "2026-09-23T08:32:15.139Z"
+  },
+  "pmid:1454084": {
+    "ok": true,
+    "year": "1992",
+    "firstAuthor": "Lichtman SW",
+    "title": "Discrepancy between self-reported and actual caloric intake and exercise in obese subjects.",
+    "checkedAt": "2026-10-14T01:45:26.690Z"
+  },
+  "pmid:14671194": {
+    "ok": true,
+    "year": "2003",
+    "firstAuthor": "Blouin K",
+    "title": "Local androgen inactivation in abdominal visceral adipose tissue.",
+    "checkedAt": "2026-08-11T04:53:23.808Z"
+  },
+  "pmid:15166654": {
+    "ok": true,
+    "year": "2004",
+    "firstAuthor": "Sierksma A",
+    "title": "Effect of moderate alcohol consumption on plasma dehydroepiandrosterone sulfate, testosterone, and estradiol levels in middle-aged men and postmenopausal women: a diet-controlled intervention study.",
+    "checkedAt": "2026-08-10T19:22:03.423Z"
+  },
+  "pmid:15383512": {
+    "ok": true,
+    "year": "2004",
+    "firstAuthor": "Rosario ER",
+    "title": "Age-related testosterone depletion and the development of Alzheimer disease.",
+    "checkedAt": "2026-08-12T07:02:17.815Z"
+  },
+  "pmid:15448977": {
+    "ok": true,
+    "year": "2004",
+    "firstAuthor": "Juliano LM",
+    "title": "A critical review of caffeine withdrawal: empirical validation of symptoms and signs, incidence, severity, and associated features.",
+    "checkedAt": "2026-08-10T19:22:11.799Z"
+  },
+  "pmid:15623462": {
+    "ok": true,
+    "year": "2004",
+    "firstAuthor": "Dalessandri KM",
+    "title": "Pilot study: effect of 3,3'-diindolylmethane supplements on urinary hormone metabolites in postmenopausal women with a history of early-stage breast cancer.",
+    "checkedAt": "2026-08-11T04:36:24.398Z"
+  },
+  "pmid:15735098": {
+    "ok": true,
+    "year": "2005",
+    "firstAuthor": "Dillingham BL",
+    "title": "Soy protein isolates of varying isoflavone content exert minor effects on serum reproductive hormones in healthy young men.",
+    "checkedAt": "2026-08-11T04:11:12.312Z"
+  },
+  "pmid:16174292": {
+    "ok": true,
+    "year": "2005",
+    "firstAuthor": "Martin WF",
+    "title": "Dietary protein intake and renal function.",
+    "checkedAt": "2026-08-11T04:11:06.080Z"
+  },
+  "pmid:16398892": {
+    "ok": true,
+    "year": "2005",
+    "firstAuthor": "Galvão DA",
+    "title": "Resistance exercise dosage in older adults: single- versus multiset effects on physical performance and body composition.",
+    "checkedAt": "2026-11-06T02:48:33.727Z"
+  },
+  "pmid:16507602": {
+    "ok": true,
+    "year": "2006",
+    "firstAuthor": "Katsanos CS",
+    "title": "A high proportion of leucine is required for optimal stimulation of the rate of muscle protein synthesis by essential amino acids in the elderly.",
+    "checkedAt": "2026-08-12T07:02:16.172Z"
+  },
+  "pmid:17136944": {
+    "ok": true,
+    "year": "2006",
+    "firstAuthor": "Hoffman J",
+    "title": "Effect of creatine and beta-alanine supplementation on performance and endocrine responses in strength/power athletes.",
+    "checkedAt": "2026-08-11T04:36:20.738Z"
+  },
+  "pmid:17193902": {
+    "ok": true,
+    "year": "2006",
+    "firstAuthor": "Maneesh M",
+    "title": "Alcohol abuse-duration dependent decrease in plasma testosterone and antioxidants in males.",
+    "checkedAt": "2026-08-10T19:22:07.409Z"
+  },
+  "pmid:17389710": {
+    "checkedAt": "2026-08-10T16:00:28.127Z",
+    "firstAuthor": "Fontana L",
+    "ok": true,
+    "title": "Calorie restriction or exercise: effects on coronary heart disease risk factors. A randomized, controlled trial.",
+    "year": "2007"
+  },
+  "pmid:17412783": {
+    "ok": true,
+    "year": "2007",
+    "firstAuthor": "Nindl BC",
+    "title": "Utility of circulating IGF-I as a biomarker for assessing body composition changes in men during periods of high physical activity superimposed upon energy and sleep restriction.",
+    "checkedAt": "2026-09-05T19:52:26.258Z"
+  },
+  "pmid:17533583": {
+    "ok": true,
+    "year": "2007",
+    "firstAuthor": "Tieken SM",
+    "title": "Effects of solid versus liquid meal-replacement products of similar energy content on hunger, satiety, and appetite-regulating hormones in older adults.",
+    "checkedAt": "2026-08-11T04:11:10.492Z"
+  },
+  "pmid:17568759": {
+    "ok": true,
+    "year": "2007",
+    "firstAuthor": "Forest CP",
+    "title": "Efficacy and safety of pomegranate juice on improvement of erectile dysfunction in male patients with mild to moderate erectile dysfunction: a randomized, placebo-controlled, double-blind, crossover study.",
+    "checkedAt": "2026-08-11T05:17:34.883Z"
+  },
+  "pmid:17684208": {
+    "ok": true,
+    "year": "2007",
+    "firstAuthor": "Hartman JW",
+    "title": "Consumption of fat-free fluid milk after resistance exercise promotes greater lean mass accretion than does consumption of soy or carbohydrate in young, novice, male weightlifters.",
+    "checkedAt": "2026-08-11T04:11:09.383Z"
+  },
+  "pmid:17882141": {
+    "checkedAt": "2026-08-10T16:07:07.633Z",
+    "firstAuthor": "Koehler K",
+    "ok": true,
+    "title": "Serum testosterone and urinary excretion of steroid hormone metabolites after administration of a high-dose zinc supplement.",
+    "year": "2009"
+  },
+  "pmid:18067519": {
+    "ok": true,
+    "year": "2008",
+    "firstAuthor": "Eriksson L",
+    "title": "Social physique anxiety and sociocultural attitudes toward appearance impact on orthorexia test in fitness participants.",
+    "checkedAt": "2026-09-02T21:35:22.725Z"
+  },
+  "pmid:18235143": {
+    "ok": true,
+    "year": "2008",
+    "firstAuthor": "Baxmann AC",
+    "title": "Influence of muscle mass and physical activity on serum and urinary creatinine and serum cystatin C.",
+    "checkedAt": "2026-08-11T04:11:07.358Z"
+  },
+  "pmid:18442638": {
+    "checkedAt": "2026-08-10T16:00:37.902Z",
+    "firstAuthor": "Yin J",
+    "ok": true,
+    "title": "Efficacy of berberine in patients with type 2 diabetes mellitus.",
+    "year": "2008"
+  },
+  "pmid:18450989": {
+    "ok": true,
+    "year": "2008",
+    "firstAuthor": "Alemany JA",
+    "title": "Effects of dietary protein content on IGF-I, testosterone, and body composition during 8 days of severe energy deficit and arduous physical activity.",
+    "checkedAt": "2026-09-05T19:52:26.795Z"
+  },
+  "pmid:18469287": {
+    "checkedAt": "2026-08-10T16:01:22.776Z",
+    "firstAuthor": "Paddon-Jones D",
+    "ok": true,
+    "title": "Protein, weight management, and satiety.",
+    "year": "2008"
+  },
+  "pmid:18801111": {
+    "checkedAt": "2026-08-10T16:00:54.758Z",
+    "firstAuthor": "Dording CM",
+    "ok": true,
+    "title": "A double-blind, randomized, pilot dose-finding study of maca root (L. meyenii) for the management of SSRI-induced sexual dysfunction.",
+    "year": "2008"
+  },
+  "pmid:18842775": {
+    "ok": true,
+    "year": "2008",
+    "firstAuthor": "Rosenbaum M",
+    "title": "Long-term persistence of adaptive thermogenesis in subjects who have maintained a reduced body weight.",
+    "checkedAt": "2026-10-14T01:45:28.616Z"
+  },
+  "pmid:19056602": {
+    "checkedAt": "2026-08-10T16:01:22.246Z",
+    "firstAuthor": "Nedeltcheva AV",
+    "ok": true,
+    "title": "Sleep curtailment is accompanied by increased intake of calories from snacks.",
+    "year": "2009"
+  },
+  "pmid:19091331": {
+    "ok": true,
+    "year": "2009",
+    "firstAuthor": "Safarinejad MR",
+    "title": "Efficacy of selenium and/or N-acetyl-cysteine for improving semen parameters in infertile men: a double-blind, placebo controlled, randomized study.",
+    "checkedAt": "2026-08-11T04:36:28.085Z"
+  },
+  "pmid:19130109": {
+    "ok": true,
+    "year": "2009",
+    "firstAuthor": "Hurtado de Catalfo GE",
+    "title": "Influence of commercial dietary oils on lipid composition and testosterone production in interstitial cells isolated from rat testis.",
+    "checkedAt": "2026-08-10T19:20:54.448Z"
+  },
+  "pmid:19204579": {
+    "ok": true,
+    "year": "2009",
+    "firstAuthor": "American College of Sports Medicine",
+    "title": "American College of Sports Medicine position stand. Progression models in resistance training for healthy adults.",
+    "checkedAt": "2026-08-19T05:13:07.292Z"
+  },
+  "pmid:19219847": {
+    "ok": true,
+    "year": "2009",
+    "firstAuthor": "Addicott MA",
+    "title": "The effect of daily caffeine use on cerebral blood flow: How much caffeine can we tolerate?",
+    "checkedAt": "2026-08-10T19:22:15.113Z"
+  },
+  "pmid:19524224": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Hamilton-Reeves JM",
+    "title": "Clinical studies show no effects of soy protein or isoflavones on reproductive hormones in men: results of a meta-analysis.",
+    "checkedAt": "2026-08-11T04:11:11.025Z"
+  },
+  "pmid:19589961": {
+    "checkedAt": "2026-08-10T16:01:14.422Z",
+    "firstAuthor": "Tang JE",
+    "ok": true,
+    "title": "Ingestion of whey hydrolysate, casein, or soy protein isolate: effects on mixed muscle protein synthesis at rest and following resistance exercise in young men.",
+    "year": "2009"
+  },
+  "pmid:19741313": {
+    "ok": true,
+    "year": "2009",
+    "firstAuthor": "van der Merwe J",
+    "title": "Three weeks of creatine monohydrate supplementation affects dihydrotestosterone to testosterone ratio in college-aged rugby players.",
+    "checkedAt": "2026-08-11T04:36:18.805Z"
+  },
+  "pmid:20012446": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Barnes MJ",
+    "title": "Post-exercise alcohol ingestion exacerbates eccentric-exercise induced losses in performance.",
+    "checkedAt": "2026-08-11T04:36:26.554Z"
+  },
+  "pmid:20352370": {
+    "checkedAt": "2026-08-10T16:29:01.055Z",
+    "firstAuthor": "Cinar V",
+    "ok": true,
+    "title": "Effects of magnesium supplementation on testosterone levels of athletes and sedentary subjects at rest and after exhaustion.",
+    "year": "2011"
+  },
+  "pmid:20520601": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Rogers PJ",
+    "title": "Association of the anxiogenic and alerting effects of caffeine with ADORA2A and ADORA1 polymorphisms and habitual level of caffeine consumption.",
+    "checkedAt": "2026-08-10T19:22:13.820Z"
+  },
+  "pmid:20543750": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Peterson MD",
+    "title": "Influence of resistance exercise on lean body mass in aging adults: a meta-analysis.",
+    "checkedAt": "2026-10-14T00:39:59.978Z"
+  },
+  "pmid:20878178": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Barnes MJ",
+    "title": "A low dose of alcohol does not impact skeletal muscle performance after exercise-induced muscle damage.",
+    "checkedAt": "2026-08-11T04:36:27.074Z"
+  },
+  "pmid:20921542": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Nedeltcheva AV",
+    "title": "Insufficient sleep undermines dietary efforts to reduce adiposity.",
+    "checkedAt": "2026-10-14T00:40:01.351Z"
+  },
+  "pmid:21040626": {
+    "checkedAt": "2026-08-10T16:00:52.739Z",
+    "firstAuthor": "Giesbrecht T",
+    "ok": true,
+    "title": "The combination of L-theanine and caffeine improves cognitive performance and increases subjective alertness.",
+    "year": "2010"
+  },
+  "pmid:21058750": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Vingren JL",
+    "title": "Testosterone physiology in resistance exercise and training: the up-stream regulatory elements.",
+    "checkedAt": "2026-09-02T21:35:21.582Z"
+  },
+  "pmid:21129941": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Naghii MR",
+    "title": "Comparative effects of daily and weekly boron supplementation on plasma steroid hormones and proinflammatory cytokines.",
+    "checkedAt": "2026-10-08T20:25:49.695Z"
+  },
+  "pmid:21154195": {
+    "checkedAt": "2026-08-10T16:29:01.810Z",
+    "firstAuthor": "Pilz S",
+    "ok": true,
+    "title": "Effect of vitamin D supplementation on testosterone levels in men.",
+    "year": "2011"
+  },
+  "pmid:21558571": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Garthe I",
+    "title": "Effect of two different weight-loss rates on body composition and strength and power-related performance in elite athletes.",
+    "checkedAt": "2026-10-08T20:20:08.300Z"
+  },
+  "pmid:21632481": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Leproult R",
+    "title": "Effect of 1 week of sleep restriction on testosterone levels in young healthy men.",
+    "checkedAt": "2026-08-12T07:02:18.366Z"
+  },
+  "pmid:21671978": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Tambi MI",
+    "title": "Standardised water-soluble extract of Eurycoma longifolia, Tongkat ali, as testosterone booster for managing men with late-onset hypogonadism?",
+    "checkedAt": "2026-10-08T20:25:41.313Z"
+  },
+  "pmid:21736786": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Ganio MS",
+    "title": "Mild dehydration impairs cognitive performance and mood of men.",
+    "checkedAt": "2026-08-11T05:17:31.025Z"
+  },
+  "pmid:21798015": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Tudor-Locke C",
+    "title": "How many steps/day are enough? For adults.",
+    "checkedAt": "2026-09-23T03:38:42.269Z"
+  },
+  "pmid:21854650": {
+    "ok": true,
+    "year": "2011",
+    "firstAuthor": "Schuchardt JP",
+    "title": "Incorporation of EPA and DHA into plasma phospholipids in response to different omega-3 fatty acid formulations--a comparative bioavailability study of fish oil vs. krill oil.",
+    "checkedAt": "2026-08-11T04:11:01.257Z"
+  },
+  "pmid:22002517": {
+    "checkedAt": "2026-08-10T16:00:29.816Z",
+    "firstAuthor": "Wilson JM",
+    "ok": true,
+    "title": "Concurrent training: a meta-analysis examining interference of aerobic and resistance exercises.",
+    "year": "2012"
+  },
+  "pmid:2202881": {
+    "ok": true,
+    "year": "1990",
+    "firstAuthor": "Seidell JC",
+    "title": "Visceral fat accumulation in men is positively associated with insulin, glucose, and C-peptide levels, but negatively with testosterone levels.",
+    "checkedAt": "2026-08-11T04:53:22.169Z"
+  },
+  "pmid:22185621": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Barnes MJ",
+    "title": "The effects of acute alcohol consumption and eccentric muscle damage on neuromuscular function.",
+    "checkedAt": "2026-08-11T04:36:27.574Z"
+  },
+  "pmid:22190027": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Armstrong LE",
+    "title": "Mild dehydration affects mood in healthy young women.",
+    "checkedAt": "2026-08-11T05:17:32.156Z"
+  },
+  "pmid:22254055": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Vella LD",
+    "title": "Alcohol, athletic performance and recovery.",
+    "checkedAt": "2026-08-19T05:13:04.589Z"
+  },
+  "pmid:22330017": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Res PT",
+    "title": "Protein ingestion before sleep improves postexercise overnight recovery.",
+    "checkedAt": "2026-08-11T04:59:52.058Z"
+  },
+  "pmid:22895856": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Robbins WA",
+    "title": "Walnuts improve semen quality in men consuming a Western-style diet: randomized control dietary intervention trial.",
+    "checkedAt": "2026-08-11T11:46:41.273Z"
+  },
+  "pmid:23053130": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Ogasawara R",
+    "title": "Comparison of muscle hypertrophy following 6-month of continuous and periodic strength training.",
+    "checkedAt": "2026-10-14T05:15:39.806Z"
+  },
+  "pmid:2305711": {
+    "ok": true,
+    "year": "1990",
+    "firstAuthor": "Mifflin MD",
+    "title": "A new predictive equation for resting energy expenditure in healthy individuals.",
+    "checkedAt": "2026-10-14T01:45:27.877Z"
+  },
+  "pmid:23360586": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Aragon AA",
+    "title": "Nutrient timing revisited: is there a post-exercise anabolic window?",
+    "checkedAt": "2026-08-11T04:36:15.654Z"
+  },
+  "pmid:23425925": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Camacho EM",
+    "title": "Age-associated changes in hypothalamic-pituitary-testicular function in middle-aged and older men are modified by weight change and lifestyle factors: longitudinal results from the European Male Ageing Study.",
+    "checkedAt": "2026-08-11T04:53:24.915Z"
+  },
+  "pmid:23439798": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Chandrasekhar K",
+    "title": "A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults.",
+    "checkedAt": "2026-08-11T04:10:53.095Z"
+  },
+  "pmid:23459753": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Areta JL",
+    "title": "Timing and distribution of protein ingestion during prolonged recovery from resistance exercise alters myofibrillar protein synthesis.",
+    "checkedAt": "2026-08-11T04:36:16.172Z"
+  },
+  "pmid:23470309": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Vingren JL",
+    "title": "Postresistance exercise ethanol ingestion and acute testosterone bioavailability.",
+    "checkedAt": "2026-09-23T08:32:16.353Z"
+  },
+  "pmid:23472458": {
+    "checkedAt": "2026-08-10T16:29:00.243Z",
+    "firstAuthor": "Derouiche A",
+    "ok": true,
+    "title": "Effect of argan and olive oil consumption on the hormonal profile of androgens among healthy adult Moroccan men.",
+    "year": "2013"
+  },
+  "pmid:23573066": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Ozaki H",
+    "title": "Possibility of leg muscle hypertrophy by ambulation in older adults: a brief review.",
+    "checkedAt": "2026-09-23T03:38:41.742Z"
+  },
+  "pmid:23754792": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Henkel RR",
+    "title": "Tongkat Ali as a potential herbal supplement for physically active male and female seniors--a pilot study.",
+    "checkedAt": "2026-10-08T20:25:41.869Z"
+  },
+  "pmid:23853635": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Abbasi B",
+    "title": "The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial.",
+    "checkedAt": "2026-10-08T20:25:43.521Z"
+  },
+  "pmid:23985804": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Camps SG",
+    "title": "Weight loss-induced reduction in physical activity recovers during weight maintenance.",
+    "checkedAt": "2026-08-11T11:46:29.449Z"
+  },
+  "pmid:24015701": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Kraemer WJ",
+    "title": "The effects of soy and whey protein supplementation on acute hormonal reponses to resistance exercise in men.",
+    "checkedAt": "2026-08-11T04:11:11.556Z"
+  },
+  "pmid:24149694": {
+    "ok": true,
+    "year": "2010",
+    "firstAuthor": "Wu BH",
+    "title": "Caffeine attenuates acute growth hormone response to a single bout of resistance exercise.",
+    "checkedAt": "2026-08-11T04:36:17.222Z"
+  },
+  "pmid:24219197": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Parmenter BJ",
+    "title": "High-intensity progressive resistance training improves flat-ground walking in older adults with symptomatic peripheral arterial disease.",
+    "checkedAt": "2026-08-26T14:02:44.636Z"
+  },
+  "pmid:24235903": {
+    "checkedAt": "2026-08-10T16:01:21.065Z",
+    "firstAuthor": "Drake C",
+    "ok": true,
+    "title": "Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed.",
+    "year": "2013"
+  },
+  "pmid:24257722": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Witard OC",
+    "title": "Myofibrillar muscle protein synthesis rates subsequent to a meal in response to increasing doses of whey protein at rest and after resistance exercise.",
+    "checkedAt": "2026-09-02T21:35:26.835Z"
+  },
+  "pmid:24259556": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Wegmüller R",
+    "title": "Zinc absorption by young adults from supplemental zinc citrate is comparable with that from zinc gluconate and higher than from zinc oxide.",
+    "checkedAt": "2026-08-11T11:46:47.440Z"
+  },
+  "pmid:24299050": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Schoenfeld BJ",
+    "title": "The effect of protein timing on muscle strength and hypertrophy: a meta-analysis.",
+    "checkedAt": "2026-08-11T04:36:15.121Z"
+  },
+  "pmid:24355438": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Bouillanne O",
+    "title": "Long-lasting improved amino acid bioavailability associated with protein pulse feeding in hospitalized elderly patients: a randomized controlled trial.",
+    "checkedAt": "2026-08-12T07:02:17.228Z"
+  },
+  "pmid:24371462": {
+    "ok": true,
+    "year": "2013",
+    "firstAuthor": "Ambiye VR",
+    "title": "Clinical Evaluation of the Spermatogenic Activity of the Root Extract of Ashwagandha (Withania somnifera) in Oligospermic Males: A Pilot Study.",
+    "checkedAt": "2026-08-11T04:46:54.052Z"
+  },
+  "pmid:24477298": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Mamerow MM",
+    "title": "Dietary protein distribution positively influences 24-h muscle protein synthesis in healthy adults.",
+    "checkedAt": "2026-08-12T07:02:16.706Z"
+  },
+  "pmid:24505395": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Li K",
+    "title": "Effect of marine-derived n-3 polyunsaturated fatty acids on C-reactive protein, interleukin 6 and tumor necrosis factor α: a meta-analysis.",
+    "checkedAt": "2026-08-11T04:36:26.037Z"
+  },
+  "pmid:24533082": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Parr EB",
+    "title": "Alcohol ingestion impairs maximal post-exercise rates of myofibrillar protein synthesis following a single bout of concurrent training.",
+    "checkedAt": "2026-08-19T05:13:05.667Z"
+  },
+  "pmid:24571926": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Trexler ET",
+    "title": "Metabolic adaptation to weight loss: implications for the athlete.",
+    "checkedAt": "2026-08-11T11:46:27.375Z"
+  },
+  "pmid:24748461": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Barnes MJ",
+    "title": "Alcohol: impact on sports performance and recovery in male athletes.",
+    "checkedAt": "2026-08-19T05:13:05.111Z"
+  },
+  "pmid:24791917": {
+    "ok": true,
+    "year": "2014",
+    "firstAuthor": "Myburgh KH",
+    "title": "Polyphenol supplementation: benefits for exercise performance or oxidative stress?",
+    "checkedAt": "2026-08-10T19:21:53.494Z"
+  },
+  "pmid:25056502": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Moore DR",
+    "title": "Protein ingestion to stimulate myofibrillar protein synthesis requires greater relative protein intakes in healthy older versus younger men.",
+    "checkedAt": "2026-08-12T07:02:15.632Z"
+  },
+  "pmid:25191556": {
+    "ok": true,
+    "year": "2012",
+    "firstAuthor": "Tsang C",
+    "title": "Intake of polyphenol-rich pomegranate pure juice influences urinary glucocorticoids, blood pressure and homeostasis model assessment of insulin resistance in human volunteers.",
+    "checkedAt": "2026-08-11T05:17:37.099Z"
+  },
+  "pmid:25311083": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Bandín C",
+    "title": "Meal timing affects glucose tolerance, substrate oxidation and circadian-related variables: A randomized, crossover trial.",
+    "checkedAt": "2026-08-11T04:59:53.096Z"
+  },
+  "pmid:25352437": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Kim IY",
+    "title": "Quantity of dietary protein intake, but not pattern of intake, affects net protein balance primarily through differences in protein synthesis in older adults.",
+    "checkedAt": "2026-08-12T07:02:15.043Z"
+  },
+  "pmid:25535358": {
+    "checkedAt": "2026-08-10T16:01:19.838Z",
+    "firstAuthor": "Chang AM",
+    "ok": true,
+    "title": "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness.",
+    "year": "2015"
+  },
+  "pmid:25683266": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Killick R",
+    "title": "Metabolic and hormonal effects of 'catch-up' sleep in men with chronic, repetitive, lifestyle-driven sleep restriction.",
+    "checkedAt": "2026-08-12T07:02:19.473Z"
+  },
+  "pmid:25739559": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Damas F",
+    "title": "A review of resistance training-induced changes in skeletal muscle protein synthesis and their contribution to hypertrophy.",
+    "checkedAt": "2026-09-02T21:35:23.788Z"
+  },
+  "pmid:25851609": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Kaushal N",
+    "title": "Exercise habit formation in new gym members: a longitudinal study.",
+    "checkedAt": "2026-10-14T05:15:40.467Z"
+  },
+  "pmid:25884846": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Köhler A",
+    "title": "Bioavailability of fatty acids from krill oil, krill meal and fish oil in healthy subjects--a randomized, single-dose, cross-over trial.",
+    "checkedAt": "2026-08-11T04:11:00.678Z"
+  },
+  "pmid:25911631": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Fernández-Elías VE",
+    "title": "Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans.",
+    "checkedAt": "2026-10-14T01:45:27.226Z"
+  },
+  "pmid:25926415": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Snijders T",
+    "title": "Protein Ingestion before Sleep Increases Muscle Mass and Strength Gains during Prolonged Resistance-Type Exercise Training in Healthy Young Men.",
+    "checkedAt": "2026-08-11T04:59:52.597Z"
+  },
+  "pmid:26024494": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Schoenfeld BJ",
+    "title": "Effects of meal frequency on weight loss and body composition: a meta-analysis.",
+    "checkedAt": "2026-08-12T07:02:12.973Z"
+  },
+  "pmid:26074744": {
+    "checkedAt": "2026-08-10T16:00:40.923Z",
+    "firstAuthor": "Cappelletti S",
+    "ok": true,
+    "title": "Caffeine: cognitive and physical performance enhancer or psychoactive drug?",
+    "year": "2015"
+  },
+  "pmid:26143633": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Corona G",
+    "title": "Obesity and late-onset hypogonadism.",
+    "checkedAt": "2026-08-11T04:53:25.428Z"
+  },
+  "pmid:26313229": {
+    "ok": true,
+    "year": "2016",
+    "firstAuthor": "Gee JR",
+    "title": "Phase Ib placebo-controlled, tissue biomarker trial of diindolylmethane (BR-DIMNG) in patients with prostate cancer who are undergoing prostatectomy.",
+    "checkedAt": "2026-08-11T04:36:24.947Z"
+  },
+  "pmid:26328782": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Yurko-Mauro K",
+    "title": "Similar eicosapentaenoic acid and docosahexaenoic acid plasma levels achieved with fish oil or krill oil in a randomized double-blind four-week bioavailability study.",
+    "checkedAt": "2026-08-11T04:11:00.015Z"
+  },
+  "pmid:26354539": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Burd NA",
+    "title": "Differences in postprandial protein handling after beef compared with milk ingestion during postexercise recovery: a randomized controlled trial.",
+    "checkedAt": "2026-08-11T04:11:09.936Z"
+  },
+  "pmid:26357480": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Ulven SM",
+    "title": "Comparison of bioavailability of krill oil versus fish oil and health effect.",
+    "checkedAt": "2026-08-11T04:11:01.891Z"
+  },
+  "pmid:26370402": {
+    "ok": true,
+    "year": "2016",
+    "firstAuthor": "Zhang XB",
+    "title": "Erectile Dysfunction and Sexual Hormone Levels in Men With Obstructive Sleep Apnea: Efficacy of Continuous Positive Airway Pressure.",
+    "checkedAt": "2026-08-12T07:02:22.120Z"
+  },
+  "pmid:26479856": {
+    "checkedAt": "2026-08-10T16:00:28.629Z",
+    "firstAuthor": "Martins C",
+    "ok": true,
+    "title": "High-Intensity Interval Training and Isocaloric Moderate-Intensity Continuous Training Result in Similar Improvements in Body Composition and Fitness in Obese Individuals.",
+    "year": "2016"
+  },
+  "pmid:26609282": {
+    "ok": true,
+    "year": "2015",
+    "firstAuthor": "Wankhede S",
+    "title": "Examining the effect of Withania somnifera supplementation on muscle strength and recovery: a randomized controlled trial.",
+    "checkedAt": "2026-08-11T04:10:56.272Z"
+  },
+  "pmid:26644270": {
+    "checkedAt": "2026-08-10T16:01:23.276Z",
+    "firstAuthor": "Boswell RG",
+    "ok": true,
+    "title": "Food cue reactivity and craving predict eating and weight gain: a meta-analytic review.",
+    "year": "2016"
+  },
+  "pmid:26647769": {
+    "ok": true,
+    "year": "2016",
+    "firstAuthor": "Arnal PJ",
+    "title": "Effect of Sleep Extension on the Subsequent Testosterone, Cortisol and Prolactin Responses to Total Sleep Deprivation and Recovery.",
+    "checkedAt": "2026-08-12T07:02:20.022Z"
+  },
+  "pmid:26817506": {
+    "checkedAt": "2026-08-10T16:01:26.865Z",
+    "firstAuthor": "Longland TM",
+    "ok": true,
+    "title": "Higher compared with lower dietary protein during an energy deficit combined with intense exercise promotes greater lean mass gain and fat mass loss: a randomized trial.",
+    "year": "2016"
+  },
+  "pmid:27055824": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Choudhary D",
+    "title": "Body Weight Management in Adults Under Chronic Stress Through Treatment With Ashwagandha Root Extract: A Double-Blind, Randomized, Placebo-Controlled Trial.",
+    "checkedAt": "2026-08-11T04:10:54.828Z"
+  },
+  "pmid:27150262": {
+    "ok": true,
+    "year": "2016",
+    "firstAuthor": "Green N",
+    "title": "Decreasing bouts of prolonged sitting among office workers.",
+    "checkedAt": "2026-08-18T20:49:46.680Z"
+  },
+  "pmid:27339881": {
+    "checkedAt": "2026-08-10T16:00:25.262Z",
+    "firstAuthor": "Sun R",
+    "ok": true,
+    "title": "Glucocorticoid-Potentiated Spinal Microglia Activation Contributes to Preoperative Anxiety-Induced Postoperative Hyperalgesia.",
+    "year": "2017"
+  },
+  "pmid:27433992": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Schoenfeld BJ",
+    "title": "Dose-response relationship between weekly resistance training volume and increases in muscle mass: A systematic review and meta-analysis.",
+    "checkedAt": "2026-08-19T05:13:06.765Z"
+  },
+  "pmid:27550719": {
+    "checkedAt": "2026-08-10T16:00:30.862Z",
+    "firstAuthor": "Tinsley GM",
+    "ok": true,
+    "title": "Time-restricted feeding in young men performing resistance training: A randomized controlled trial.",
+    "year": "2017"
+  },
+  "pmid:27597529": {
+    "checkedAt": "2026-08-10T16:01:09.895Z",
+    "firstAuthor": "Wolk A",
+    "ok": true,
+    "title": "Potential health hazards of eating red meat.",
+    "year": "2017"
+  },
+  "pmid:27737674": {
+    "checkedAt": "2026-08-10T16:00:30.322Z",
+    "firstAuthor": "Moro T",
+    "ok": true,
+    "title": "Effects of eight weeks of time-restricted feeding (16/8) on basal metabolism, maximal strength, body composition, inflammation, and cardiovascular risk factors in resistance-trained males.",
+    "year": "2016"
+  },
+  "pmid:27762662": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Beaumont R",
+    "title": "Chronic ingestion of a low dose of caffeine induces tolerance to the performance benefits of caffeine.",
+    "checkedAt": "2026-08-10T19:22:09.695Z"
+  },
+  "pmid:27807480": {
+    "ok": true,
+    "year": "2016",
+    "firstAuthor": "Antonio J",
+    "title": "A High Protein Diet Has No Harmful Effects: A One-Year Crossover Study in Resistance-Trained Males.",
+    "checkedAt": "2026-08-11T04:11:05.020Z"
+  },
+  "pmid:28097313": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "O'Donovan G",
+    "title": "Association of \"Weekend Warrior\" and Other Leisure Time Physical Activity Patterns With Risks for All-Cause, Cardiovascular Disease, and Cancer Mortality.",
+    "checkedAt": "2026-11-06T02:48:36.687Z"
+  },
+  "pmid:28321637": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Stock MS",
+    "title": "The time course of short-term hypertrophy in the absence of eccentric muscle damage.",
+    "checkedAt": "2026-09-02T21:35:23.280Z"
+  },
+  "pmid:28346813": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Reidy PT",
+    "title": "Protein Supplementation Does Not Affect Myogenic Adaptations to Resistance Training.",
+    "checkedAt": "2026-08-11T04:11:08.823Z"
+  },
+  "pmid:28538708": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Shcherbina A",
+    "title": "Accuracy in Wrist-Worn, Sensor-Based Measurements of Heart Rate and Energy Expenditure in a Diverse Cohort.",
+    "checkedAt": "2026-10-07T21:23:53.442Z"
+  },
+  "pmid:28578730": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Canuto R",
+    "title": "Eating frequency and weight and body composition: a systematic review of observational studies.",
+    "checkedAt": "2026-08-26T14:02:41.051Z"
+  },
+  "pmid:28615996": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Kreider RB",
+    "title": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine.",
+    "checkedAt": "2026-08-11T04:36:20.223Z"
+  },
+  "pmid:28630601": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Aragon AA",
+    "title": "International society of sports nutrition position stand: diets and body composition.",
+    "checkedAt": "2026-08-11T11:46:36.940Z"
+  },
+  "pmid:28641044": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Grgic J",
+    "title": "The effects of short versus long inter-set rest intervals in resistance training on measures of muscle hypertrophy: A systematic review.",
+    "checkedAt": "2026-08-26T14:02:35.537Z"
+  },
+  "pmid:28696985": {
+    "checkedAt": "2026-08-10T16:01:15.873Z",
+    "firstAuthor": "Vitale KC",
+    "ok": true,
+    "title": "Tart Cherry Juice in Athletes: A Literature Review and Commentary.",
+    "year": "2017"
+  },
+  "pmid:28698222": {
+    "checkedAt": "2026-08-10T16:00:49.179Z",
+    "firstAuthor": "Morton RW",
+    "ok": true,
+    "title": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults.",
+    "year": "2018"
+  },
+  "pmid:28834797": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Schoenfeld BJ",
+    "title": "Strength and Hypertrophy Adaptations Between Low- vs. High-Load Resistance Training: A Systematic Review and Meta-analysis.",
+    "checkedAt": "2026-08-26T14:02:47.134Z"
+  },
+  "pmid:28919842": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Kerksick CM",
+    "title": "International society of sports nutrition position stand: nutrient timing.",
+    "checkedAt": "2026-08-11T04:36:16.677Z"
+  },
+  "pmid:28924423": {
+    "checkedAt": "2026-08-10T16:01:04.940Z",
+    "firstAuthor": "Rogerson D",
+    "ok": true,
+    "title": "Vegan diets: practical advice for athletes and exercisers.",
+    "year": "2017"
+  },
+  "pmid:28938446": {
+    "checkedAt": "2026-08-10T16:29:02.358Z",
+    "firstAuthor": "Lerchbaum E",
+    "ok": true,
+    "title": "Vitamin D and Testosterone in Healthy Men: A Randomized Controlled Trial.",
+    "year": "2017"
+  },
+  "pmid:28978542": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "van Vliet S",
+    "title": "Consumption of whole eggs promotes greater stimulation of postexercise muscle protein synthesis than consumption of isonitrogenous amounts of egg whites in young men.",
+    "checkedAt": "2026-08-11T04:10:58.364Z"
+  },
+  "pmid:29018060": {
+    "checkedAt": "2026-08-10T16:00:46.810Z",
+    "firstAuthor": "Liu X",
+    "ok": true,
+    "title": "Dietary supplements for treating osteoarthritis: a systematic review and meta-analysis.",
+    "year": "2018"
+  },
+  "pmid:29138605": {
+    "checkedAt": "2026-08-10T16:01:27.370Z",
+    "firstAuthor": "Chilibeck PD",
+    "ok": true,
+    "title": "Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults: a meta-analysis.",
+    "year": "2017"
+  },
+  "pmid:29152243": {
+    "ok": true,
+    "year": "2017",
+    "firstAuthor": "Stockton A",
+    "title": "Effect of pomegranate extract on blood pressure and anthropometry in adults: a double-blind placebo-controlled randomised clinical trial.",
+    "checkedAt": "2026-08-11T05:17:36.525Z"
+  },
+  "pmid:2916451": {
+    "ok": true,
+    "year": "1989",
+    "firstAuthor": "Lissner L",
+    "title": "Body composition and energy intake: do overweight women overeat and underreport?",
+    "checkedAt": "2026-08-26T14:02:39.724Z"
+  },
+  "pmid:29320305": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Portman RM",
+    "title": "Social physique anxiety and physical activity behaviour of male and female exercisers.",
+    "checkedAt": "2026-09-02T21:35:22.162Z"
+  },
+  "pmid:29414855": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Stokes T",
+    "title": "Recent Perspectives Regarding the Role of Dietary Protein for the Promotion of Muscle Hypertrophy with Resistance Exercise Training.",
+    "checkedAt": "2026-09-02T21:35:26.312Z"
+  },
+  "pmid:29470825": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Grgic J",
+    "title": "Effect of Resistance Training Frequency on Gains in Muscular Strength: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-08-26T14:02:33.434Z"
+  },
+  "pmid:29495598": {
+    "checkedAt": "2026-08-10T16:01:02.885Z",
+    "firstAuthor": "Gorzynik-Debicka M",
+    "ok": true,
+    "title": "Potential Health Benefits of Olive Oil and Plant Polyphenols.",
+    "year": "2018"
+  },
+  "pmid:29509641": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Guest N",
+    "title": "Caffeine, CYP1A2 Genotype, and Endurance Performance in Athletes.",
+    "checkedAt": "2026-08-10T19:22:12.855Z"
+  },
+  "pmid:29511019": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Khaw KT",
+    "title": "Randomised trial of coconut oil, olive oil or butter on blood lipids and other cardiovascular risk factors in healthy men and women.",
+    "checkedAt": "2026-08-10T19:20:50.230Z"
+  },
+  "pmid:29897866": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Estruch R",
+    "title": "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts.",
+    "checkedAt": "2026-08-10T19:21:54.548Z"
+  },
+  "pmid:29933347": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Wittbrodt MT",
+    "title": "Dehydration Impairs Cognitive Performance: A Meta-analysis.",
+    "checkedAt": "2026-08-11T05:17:29.757Z"
+  },
+  "pmid:30133322": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Abou Sawan S",
+    "title": "Whole egg, but not egg white, ingestion induces mTOR colocalization with the lysosome after resistance exercise.",
+    "checkedAt": "2026-08-11T04:10:58.901Z"
+  },
+  "pmid:30173351": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Pickering C",
+    "title": "What Should We Do About Habitual Caffeine Use in Athletes?",
+    "checkedAt": "2026-08-10T19:22:16.171Z"
+  },
+  "pmid:30249314": {
+    "checkedAt": "2026-08-10T16:00:42.852Z",
+    "firstAuthor": "Leyh SM",
+    "ok": true,
+    "title": "Pre-sleep protein in casein supplement or whole-food form has no impact on resting energy expenditure or hunger in women.",
+    "year": "2018"
+  },
+  "pmid:30383278": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Devries MC",
+    "title": "Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-08-11T04:11:04.419Z"
+  },
+  "pmid:30475967": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Salas-Huetos A",
+    "title": "Effect of nut consumption on semen quality and functionality in healthy men consuming a Western-style diet: a randomized controlled trial.",
+    "checkedAt": "2026-08-11T11:46:41.804Z"
+  },
+  "pmid:30558493": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Schoenfeld BJ",
+    "title": "How many times per week should a muscle be trained to maximize muscle hypertrophy? A systematic review and meta-analysis of studies examining the effects of resistance training frequency.",
+    "checkedAt": "2026-10-14T01:36:47.519Z"
+  },
+  "pmid:30597848": {
+    "checkedAt": "2026-08-10T16:00:42.349Z",
+    "firstAuthor": "Apweiler E",
+    "ok": true,
+    "title": "Pre-Bed Casein Protein Supplementation Does Not Enhance Acute Functional Recovery in Physically Active Males and Females When Exercise is Performed in the Morning.",
+    "year": "2018"
+  },
+  "pmid:30720789": {
+    "ok": true,
+    "year": "2018",
+    "firstAuthor": "Zhang J",
+    "title": "The Effects of Hydration Status on Cognitive Performances among Young Adults in Hebei, China: A Randomized Controlled Trial (RCT).",
+    "checkedAt": "2026-08-11T05:17:33.297Z"
+  },
+  "pmid:30854916": {
+    "checkedAt": "2026-08-10T16:00:34.941Z",
+    "firstAuthor": "Lopresti AL",
+    "ok": true,
+    "title": "A Randomized, Double-Blind, Placebo-Controlled, Crossover Study Examining the Hormonal and Vitality Effects of Ashwagandha ( Withania somnifera) in Aging, Overweight Males.",
+    "year": "2019"
+  },
+  "pmid:31105044": {
+    "checkedAt": "2026-08-10T16:01:23.787Z",
+    "firstAuthor": "Hall KD",
+    "ok": true,
+    "title": "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake.",
+    "year": "2019"
+  },
+  "pmid:31141447": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Spiteri K",
+    "title": "Barriers and Motivators of Physical Activity Participation in Middle-aged and Older-adults - A Systematic Review.",
+    "checkedAt": "2026-08-26T14:02:37.208Z"
+  },
+  "pmid:31141585": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Lee IM",
+    "title": "Association of Step Volume and Intensity With All-Cause Mortality in Older Women.",
+    "checkedAt": "2026-09-23T03:38:40.603Z"
+  },
+  "pmid:3127426": {
+    "checkedAt": "2026-08-10T16:00:48.224Z",
+    "firstAuthor": "Ho KY",
+    "ok": true,
+    "title": "Fasting enhances growth hormone secretion and amplifies the complex rhythms of growth hormone secretion in man.",
+    "year": "1988"
+  },
+  "pmid:31343601": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Fragala MS",
+    "title": "Resistance Training for Older Adults: Position Statement From the National Strength and Conditioning Association.",
+    "checkedAt": "2026-09-02T21:35:33.780Z"
+  },
+  "pmid:31375368": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Salas-Huetos A",
+    "title": "Diet and sperm quality: Nutrients, foods and dietary patterns.",
+    "checkedAt": "2026-08-11T11:46:42.872Z"
+  },
+  "pmid:31422243": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Bontrup C",
+    "title": "Low back pain and its relationship with sitting behaviour among sedentary office workers.",
+    "checkedAt": "2026-08-18T20:49:46.173Z"
+  },
+  "pmid:31517876": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Lopresti AL",
+    "title": "An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: A randomized, double-blind, placebo-controlled study.",
+    "checkedAt": "2026-08-11T04:10:54.108Z"
+  },
+  "pmid:31567003": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Hu Y",
+    "title": "Marine Omega-3 Supplementation and Cardiovascular Disease: An Updated Meta-Analysis of 13 Randomized Controlled Trials Involving 127 477 Participants.",
+    "checkedAt": "2026-08-10T19:21:55.351Z"
+  },
+  "pmid:31728244": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Langade D",
+    "title": "Efficacy and Safety of Ashwagandha (Withania somnifera) Root Extract in Insomnia and Anxiety: A Double-blind, Randomized, Placebo-controlled Study.",
+    "checkedAt": "2026-08-11T04:10:55.579Z"
+  },
+  "pmid:31797219": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Androulakis-Korakakis P",
+    "title": "The Minimum Effective Training Dose Required to Increase 1RM Strength in Resistance-Trained Men: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-11-06T02:48:37.192Z"
+  },
+  "pmid:31951274": {
+    "checkedAt": "2026-08-10T17:37:20.438Z",
+    "firstAuthor": "Jensen TK",
+    "ok": true,
+    "title": "Associations of Fish Oil Supplement Use With Testicular Function in Young Men.",
+    "year": "2020"
+  },
+  "pmid:31991029": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Björnsson HK",
+    "title": "Ashwagandha-induced liver injury: A case series from Iceland and the US Drug-Induced Liver Injury Network.",
+    "checkedAt": "2026-10-08T20:25:45.597Z"
+  },
+  "pmid:32021735": {
+    "ok": true,
+    "year": "2019",
+    "firstAuthor": "Salve J",
+    "title": "Adaptogenic and Anxiolytic Effects of Ashwagandha Root Extract in Healthy Adults: A Double-blind, Randomized, Placebo-controlled Clinical Study.",
+    "checkedAt": "2026-10-08T20:25:45.068Z"
+  },
+  "pmid:32040492": {
+    "checkedAt": "2026-08-10T16:01:20.444Z",
+    "firstAuthor": "He JW",
+    "ok": true,
+    "title": "Effect of restricting bedtime mobile phone use on sleep, arousal, mood, and working memory: A randomized pilot trial.",
+    "year": "2020"
+  },
+  "pmid:32060194": {
+    "checkedAt": "2026-08-10T16:00:31.371Z",
+    "firstAuthor": "Welton S",
+    "ok": true,
+    "title": "Intermittent fasting and weight loss: Systematic review.",
+    "year": "2020"
+  },
+  "pmid:32143716": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Ammar A",
+    "title": "Effects of natural polyphenol-rich pomegranate juice on the acute and delayed response of Homocysteine and steroidal hormones following weightlifting exercises: a double-blind, placebo-controlled trial.",
+    "checkedAt": "2026-08-11T05:17:35.992Z"
+  },
+  "pmid:32207799": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Saint-Maurice PF",
+    "title": "Association of Daily Step Count and Step Intensity With Mortality Among US Adults.",
+    "checkedAt": "2026-09-23T03:38:39.798Z"
+  },
+  "pmid:32218059": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Roberts BM",
+    "title": "Sex Differences in Resistance Training: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-10-14T01:36:46.339Z"
+  },
+  "pmid:32244995": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Kagawa M",
+    "title": "Preoccupation with Body Weight and Under-Reporting of Energy Intake in Female Japanese Nutrition Students.",
+    "checkedAt": "2026-08-26T14:02:40.356Z"
+  },
+  "pmid:32602418": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Bell L",
+    "title": "Overreaching and overtraining in strength sports and resistance training: A scoping review.",
+    "checkedAt": "2026-08-19T05:13:02.488Z"
+  },
+  "pmid:32646013": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Deldicque L",
+    "title": "Protein Intake and Exercise-Induced Skeletal Muscle Hypertrophy: An Update.",
+    "checkedAt": "2026-09-02T21:35:34.305Z"
+  },
+  "pmid:32661839": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "McNulty KL",
+    "title": "The Effects of Menstrual Cycle Phase on Exercise Performance in Eumenorrheic Women: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-10-14T01:36:46.919Z"
+  },
+  "pmid:32966683": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Salas-Huetos A",
+    "title": "Sperm DNA methylation changes after short-term nut supplementation in healthy men consuming a Western-style diet.",
+    "checkedAt": "2026-08-11T11:46:42.347Z"
+  },
+  "pmid:33150931": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Smith SJ",
+    "title": "Examining the Effects of Herbs on Testosterone Concentrations in Men: A Systematic Review.",
+    "checkedAt": "2026-08-11T04:46:55.318Z"
+  },
+  "pmid:33239350": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Bull FC",
+    "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour.",
+    "checkedAt": "2026-09-23T03:38:42.803Z"
+  },
+  "pmid:33306586": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Bagheri R",
+    "title": "Whole Egg Vs. Egg White Ingestion During 12 weeks of Resistance Training in Trained Young Males: A Randomized Controlled Trial.",
+    "checkedAt": "2026-08-11T04:10:57.727Z"
+  },
+  "pmid:33321978": {
+    "ok": true,
+    "year": "2020",
+    "firstAuthor": "Ruiz-Moreno C",
+    "title": "Time Course and Magnitude of Tolerance to the Ergogenic Effect of Caffeine on the Second Ventilatory Threshold.",
+    "checkedAt": "2026-08-10T19:22:10.934Z"
+  },
+  "pmid:33383165": {
+    "checkedAt": "2026-08-10T16:01:13.910Z",
+    "firstAuthor": "Reed KE",
+    "ok": true,
+    "title": "Neither soy nor isoflavone intake affects male reproductive hormones: An expanded and updated meta-analysis of clinical studies.",
+    "year": "2021"
+  },
+  "pmid:33388079": {
+    "checkedAt": "2026-08-10T16:00:40.349Z",
+    "firstAuthor": "Guest NS",
+    "ok": true,
+    "title": "International society of sports nutrition position stand: caffeine and exercise performance.",
+    "year": "2021"
+  },
+  "pmid:33400856": {
+    "checkedAt": "2026-08-10T16:02:39.447Z",
+    "firstAuthor": "Lamon S",
+    "ok": true,
+    "title": "The effect of acute sleep deprivation on skeletal muscle protein synthesis and the hormonal environment.",
+    "year": "2021"
+  },
+  "pmid:33497853": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Grgic J",
+    "title": "Effects of resistance training performed to repetition failure or non-failure on muscular strength and hypertrophy: A systematic review and meta-analysis.",
+    "checkedAt": "2026-08-26T14:02:48.068Z"
+  },
+  "pmid:33541567": {
+    "checkedAt": "2026-08-10T16:00:35.447Z",
+    "firstAuthor": "Leitão AE",
+    "ok": true,
+    "title": "A 6-month, double-blind, placebo-controlled, randomized trial to evaluate the effect of Eurycoma longifolia (Tongkat Ali) and concurrent training on erectile function and testosterone levels in androgen deficiency of aging males (ADAM).",
+    "year": "2021"
+  },
+  "pmid:33557850": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Antonio J",
+    "title": "Common questions and misconceptions about creatine supplementation: what does the scientific evidence really show?",
+    "checkedAt": "2026-08-11T04:36:19.378Z"
+  },
+  "pmid:33559971": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Chan KQ",
+    "title": "The effect of Eurycoma Longifolia on the regulation of reproductive hormones in young males.",
+    "checkedAt": "2026-10-08T20:25:42.486Z"
+  },
+  "pmid:33710270": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Bailey DP",
+    "title": "Sedentary behaviour in the workplace: prevalence, health implications and interventions.",
+    "checkedAt": "2026-08-18T20:49:45.642Z"
+  },
+  "pmid:33741447": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Whittaker J",
+    "title": "Low-fat diets and testosterone in men: Systematic review and meta-analysis of intervention studies.",
+    "checkedAt": "2026-08-10T19:20:51.210Z"
+  },
+  "pmid:33800439": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Smith-Ryan AE",
+    "title": "Creatine Supplementation in Women's Health: A Lifespan Perspective.",
+    "checkedAt": "2026-08-26T14:02:42.432Z"
+  },
+  "pmid:33838606": {
+    "checkedAt": "2026-08-10T16:01:10.533Z",
+    "firstAuthor": "Huang Y",
+    "ok": true,
+    "title": "Red and processed meat consumption and cancer outcomes: Umbrella review.",
+    "year": "2021"
+  },
+  "pmid:33865376": {
+    "checkedAt": "2026-08-10T16:00:56.336Z",
+    "firstAuthor": "Mah J",
+    "ok": true,
+    "title": "Oral magnesium supplementation for insomnia in older adults: a Systematic Review & Meta-Analysis.",
+    "year": "2021"
+  },
+  "pmid:34040197": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Abe T",
+    "title": "Comparisons of calorie restriction and structured exercise on reductions in visceral and abdominal subcutaneous adipose tissue: a systematic review.",
+    "checkedAt": "2026-09-02T21:35:32.763Z"
+  },
+  "pmid:34042299": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Kotarsky CJ",
+    "title": "Time-restricted eating and concurrent exercise training reduces fat mass and increases lean mass in overweight and obese adults.",
+    "checkedAt": "2026-08-26T14:02:43.030Z"
+  },
+  "pmid:34262417": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Chinnappan SM",
+    "title": "Effect of Eurycoma longifolia standardised aqueous root extract-Physta(®) on testosterone levels and quality of life in ageing male subjects: a randomised, double-blind, placebo-controlled multicentre study.",
+    "checkedAt": "2026-10-08T20:25:40.788Z"
+  },
+  "pmid:34331682": {
+    "checkedAt": "2026-08-10T16:01:17.381Z",
+    "firstAuthor": "Akaberi M",
+    "ok": true,
+    "title": "Turmeric and Curcumin: From Traditional to Modern Medicine.",
+    "year": "2021"
+  },
+  "pmid:34440187": {
+    "checkedAt": "2026-08-10T16:01:01.431Z",
+    "firstAuthor": "Chaudhry SR",
+    "ok": true,
+    "title": "Melatonin Moderates the Triangle of Chronic Pain, Sleep Architecture and Immunometabolic Traffic.",
+    "year": "2021"
+  },
+  "pmid:34445021": {
+    "checkedAt": "2026-08-10T16:01:12.456Z",
+    "firstAuthor": "Todorova V",
+    "ok": true,
+    "title": "Plant Adaptogens-History and Future Perspectives.",
+    "year": "2021"
+  },
+  "pmid:34504041": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Santos HO",
+    "title": "The Effect of Whole Egg Intake on Muscle Mass: Are the Yolk and Its Nutrients Important?",
+    "checkedAt": "2026-08-11T04:10:59.464Z"
+  },
+  "pmid:34633484": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Clark BK",
+    "title": "Physical activity and sitting time in occupational groups from Papua New Guinea.",
+    "checkedAt": "2026-09-02T21:35:30.112Z"
+  },
+  "pmid:34660663": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Williams DE",
+    "title": "Indoles Derived From Glucobrassicin: Cancer Chemoprevention by Indole-3-Carbinol and 3,3'-Diindolylmethane.",
+    "checkedAt": "2026-08-11T04:36:25.508Z"
+  },
+  "pmid:34684650": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Zhang J",
+    "title": "Effects of Water Restriction and Supplementation on Cognitive Performances and Mood among Young Adults in Baoding, China: A Randomized Controlled Trial (RCT).",
+    "checkedAt": "2026-08-11T05:17:32.734Z"
+  },
+  "pmid:34801825": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Su L",
+    "title": "Effect of partial and total sleep deprivation on serum testosterone in healthy males: a systematic review and meta-analysis.",
+    "checkedAt": "2026-08-12T07:02:18.915Z"
+  },
+  "pmid:34858513": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Gopukumar K",
+    "title": "Efficacy and Safety of Ashwagandha Root Extract on Cognitive Functions in Healthy, Stressed Adults: A Randomized, Double-Blind, Placebo-Controlled Study.",
+    "checkedAt": "2026-08-11T04:10:56.939Z"
+  },
+  "pmid:34960035": {
+    "ok": true,
+    "year": "2021",
+    "firstAuthor": "Popp CJ",
+    "title": "Temporal Eating Patterns and Eating Windows among Adults with Overweight or Obesity.",
+    "checkedAt": "2026-09-02T21:35:31.733Z"
+  },
+  "pmid:35105664": {
+    "checkedAt": "2026-08-10T16:01:07.431Z",
+    "firstAuthor": "de Vos WM",
+    "ok": true,
+    "title": "Gut microbiome and health: mechanistic insights.",
+    "year": "2022"
+  },
+  "pmid:35129580": {
+    "checkedAt": "2026-08-10T16:02:39.951Z",
+    "firstAuthor": "Tasali E",
+    "ok": true,
+    "title": "Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings: A Randomized Clinical Trial.",
+    "year": "2022"
+  },
+  "pmid:35184264": {
+    "checkedAt": "2026-08-10T16:00:55.796Z",
+    "firstAuthor": "Arab A",
+    "ok": true,
+    "title": "The Role of Magnesium in Sleep Health: a Systematic Review of Available Literature.",
+    "year": "2023"
+  },
+  "pmid:35187864": {
+    "checkedAt": "2026-08-10T16:01:25.347Z",
+    "firstAuthor": "Nunes EA",
+    "ok": true,
+    "title": "Systematic review and meta-analysis of protein intake to support muscle mass and function in healthy adults.",
+    "year": "2022"
+  },
+  "pmid:35219904": {
+    "checkedAt": "2026-08-10T16:00:58.800Z",
+    "firstAuthor": "Di Giosia P",
+    "ok": true,
+    "title": "The role of nutrition in inflammaging.",
+    "year": "2022"
+  },
+  "pmid:35228201": {
+    "checkedAt": "2026-08-10T16:01:26.359Z",
+    "firstAuthor": "Momma H",
+    "ok": true,
+    "title": "Muscle-strengthening activities are associated with lower risk and mortality in major non-communicable diseases: a systematic review and meta-analysis of cohort studies.",
+    "year": "2022"
+  },
+  "pmid:35247352": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Paluch AE",
+    "title": "Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts.",
+    "checkedAt": "2026-09-23T03:38:38.244Z"
+  },
+  "pmid:35310455": {
+    "checkedAt": "2026-08-10T16:00:51.128Z",
+    "firstAuthor": "Longo VD",
+    "ok": true,
+    "title": "Intermittent and periodic fasting, longevity and disease.",
+    "year": "2021"
+  },
+  "pmid:35354447": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Landais LL",
+    "title": "Office workers' perspectives on physical activity and sedentary behaviour: a qualitative study.",
+    "checkedAt": "2026-09-02T21:35:19.883Z"
+  },
+  "pmid:35704055": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Zhang F",
+    "title": "Effect of a home-based resistance exercise program in elderly participants with osteoporosis: a randomized controlled trial.",
+    "checkedAt": "2026-09-02T21:35:28.430Z"
+  },
+  "pmid:35751032": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Fyfe JJ",
+    "title": "Feasibility and acceptability of a remotely delivered, home-based, pragmatic resistance 'exercise snacking' intervention in community-dwelling older adults: a pilot randomised controlled trial.",
+    "checkedAt": "2026-08-26T14:02:37.835Z"
+  },
+  "pmid:35761969": {
+    "checkedAt": "2026-08-10T16:00:57.767Z",
+    "firstAuthor": "Jadhav HB",
+    "ok": true,
+    "title": "Triglycerides of medium-chain fatty acids: a concise review.",
+    "year": "2023"
+  },
+  "pmid:35850566": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Vrabec A",
+    "title": "Social jet lag and eating styles in young adults.",
+    "checkedAt": "2026-09-02T21:35:32.248Z"
+  },
+  "pmid:35859621": {
+    "checkedAt": "2026-08-10T16:00:44.294Z",
+    "firstAuthor": "Bürkle F",
+    "ok": true,
+    "title": "New perspectives for investigating muscular perfusion response after dietary supplement intake: an exploratory, randomized, double-blind, placebo-controlled crossover trial in healthy young athletes using contrast-enhanced ultrasound (CEUS).",
+    "year": "2022"
+  },
+  "pmid:35873404": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Chauhan S",
+    "title": "Effect of standardized root extract of ashwagandha (Withania somnifera) on well-being and sexual performance in adult males: A randomized controlled trial.",
+    "checkedAt": "2026-08-11T04:46:54.746Z"
+  },
+  "pmid:35928723": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Pandit SL",
+    "title": "A proprietary blend of standardized Punica granatum fruit rind and Theobroma cocoa seed extracts mitigates aging males' symptoms: A randomized, double-blind, placebo-controlled study.",
+    "checkedAt": "2026-08-11T05:17:35.445Z"
+  },
+  "pmid:36013514": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Leisegang K",
+    "title": "Eurycoma longifolia (Jack) Improves Serum Total Testosterone in Men: A Systematic Review and Meta-Analysis of Clinical Trials.",
+    "checkedAt": "2026-10-08T20:25:43.009Z"
+  },
+  "pmid:36066874": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Del Pozo Cruz B",
+    "title": "Association of Daily Step Count and Intensity With Incident Dementia in 78 430 Adults Living in the UK.",
+    "checkedAt": "2026-09-23T03:38:41.220Z"
+  },
+  "pmid:36087576": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Ruddick-Collins LC",
+    "title": "Timing of daily calorie loading affects appetite and hunger responses without changes in energy metabolism in healthy subjects with obesity.",
+    "checkedAt": "2026-08-11T04:59:50.568Z"
+  },
+  "pmid:36152143": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Liu PY",
+    "title": "Sleep, testosterone and cortisol balance, and ageing men.",
+    "checkedAt": "2026-08-12T07:02:21.082Z"
+  },
+  "pmid:36198293": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Vujović N",
+    "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity.",
+    "checkedAt": "2026-08-11T04:59:51.246Z"
+  },
+  "pmid:36199287": {
+    "ok": true,
+    "year": "2022",
+    "firstAuthor": "Plotkin D",
+    "title": "Progressive overload without progressing load? The effects of load or repetition progression on muscular adaptations.",
+    "checkedAt": "2026-09-02T21:35:34.811Z"
+  },
+  "pmid:3630857": {
+    "ok": true,
+    "year": "1987",
+    "firstAuthor": "Barrie SA",
+    "title": "Comparative absorption of zinc picolinate, zinc citrate and zinc gluconate in humans.",
+    "checkedAt": "2026-08-11T11:46:45.341Z"
+  },
+  "pmid:36405389": {
+    "checkedAt": "2026-08-10T16:01:19.188Z",
+    "firstAuthor": "Kheirinejad S",
+    "ok": true,
+    "title": "\"Leave your smartphone out of bed\": quantitative analysis of smartphone use effect on sleep quality.",
+    "year": "2023"
+  },
+  "pmid:36669870": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Recchia F",
+    "title": "Dose-response effects of exercise and caloric restriction on visceral adiposity in overweight and obese adults: a systematic review and meta-analysis of randomised controlled trials.",
+    "checkedAt": "2026-09-02T21:35:30.620Z"
+  },
+  "pmid:36782207": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Deslippe AL",
+    "title": "Barriers and facilitators to diet, physical activity and lifestyle behavior intervention adherence: a qualitative systematic review of the literature.",
+    "checkedAt": "2026-08-26T14:02:36.122Z"
+  },
+  "pmid:3678698": {
+    "checkedAt": "2026-08-10T17:37:19.894Z",
+    "firstAuthor": "Nielsen FH",
+    "ok": true,
+    "title": "Effect of dietary boron on mineral, estrogen, and testosterone metabolism in postmenopausal women.",
+    "year": "1987"
+  },
+  "pmid:36804260": {
+    "checkedAt": "2026-08-10T16:01:16.867Z",
+    "firstAuthor": "Dehzad MJ",
+    "ok": true,
+    "title": "Antioxidant and anti-inflammatory effects of curcumin/turmeric supplementation in adults: A GRADE-assessed systematic review and dose-response meta-analysis of randomized controlled trials.",
+    "year": "2023"
+  },
+  "pmid:36862943": {
+    "checkedAt": "2026-08-10T16:00:53.281Z",
+    "firstAuthor": "Jagim AR",
+    "ok": true,
+    "title": "International society of sports nutrition position stand: energy drinks and energy shots.",
+    "year": "2023"
+  },
+  "pmid:36870101": {
+    "checkedAt": "2026-08-10T16:01:32.044Z",
+    "firstAuthor": "Gardiner C",
+    "ok": true,
+    "title": "The effect of caffeine on subsequent sleep: A systematic review and meta-analysis.",
+    "year": "2023"
+  },
+  "pmid:36999891": {
+    "checkedAt": "2026-08-10T16:00:37.045Z",
+    "firstAuthor": "Li Z",
+    "ok": true,
+    "title": "Berberine and health outcomes: An umbrella review.",
+    "year": "2023"
+  },
+  "pmid:37053143": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Jung R",
+    "title": "Muscle strength gains per week are higher in the lower-body than the upper-body in resistance training experienced healthy young women-A systematic review with meta-analysis.",
+    "checkedAt": "2026-08-26T14:02:34.854Z"
+  },
+  "pmid:37078654": {
+    "checkedAt": "2026-08-10T16:01:08.897Z",
+    "firstAuthor": "Lai H",
+    "ok": true,
+    "title": "Effects of dietary fibers or probiotics on functional constipation symptoms and roles of gut microbiota: a double-blinded randomized placebo trial.",
+    "year": "2023"
+  },
+  "pmid:37452666": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Hernández-Pérez JG",
+    "title": "Association of sleep duration and quality with serum testosterone concentrations among men and women: NHANES 2011-2016.",
+    "checkedAt": "2026-08-12T07:02:20.541Z"
+  },
+  "pmid:37489301": {
+    "checkedAt": "2026-08-10T16:00:44.874Z",
+    "firstAuthor": "Gonzalez AM",
+    "ok": true,
+    "title": "Acute Effect of L-Citrulline Supplementation on Resistance Exercise Performance and Muscle Oxygenation in Recreationally Resistance Trained Men and Women.",
+    "year": "2023"
+  },
+  "pmid:37495550": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Barbonetti A",
+    "title": "Effect of antioxidants on semen parameters in men with oligo-astheno-teratozoospermia: a network meta-analysis.",
+    "checkedAt": "2026-08-11T04:36:29.192Z"
+  },
+  "pmid:37506190": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Godwin JS",
+    "title": "Time Course of Proteolysis Biomarker Responses to Resistance, High-Intensity Interval, and Concurrent Exercise Bouts.",
+    "checkedAt": "2026-09-02T21:35:24.865Z"
+  },
+  "pmid:37513540": {
+    "checkedAt": "2026-08-10T16:01:06.882Z",
+    "firstAuthor": "Gao T",
+    "ok": true,
+    "title": "The Role of Probiotics in Skin Health and Related Gut-Skin Axis: A Review.",
+    "year": "2023"
+  },
+  "pmid:37555441": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Banach M",
+    "title": "The association between daily step count and all-cause and cardiovascular mortality: a meta-analysis.",
+    "checkedAt": "2026-09-23T03:38:39.278Z"
+  },
+  "pmid:37562755": {
+    "checkedAt": "2026-08-10T16:01:21.596Z",
+    "firstAuthor": "Tajiri E",
+    "ok": true,
+    "title": "Effects of sleep restriction on food intake and appetite under free-living conditions: A randomized crossover trial.",
+    "year": "2023"
+  },
+  "pmid:37676198": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Stens NA",
+    "title": "Relationship of Daily Step Counts to All-Cause Mortality and Cardiovascular Events.",
+    "checkedAt": "2026-09-23T03:38:38.758Z"
+  },
+  "pmid:37985426": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Gaml-Sørensen A",
+    "title": "Sleep duration and biomarkers of fecundity in young men: a cross-sectional study from a population-based cohort.",
+    "checkedAt": "2026-08-12T07:02:21.585Z"
+  },
+  "pmid:38147966": {
+    "checkedAt": "2026-08-10T16:00:59.441Z",
+    "firstAuthor": "Mishra A",
+    "ok": true,
+    "title": "Nutrition and dietary restrictions in cancer prevention.",
+    "year": "2024"
+  },
+  "pmid:38201847": {
+    "ok": true,
+    "year": "2023",
+    "firstAuthor": "Padua E",
+    "title": "The Impact of Diet and Physical Activity on Fat-to-Lean Mass Ratio.",
+    "checkedAt": "2026-08-26T14:02:43.851Z"
+  },
+  "pmid:38274324": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Coleman M",
+    "title": "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations.",
+    "checkedAt": "2026-08-19T05:13:03.040Z"
+  },
+  "pmid:38350303": {
+    "checkedAt": "2026-08-10T16:01:33.571Z",
+    "firstAuthor": "Li ML",
+    "ok": true,
+    "title": "Improving sarcopenia in older adults: a systematic review and meta-analysis of randomized controlled trials of whey protein supplementation with or without resistance training.",
+    "year": "2024"
+  },
+  "pmid:38584675": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Ito A",
+    "title": "Association between Fish Intake and Serum Testosterone Levels in Older Males: The Hitachi Health Study II.",
+    "checkedAt": "2026-08-11T11:46:39.175Z"
+  },
+  "pmid:38599681": {
+    "checkedAt": "2026-08-10T16:01:49.675Z",
+    "firstAuthor": "Lang JJ",
+    "ok": true,
+    "title": "Cardiorespiratory fitness is a strong and consistent predictor of morbidity and mortality among adults: an overview of meta-analyses representing over 20.9 million observations from 199 unique cohort studies.",
+    "year": "2024"
+  },
+  "pmid:38629387": {
+    "checkedAt": "2026-08-10T16:01:30.447Z",
+    "firstAuthor": "Bikou A",
+    "ok": true,
+    "title": "A systematic review of the effect of semaglutide on lean mass: insights from clinical trials.",
+    "year": "2024"
+  },
+  "pmid:38662884": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Biscardi LM",
+    "title": "Self-efficacy, Effort, and Performance Perceptions Enhance Psychological Responses to Strength Training in National Collegiate Athletic Association Division I Athletes.",
+    "checkedAt": "2026-09-02T21:35:27.358Z"
+  },
+  "pmid:38687506": {
+    "checkedAt": "2026-08-10T16:01:30.955Z",
+    "firstAuthor": "Locatelli JC",
+    "ok": true,
+    "title": "Incretin-Based Weight Loss Pharmacotherapy: Can Resistance Exercise Optimize Changes in Body Composition?",
+    "year": "2024"
+  },
+  "pmid:38777807": {
+    "checkedAt": "2026-08-10T16:02:36.435Z",
+    "firstAuthor": "Therdyothin A",
+    "ok": true,
+    "title": "The effects of omega-3 polyunsaturated fatty acids on muscle and whole-body protein synthesis: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:38835720": {
+    "checkedAt": "2026-08-10T16:02:38.940Z",
+    "firstAuthor": "Kohanmoo A",
+    "ok": true,
+    "title": "Short sleep duration is associated with higher risk of central obesity in adults: A systematic review and meta-analysis of prospective cohort studies.",
+    "year": "2024"
+  },
+  "pmid:38878596": {
+    "checkedAt": "2026-08-10T16:01:25.853Z",
+    "firstAuthor": "An J",
+    "ok": true,
+    "title": "Effect of aerobic training versus resistance training for improving cardiorespiratory fitness and body composition in middle-aged to older adults: A systematic review and meta-analysis of randomized controlled trials.",
+    "year": "2024"
+  },
+  "pmid:38897385": {
+    "checkedAt": "2026-08-10T16:01:39.051Z",
+    "firstAuthor": "Dai Z",
+    "ok": true,
+    "title": "The Effect of Time-Restricted Eating Combined with Exercise on Body Composition and Metabolic Health: A Systematic Review and Meta-Analysis.",
+    "year": "2024"
+  },
+  "pmid:38955141": {
+    "checkedAt": "2026-08-10T16:00:50.617Z",
+    "firstAuthor": "Reddy BL",
+    "ok": true,
+    "title": "Health Benefits of Intermittent Fasting.",
+    "year": "2024"
+  },
+  "pmid:38970765": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Robinson ZP",
+    "title": "Exploring the Dose-Response Relationship Between Estimated Resistance Training Proximity to Failure, Strength Gain, and Muscle Hypertrophy: A Series of Meta-Regressions.",
+    "checkedAt": "2026-08-19T05:13:06.206Z"
+  },
+  "pmid:38978882": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Ghewade P",
+    "title": "Role of Dietary Antioxidant Supplements in Male Infertility: A Review.",
+    "checkedAt": "2026-08-11T04:36:29.690Z"
+  },
+  "pmid:39058089": {
+    "checkedAt": "2026-08-10T16:02:41.068Z",
+    "firstAuthor": "Mpampoulis T",
+    "ok": true,
+    "title": "Effect of Different Reduced Training Frequencies after 12 Weeks of Concurrent Resistance and Aerobic Training on Muscle Strength and Morphology.",
+    "year": "2024"
+  },
+  "pmid:39074168": {
+    "checkedAt": "2026-08-10T16:01:34.070Z",
+    "firstAuthor": "Desai I",
+    "ok": true,
+    "title": "The Effect of Creatine Supplementation on Resistance Training-Based Changes to Body Composition: A Systematic Review and Meta-analysis.",
+    "year": "2024"
+  },
+  "pmid:39107699": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Park S",
+    "title": "Sedentary behaviors and physical activity of the working population measured by accelerometry: a systematic review and meta-analysis.",
+    "checkedAt": "2026-09-02T21:35:28.988Z"
+  },
+  "pmid:39159314": {
+    "checkedAt": "2026-08-10T16:02:40.536Z",
+    "firstAuthor": "Cumming KT",
+    "ok": true,
+    "title": "Muscle memory in humans: evidence for myonuclear permanence and long-term transcriptional regulation after strength training.",
+    "year": "2024"
+  },
+  "pmid:39228768": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Duan Y",
+    "title": "A Randomized Controlled Trial to Determine the Impact of Resistance Training versus Aerobic Training on the Management of FGF-21 and Related Physiological Variables in Obese Men with Type 2 Diabetes Mellitus.",
+    "checkedAt": "2026-09-02T21:35:20.500Z"
+  },
+  "pmid:39267249": {
+    "checkedAt": "2026-08-10T16:01:39.565Z",
+    "firstAuthor": "Hamano S",
+    "ok": true,
+    "title": "Ultra-processed foods cause weight gain and increased energy intake associated with reduced chewing frequency: A randomized, open-label, crossover study.",
+    "year": "2024"
+  },
+  "pmid:39364857": {
+    "checkedAt": "2026-08-10T16:02:41.580Z",
+    "firstAuthor": "Halonen EJ",
+    "ok": true,
+    "title": "Does Taking a Break Matter-Adaptations in Muscle Strength and Size Between Continuous and Periodic Resistance Training.",
+    "year": "2024"
+  },
+  "pmid:39400423": {
+    "checkedAt": "2026-08-10T16:01:00.872Z",
+    "firstAuthor": "Comai S",
+    "ok": true,
+    "title": "Melatonin, Melatonin Receptors and Sleep: Moving Beyond Traditional Views.",
+    "year": "2024"
+  },
+  "pmid:39408214": {
+    "checkedAt": "2026-08-10T16:00:39.359Z",
+    "firstAuthor": "Antonio J",
+    "ok": true,
+    "title": "The Top 5 Can't-Miss Sport Supplements.",
+    "year": "2024"
+  },
+  "pmid:39408357": {
+    "checkedAt": "2026-08-10T16:02:45.882Z",
+    "firstAuthor": "Xie Y",
+    "ok": true,
+    "title": "The Effects of Time-Restricted Eating on Fat Loss in Adults with Overweight and Obese Depend upon the Eating Window and Intervention Strategies: A Systematic Review and Meta-Analysis.",
+    "year": "2024"
+  },
+  "pmid:39408370": {
+    "checkedAt": "2026-08-10T16:01:31.478Z",
+    "firstAuthor": "Inacio PAQ",
+    "ok": true,
+    "title": "The Effects of Collagen Peptides as a Dietary Supplement on Muscle Damage Recovery and Fatigue Responses: An Integrative Review.",
+    "year": "2024"
+  },
+  "pmid:39519498": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Wang Z",
+    "title": "Effects of Creatine Supplementation and Resistance Training on Muscle Strength Gains in Adults <50 Years of Age: A Systematic Review and Meta-Analysis.",
+    "checkedAt": "2026-08-26T14:02:41.675Z"
+  },
+  "pmid:39537313": {
+    "checkedAt": "2026-08-10T16:01:50.180Z",
+    "firstAuthor": "Weeldreyer NR",
+    "ok": true,
+    "title": "Cardiorespiratory fitness, body mass index and mortality: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:39574284": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Liang IJ",
+    "title": "The Efficacy of 12-Week Progressive Home-Based Strength and Tai-Chi Exercise Snacking in Older Adults: A Mixed-Method Exploratory Randomised Control Trial.",
+    "checkedAt": "2026-09-02T21:35:27.898Z"
+  },
+  "pmid:39614235": {
+    "checkedAt": "2026-08-10T16:02:46.395Z",
+    "firstAuthor": "Sampieri A",
+    "ok": true,
+    "title": "Impact of daily fasting duration on body composition and cardiometabolic risk factors during a time-restricted eating protocol: a randomized controlled trial.",
+    "year": "2024"
+  },
+  "pmid:39719170": {
+    "checkedAt": "2026-08-10T16:01:29.446Z",
+    "firstAuthor": "Karakasis P",
+    "ok": true,
+    "title": "Effect of glucagon-like peptide-1 receptor agonists and co-agonists on body composition: Systematic review and network meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:39724371": {
+    "checkedAt": "2026-08-10T16:01:32.558Z",
+    "firstAuthor": "Jayedi A",
+    "ok": true,
+    "title": "Aerobic Exercise and Weight Loss in Adults: A Systematic Review and Dose-Response Meta-Analysis.",
+    "year": "2024"
+  },
+  "pmid:39796541": {
+    "ok": true,
+    "year": "2024",
+    "firstAuthor": "Santos JS",
+    "title": "Weekday-Weekend Differences in Chrononutritional Variables Depend on Urban or Rural Living.",
+    "checkedAt": "2026-09-02T21:35:31.177Z"
+  },
+  "pmid:39813010": {
+    "checkedAt": "2026-08-10T16:01:54.326Z",
+    "firstAuthor": "Reid-McCann RJ",
+    "ok": true,
+    "title": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+    "year": "2025"
+  },
+  "pmid:39846678": {
+    "checkedAt": "2026-08-10T16:02:42.242Z",
+    "firstAuthor": "Mpampoulis T",
+    "ok": true,
+    "title": "Effect of Different Reduced Training Frequencies After 12 Weeks of Concurrent Ballistic and Aerobic Training on Muscle Power and Triceps Brachii Muscle Architecture.",
+    "year": "2025"
+  },
+  "pmid:39848543": {
+    "checkedAt": "2026-08-10T16:02:36.972Z",
+    "firstAuthor": "Khalafi M",
+    "ok": true,
+    "title": "The combined effects of omega-3 polyunsaturated fatty acid supplementation and exercise training on body composition and cardiometabolic health in adults: A systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:39918027": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Zhou J",
+    "title": "Home-based strength and balance exercises for fall prevention among older individuals of advanced age: a randomized controlled single-blind study.",
+    "checkedAt": "2026-09-02T21:35:33.274Z"
+  },
+  "pmid:39982647": {
+    "checkedAt": "2026-08-10T16:01:05.470Z",
+    "firstAuthor": "López-Moreno M",
+    "ok": true,
+    "title": "The Impact of Plant-Based Proteins on Muscle Mass and Strength Performance: A Comprehensive Review.",
+    "year": "2025"
+  },
+  "pmid:39996356": {
+    "checkedAt": "2026-08-10T16:01:29.947Z",
+    "firstAuthor": "Look M",
+    "ok": true,
+    "title": "Body composition changes during weight reduction with tirzepatide in the SURMOUNT-1 study of adults with obesity or overweight.",
+    "year": "2025"
+  },
+  "pmid:40049759": {
+    "checkedAt": "2026-08-10T16:01:34.590Z",
+    "firstAuthor": "Singh B",
+    "ok": true,
+    "title": "Effectiveness of exercise for improving cognition, memory and executive function: a systematic umbrella review and meta-meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:40100255": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Nulty CD",
+    "title": "Hydrolysed Collagen Supplementation Enhances Patellar Tendon Adaptations to 12 Weeks' Resistance Training in Middle-Aged Men.",
+    "checkedAt": "2026-09-02T21:35:21.053Z"
+  },
+  "pmid:40108888": {
+    "checkedAt": "2026-08-10T16:02:47.119Z",
+    "firstAuthor": "Cui T",
+    "ok": true,
+    "title": "Efficacy of time restricted eating and resistance training on body composition and mood profiles among young adults with overweight/obesity: a randomized controlled trial.",
+    "year": "2025"
+  },
+  "pmid:40226294": {
+    "checkedAt": "2026-08-10T16:02:45.365Z",
+    "firstAuthor": "Zhang M",
+    "ok": true,
+    "title": "Effects of human concurrent aerobic and resistance training on cognitive health: A systematic review with meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:40236824": {
+    "checkedAt": "2026-08-10T16:01:43.827Z",
+    "firstAuthor": "Kong Y",
+    "ok": true,
+    "title": "Effects of sleep deprivation on sports performance and perceived exertion in athletes and non-athletes: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:40290077": {
+    "checkedAt": "2026-08-10T16:02:47.625Z",
+    "firstAuthor": "Yu Z",
+    "ok": true,
+    "title": "Early Time-Restricted Eating Improves Weight Loss While Preserving Muscle: An 8-Week Trial in Young Women.",
+    "year": "2025"
+  },
+  "pmid:40298934": {
+    "checkedAt": "2026-08-10T16:01:37.384Z",
+    "firstAuthor": "Fernandes-Alves D",
+    "ok": true,
+    "title": "Systematic Review and Meta-analysis of Randomized Clinical Trials Comparing Time-Restricted Eating With and Without Caloric Restriction for Weight Loss.",
+    "year": "2026"
+  },
+  "pmid:40376491": {
+    "checkedAt": "2026-08-10T16:02:44.856Z",
+    "firstAuthor": "Cai Z",
+    "ok": true,
+    "title": "A scoping review of effects of acute exercise on executive function: evidence from event-related potentials.",
+    "year": "2025"
+  },
+  "pmid:40401903": {
+    "checkedAt": "2026-08-10T16:01:42.270Z",
+    "firstAuthor": "Chavez AM",
+    "ok": true,
+    "title": "Nutrition support whilst on glucagon-like peptide-1 based therapy. Is it necessary?",
+    "year": "2025"
+  },
+  "pmid:40405489": {
+    "checkedAt": "2026-08-10T16:01:33.062Z",
+    "firstAuthor": "Lafontant K",
+    "ok": true,
+    "title": "Comparison of concurrent, resistance, or aerobic training on body fat loss: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:40445127": {
+    "checkedAt": "2026-08-10T16:01:41.768Z",
+    "firstAuthor": "Mozaffarian D",
+    "ok": true,
+    "title": "Nutritional priorities to support GLP-1 therapy for obesity: A joint Advisory from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society.",
+    "year": "2025"
+  },
+  "pmid:40501026": {
+    "checkedAt": "2026-08-10T16:01:49.049Z",
+    "firstAuthor": "Azimkhani A",
+    "ok": true,
+    "title": "The Effect of Aerobic, Resistance, and Combined Exercise Training on Cardiorespiratory Fitness in Healthy People Aged 60 years and Over: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+    "year": "2026"
+  },
+  "pmid:40507112": {
+    "checkedAt": "2026-08-10T16:01:03.427Z",
+    "firstAuthor": "Ussia S",
+    "ok": true,
+    "title": "Exploring the Benefits of Extra Virgin Olive Oil on Cardiovascular Health Enhancement and Disease Prevention: A Systematic Review.",
+    "year": "2025"
+  },
+  "pmid:40640600": {
+    "checkedAt": "2026-08-10T16:01:44.328Z",
+    "firstAuthor": "Sales AJ",
+    "ok": true,
+    "title": "Caffeine intake reverses the impairment of sleep restriction on high-intensity exercise performance.",
+    "year": "2026"
+  },
+  "pmid:40644449": {
+    "checkedAt": "2026-08-10T16:01:46.881Z",
+    "firstAuthor": "Machalias A",
+    "ok": true,
+    "title": "Cereal Fibers and Satiety: A Systematic Review.",
+    "year": "2026"
+  },
+  "pmid:40647175": {
+    "checkedAt": "2026-08-10T16:01:51.241Z",
+    "firstAuthor": "Casuso RA",
+    "ok": true,
+    "title": "Does Protein Ingestion Timing Affect Exercise-Induced Adaptations? A Systematic Review with Meta-Analysis.",
+    "year": "2025"
+  },
+  "pmid:40647193": {
+    "checkedAt": "2026-08-10T16:02:35.925Z",
+    "firstAuthor": "Okut S",
+    "ok": true,
+    "title": "The Effects of Omega-3 Supplementation Combined with Strength Training on Neuro-Biomarkers, Inflammatory and Antioxidant Responses, and the Lipid Profile in Physically Healthy Adults.",
+    "year": "2025"
+  },
+  "pmid:40647198": {
+    "checkedAt": "2026-08-10T16:00:46.309Z",
+    "firstAuthor": "Baden KER",
+    "ok": true,
+    "title": "The Safety and Efficacy of Glucosamine and/or Chondroitin in Humans: A Systematic Review.",
+    "year": "2025"
+  },
+  "pmid:40713949": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Ding D",
+    "title": "Daily steps and health outcomes in adults: a systematic review and dose-response meta-analysis.",
+    "checkedAt": "2026-09-23T03:38:37.632Z"
+  },
+  "pmid:40728831": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Gavanda S",
+    "title": "Optimizing Resistance Training Outcomes: Comparing In-Person Supervision, Online Coaching, and Self-Guided Approaches: A Randomized Controlled Trial.",
+    "checkedAt": "2026-10-28T14:01:29.962Z"
+  },
+  "pmid:40731316": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Glavas C",
+    "title": "Experiences and outcomes of older adults with obesity transitioning from gym- to home-based resistance training due to COVID-19 lockdowns: a mixed-methods analysis of a RCT.",
+    "checkedAt": "2026-08-26T14:02:45.340Z"
+  },
+  "pmid:40731344": {
+    "checkedAt": "2026-08-10T16:01:38.511Z",
+    "firstAuthor": "Wang B",
+    "ok": true,
+    "title": "The impact of intermittent fasting on body composition and cardiometabolic outcomes in overweight and obese adults: a systematic review and meta-analysis of randomized controlled trials.",
+    "year": "2025"
+  },
+  "pmid:40746175": {
+    "ok": true,
+    "year": "2025",
+    "firstAuthor": "Albalawi AA",
+    "title": "Dual impact of Ashwagandha: Significant cortisol reduction but no effects on perceived stress - A systematic review and meta-analysis.",
+    "checkedAt": "2026-10-08T20:25:44.568Z"
+  },
+  "pmid:40756949": {
+    "checkedAt": "2026-08-10T16:01:40.081Z",
+    "firstAuthor": "Vasireddi N",
+    "ok": true,
+    "title": "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review.",
+    "year": "2025"
+  },
+  "pmid:40909191": {
+    "checkedAt": "2026-08-10T16:01:53.824Z",
+    "firstAuthor": "Binmahfoz A",
+    "ok": true,
+    "title": "Effect of resistance exercise on body composition, muscle strength and cardiometabolic health during dietary weight loss in people living with overweight or obesity: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:40971619": {
+    "checkedAt": "2026-08-10T16:01:44.842Z",
+    "firstAuthor": "Marshall S",
+    "ok": true,
+    "title": "Creatine and Cognition in Aging: A Systematic Review of Evidence in Older Adults.",
+    "year": "2026"
+  },
+  "pmid:41010525": {
+    "checkedAt": "2026-08-10T16:00:31.915Z",
+    "firstAuthor": "Castagna A",
+    "ok": true,
+    "title": "Effect of Apple Cider Vinegar Intake on Body Composition in Humans with Type 2 Diabetes and/or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+    "year": "2025"
+  },
+  "pmid:41058015": {
+    "ok": true,
+    "year": "2026",
+    "firstAuthor": "Park S",
+    "title": "Postpandemic Sedentary Behavior and Physical Activity Among IT Workers.",
+    "checkedAt": "2026-09-02T21:35:29.553Z"
+  },
+  "pmid:41062952": {
+    "checkedAt": "2026-08-10T16:01:45.354Z",
+    "firstAuthor": "Sharifian G",
+    "ok": true,
+    "title": "Impact of creatine supplementation and exercise training in older adults: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:41076575": {
+    "checkedAt": "2026-08-10T16:01:41.223Z",
+    "firstAuthor": "Bhandarkar A",
+    "ok": true,
+    "title": "Effect of GLP-1 receptor agonists on body composition.",
+    "year": "2025"
+  },
+  "pmid:41079996": {
+    "checkedAt": "2026-08-10T16:02:44.346Z",
+    "firstAuthor": "Cheng Y",
+    "ok": true,
+    "title": "Effects of three aerobic exercise modalities (walking, running, and cycling) on circulating brain-derived neurotrophic factor in older adults: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:41080184": {
+    "checkedAt": "2026-08-10T16:01:11.952Z",
+    "firstAuthor": "Wang X",
+    "ok": true,
+    "title": "The effect of Rhodiola rosea supplementation on endurance performance and related biomarkers: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:41106502": {
+    "checkedAt": "2026-08-10T16:01:45.859Z",
+    "firstAuthor": "Wang J",
+    "ok": true,
+    "title": "Resistance training enhances metabolic and muscular health and reduces systemic inflammation in middle-aged and older adults with type 2 diabetes: a meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:41259024": {
+    "checkedAt": "2026-08-10T16:02:43.286Z",
+    "firstAuthor": "Marino FR",
+    "ok": true,
+    "title": "Physical Activity Over the Adult Life Course and Risk of Dementia in the Framingham Heart Study.",
+    "year": "2025"
+  },
+  "pmid:41314613": {
+    "checkedAt": "2026-08-10T16:01:47.989Z",
+    "firstAuthor": "Forde CG",
+    "ok": true,
+    "title": "Eating rate has sustained effects on energy intake from ultraprocessed diets: a 2-week ad libitum dietary randomized controlled crossover trial.",
+    "year": "2026"
+  },
+  "pmid:41343037": {
+    "checkedAt": "2026-08-10T16:01:35.694Z",
+    "firstAuthor": "Pelland JC",
+    "ok": true,
+    "title": "The Resistance Training Dose Response: Meta-Regressions Exploring the Effects of Weekly Volume and Frequency on Muscle Hypertrophy and Strength Gains.",
+    "year": "2026"
+  },
+  "pmid:41346689": {
+    "checkedAt": "2026-08-10T16:02:42.765Z",
+    "firstAuthor": "Pérez-Castillo ÍM",
+    "ok": true,
+    "title": "Skeletal muscle memory: implications for sports, aging and nutrition.",
+    "year": "2025"
+  },
+  "pmid:41476424": {
+    "checkedAt": "2026-08-10T16:01:40.611Z",
+    "firstAuthor": "Mayfield CK",
+    "ok": true,
+    "title": "Injectable Peptide Therapy: A Primer for Orthopaedic and Sports Medicine Physicians.",
+    "year": "2026"
+  },
+  "pmid:41503279": {
+    "checkedAt": "2026-08-10T16:02:43.801Z",
+    "firstAuthor": "Wu J",
+    "ok": true,
+    "title": "A systematic review and meta-analysis of the effects of resistance exercise on cognitive function in older adults.",
+    "year": "2025"
+  },
+  "pmid:41549912": {
+    "checkedAt": "2026-08-10T16:01:54.830Z",
+    "firstAuthor": "Urbina J",
+    "ok": true,
+    "title": "Micronutrient and Nutritional Deficiencies Associated With GLP-1 Receptor Agonist Therapy: A Narrative Review.",
+    "year": "2026"
+  },
+  "pmid:41564347": {
+    "checkedAt": "2026-08-10T16:01:51.751Z",
+    "firstAuthor": "Beals JW",
+    "ok": true,
+    "title": "Sleep Extension Improves Sleep Health but Not Insulin Sensitivity in People With Overweight or Obesity Who Maintain Habitual Short Sleep Schedules.",
+    "year": "2026"
+  },
+  "pmid:41574252": {
+    "checkedAt": "2026-08-10T16:01:24.837Z",
+    "firstAuthor": "Han H",
+    "ok": true,
+    "title": "Physical activity types, variety, and mortality: results from two prospective cohort studies.",
+    "year": "2026"
+  },
+  "pmid:41635649": {
+    "checkedAt": "2026-08-10T16:01:47.435Z",
+    "firstAuthor": "Drummond MDM",
+    "ok": true,
+    "title": "Which Protein-Based Dietary Supplements Most Effectively Enhance Fat-Free Mass and Strength Gains in Healthy Adults Undergoing Resistance Training? A Network Meta-Analysis.",
+    "year": "2026"
+  },
+  "pmid:41668861": {
+    "checkedAt": "2026-08-10T16:01:46.366Z",
+    "firstAuthor": "Zhou Y",
+    "ok": true,
+    "title": "Effects of resistance training on muscle mass, strength, and physical function in older women with sarcopenia: a systematic review and meta-analysis.",
+    "year": "2025"
+  },
+  "pmid:41692034": {
+    "checkedAt": "2026-08-10T16:01:37.969Z",
+    "firstAuthor": "Garegnani LI",
+    "ok": true,
+    "title": "Intermittent fasting for adults with overweight or obesity.",
+    "year": "2026"
+  },
+  "pmid:41712097": {
+    "checkedAt": "2026-08-10T16:01:50.719Z",
+    "firstAuthor": "Henselmans M",
+    "ok": true,
+    "title": "The Effect of Carbohydrate Intake on Muscle Hypertrophy: A Systematic Review and Meta-analysis.",
+    "year": "2026"
+  },
+  "pmid:41718208": {
+    "checkedAt": "2026-08-10T16:01:36.202Z",
+    "firstAuthor": "Tsartsapakis I",
+    "ok": true,
+    "title": "Effects of Advanced Resistance Training Systems on Muscle Hypertrophy and Strength in Recreationally Trained Adults: A Systematic Review and Meta-Analysis.",
+    "year": "2026"
+  },
+  "pmid:41740946": {
+    "ok": true,
+    "year": "2026",
+    "firstAuthor": "Fornalik M",
+    "title": "Hormonal Modulation with Withania somnifera: Systematic Review and Meta-Analysis of Randomized-controlled Trials.",
+    "checkedAt": "2026-10-08T20:25:44.054Z"
+  },
+  "pmid:41789013": {
+    "checkedAt": "2026-08-10T16:00:32.500Z",
+    "firstAuthor": "",
+    "ok": true,
+    "title": "Retraction: Apple cider vinegar for weight management in lebanese adolescents and young adults with overweight and obesity: a randomised, double-blind, placebo-controlled study.",
+    "year": "2025"
+  },
+  "pmid:41843416": {
+    "checkedAt": "2026-08-10T16:01:35.162Z",
+    "firstAuthor": "Currier BS",
+    "ok": true,
+    "title": "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews.",
+    "year": "2026"
+  },
+  "pmid:41850248": {
+    "checkedAt": "2026-08-10T16:01:43.313Z",
+    "firstAuthor": "Langer HT",
+    "ok": true,
+    "title": "Weight loss with GLP-1 medicines does not result in a disproportionate loss of muscle mass or function in obese mice and humans.",
+    "year": "2026"
+  },
+  "pmid:41877354": {
+    "checkedAt": "2026-08-10T16:01:52.257Z",
+    "firstAuthor": "Eisa N",
+    "ok": true,
+    "title": "Lean Mass Changes With Incretin Therapy Versus Lifestyle Intervention: A Systematic Review and Meta-Analysis of Randomised Controlled Trials.",
+    "year": "2026"
+  },
+  "pmid:41889166": {
+    "checkedAt": "2026-08-10T16:02:37.507Z",
+    "firstAuthor": "Kline CE",
+    "ok": true,
+    "title": "Sleep Duration and Quality as Predictors of Weight Loss and Adherence During a Behavioral Weight Loss Intervention.",
+    "year": "2026"
+  },
+  "pmid:41891174": {
+    "checkedAt": "2026-08-10T16:02:35.410Z",
+    "firstAuthor": "Li Z",
+    "ok": true,
+    "title": "Effects of Omega-3 Supplementation on Inflammation and Recovery in Sports: A Meta-Analysis.",
+    "year": "2026"
+  },
+  "pmid:41940947": {
+    "ok": true,
+    "year": "2026",
+    "firstAuthor": "Vargas-Molina S",
+    "title": "Comparison of two nutritional protocols in body re-composition of resistance-trained participants.",
+    "checkedAt": "2026-08-26T14:02:38.637Z"
+  },
+  "pmid:41941966": {
+    "checkedAt": "2026-08-10T16:01:28.399Z",
+    "firstAuthor": "Fernandez-Garrido J",
+    "ok": true,
+    "title": "Effects of high-load, velocity-intentional variable resistance training combined with creatine supplementation on neuroplasticity, oxidative stress, inflammation, physical function, cognitive performance and quality of life in older adults: A randomized, double-blind, placebo-controlled trial.",
+    "year": "2026"
+  },
+  "pmid:41975304": {
+    "checkedAt": "2026-08-10T16:01:27.888Z",
+    "firstAuthor": "Hosseini MH",
+    "ok": true,
+    "title": "Preserving brain health in aging: structural and biochemical benefits of water based resistance training, a randomized controlled trial.",
+    "year": "2026"
+  },
+  "pmid:41996180": {
+    "checkedAt": "2026-08-10T16:01:53.319Z",
+    "firstAuthor": "Batsis JA",
+    "ok": true,
+    "title": "Effect of Incretin-Based and Nonpharmacologic Weight Loss on Body Composition : A Systematic Review.",
+    "year": "2026"
+  },
+  "pmid:42020128": {
+    "checkedAt": "2026-08-10T16:01:42.808Z",
+    "firstAuthor": "Alawadhi AA",
+    "ok": true,
+    "title": "LEAN mass Preservation with Resistance Exercise and Protein during semaglutide and tirzepatide therapy (LEAN-PREP study): a protocol for a randomised controlled trial.",
+    "year": "2026"
+  },
+  "pmid:42068988": {
+    "checkedAt": "2026-08-10T16:01:48.494Z",
+    "firstAuthor": "Shan J",
+    "ok": true,
+    "title": "Physical activity and biological age measured by DNA methylation clocks: a systematic review and meta-analysis.",
+    "year": "2026"
+  },
+  "pmid:42105861": {
+    "checkedAt": "2026-08-10T16:01:28.930Z",
+    "firstAuthor": "Ahmed S",
+    "ok": true,
+    "title": "Evidence on protein intake on lean body mass and function in community-dwelling adults aged 50 years and over living with multiple long-term conditions: Systematic review.",
+    "year": "2026"
+  },
+  "pmid:42209204": {
+    "checkedAt": "2026-08-10T16:01:52.811Z",
+    "firstAuthor": "Wachiraphansakul N",
+    "ok": true,
+    "title": "Comparative Effects of Individual Glucagon-Like Peptide-1 Receptor Agonist-Based Medications on Direct Measurement of Body Composition Among Adults With Overweight or Obesity With or Without Type 2 Diabetes: A Systematic Review and Network Meta-Analysis of Randomised Controlled Trials.",
+    "year": "2026"
+  },
+  "pmid:42230125": {
+    "checkedAt": "2026-08-10T16:01:24.313Z",
+    "firstAuthor": "Zhang Y",
+    "ok": true,
+    "title": "Long-term resistance training with all-cause and cause-specific mortality: assessing dose-response and joint associations with aerobic physical activity.",
+    "year": "2026"
+  },
+  "pmid:42407080": {
+    "checkedAt": "2026-08-10T16:02:38.176Z",
+    "firstAuthor": "Zuraikat FM",
+    "ok": true,
+    "title": "Prolonged Short Sleep and Its Effect on Body Weight and Composition : A Pooled Analysis of Randomized Trials.",
+    "year": "2026"
+  },
+  "pmid:458251": {
+    "ok": true,
+    "year": "1979",
+    "firstAuthor": "Solomons NW",
+    "title": "Studies on the bioavailability of zinc in man. II. Absorption of zinc from organic and inorganic sources.",
+    "checkedAt": "2026-08-11T05:17:33.813Z"
+  },
+  "pmid:6402410": {
+    "ok": true,
+    "year": "1983",
+    "firstAuthor": "Van Thiel DH",
+    "title": "Recovery of sexual function in abstinent alcoholic men.",
+    "checkedAt": "2026-08-10T19:22:08.788Z"
+  },
+  "pmid:6443186": {
+    "ok": true,
+    "year": "1984",
+    "firstAuthor": "Välimäki MJ",
+    "title": "Sex hormones and adrenocortical steroids in men acutely intoxicated with ethanol.",
+    "checkedAt": "2026-08-10T19:22:05.379Z"
+  },
+  "pmid:7050706": {
+    "ok": true,
+    "year": "1982",
+    "firstAuthor": "Brenner BM",
+    "title": "Dietary protein intake and the progressive nature of kidney disease: the role of hemodynamically mediated glomerular injury in the pathogenesis of progressive glomerular sclerosis in aging, renal ablation, and intrinsic renal disease.",
+    "checkedAt": "2026-08-11T04:11:06.637Z"
+  },
+  "pmid:7223699": {
+    "ok": true,
+    "year": "1981",
+    "firstAuthor": "Solomons NW",
+    "title": "Studies on the bioavailability of zinc in humans: effects of heme and nonheme iron on the absorption of zinc.",
+    "checkedAt": "2026-08-11T05:17:34.348Z"
+  },
+  "pmid:7723675": {
+    "ok": true,
+    "year": "1995",
+    "firstAuthor": "Tchernof A",
+    "title": "Reduced testosterone and adrenal C19 steroid levels in obese men.",
+    "checkedAt": "2026-08-11T04:53:22.714Z"
+  },
+  "pmid:8875519": {
+    "checkedAt": "2026-08-10T16:07:07.102Z",
+    "firstAuthor": "Prasad AS",
+    "ok": true,
+    "title": "Zinc status and serum testosterone levels of healthy adults.",
+    "year": "1996"
+  },
+  "pmid:8942407": {
+    "ok": true,
+    "year": "1996",
+    "firstAuthor": "Dorgan JF",
+    "title": "Effects of dietary fat and fiber on plasma and urine androgens and estrogens in men: a controlled feeding study.",
+    "checkedAt": "2026-08-10T19:20:52.302Z"
+  },
+  "pmid:894528": {
+    "ok": true,
+    "year": "1977",
+    "firstAuthor": "Mendelson JH",
+    "title": "Effects of acute alcohol intake on pituitary-gonadal hormones in normal human males.",
+    "checkedAt": "2026-08-10T19:22:06.381Z"
+  },
+  "pmid:9029197": {
+    "ok": true,
+    "year": "1997",
+    "firstAuthor": "Volek JS",
+    "title": "Testosterone and cortisol in relationship to dietary nutrients and resistance exercise.",
+    "checkedAt": "2026-08-10T19:20:53.495Z"
+  },
+  "pmid:9168187": {
+    "ok": true,
+    "year": "1997",
+    "firstAuthor": "Michnovicz JJ",
+    "title": "Changes in levels of urinary estrogen metabolites after oral indole-3-carbinol treatment in humans.",
+    "checkedAt": "2026-08-11T04:36:23.334Z"
+  },
+  "pmid:9216554": {
+    "ok": true,
+    "year": "1997",
+    "firstAuthor": "Volek JS",
+    "title": "Creatine supplementation enhances muscular performance during high-intensity resistance exercise.",
+    "checkedAt": "2026-08-11T04:36:21.246Z"
+  },
+  "pmid:9298684": {
+    "ok": true,
+    "year": "1997",
+    "firstAuthor": "Tchernof A",
+    "title": "Relationships between endogenous steroid hormone, sex hormone-binding globulin and lipoprotein levels in men: contribution of visceral obesity, insulin levels and other metabolic variables.",
+    "checkedAt": "2026-08-11T04:53:23.278Z"
+  },
+  "pmid:9338423": {
+    "ok": true,
+    "year": "1997",
+    "firstAuthor": "Shirreffs SM",
+    "title": "Restoration of fluid balance after exercise-induced dehydration: effects of alcohol consumption.",
+    "checkedAt": "2026-09-23T08:32:15.776Z"
+  },
+  "pmid:9698665": {
+    "ok": true,
+    "year": "1998",
+    "firstAuthor": "Scott R",
+    "title": "The effect of oral selenium supplementation on human sperm motility.",
+    "checkedAt": "2026-08-11T04:36:28.609Z"
+  },
+  "pmid:9880251": {
+    "ok": true,
+    "year": "1999",
+    "firstAuthor": "Levine JA",
+    "title": "Role of nonexercise activity thermogenesis in resistance to fat gain in humans.",
+    "checkedAt": "2026-08-11T11:46:31.713Z"
+  },
+  "pmid:99999991": {
+    "checkedAt": "2026-08-10T16:05:05.594Z",
+    "ok": false
+  }
+}

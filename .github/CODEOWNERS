@@ -1,0 +1,10 @@
+vercel.json @gonzaloeaguilar-bot
+next.config.* @gonzaloeaguilar-bot
+.github/ @gonzaloeaguilar-bot
+scripts/verify-ui-integrity.mjs @gonzaloeaguilar-bot
+app/layout.tsx @gonzaloeaguilar-bot
+components/GoogleAnalytics.tsx @gonzaloeaguilar-bot
+app/robots.ts @gonzaloeaguilar-bot
+app/sitemap.ts @gonzaloeaguilar-bot
+analytics-legacy-map.json @gonzaloeaguilar-bot
+package.json @gonzaloeaguilar-bot
