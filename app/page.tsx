@@ -9,7 +9,7 @@ import HowItWorks from "@/components/HowItWorks";
 export default async function Home() {
   return (
     <>
-      <main id="main">
+      <main id="main" data-client-ui-test="kris-claude-edit-ok">
         <Hero />
 
         {/* The Kris chat card came OFF the homepage 2026-10-07. Added 10-02 as a
