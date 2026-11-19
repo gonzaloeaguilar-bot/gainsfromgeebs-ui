@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geebs Science Digest</title>
+    <link>https://gainsfromgeebs.com/science</link>
+    <description>Geebs Science Digest is an AI-narrated audio companion to the Gains From Geebs science library. Each short episode reads one study-backed answer from gainsfromgeebs.com/science — training, nutrition, sleep, and body recomposition questions answered from peer-reviewed research with honest study limits. Episodes are narrated by a synthetic AI voice, not by a human host. The Gains From Geebs coaching program is run by Kris Oddo in Denver, fully remote.</description>
+    <language>en-us</language>
+    <copyright>© 2026 Kris Oddo</copyright>
+    <lastBuildDate>Sat, 11 Jul 2026 19:41:00 +0000</lastBuildDate>
+    <atom:link href="https://gainsfromgeebs.com/podcast/science-digest/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Gains From Geebs</itunes:author>
+    <itunes:summary>Geebs Science Digest is an AI-narrated audio companion to the Gains From Geebs science library. Each short episode reads one study-backed answer from gainsfromgeebs.com/science — training, nutrition, sleep, and body recomposition questions answered from peer-reviewed research with honest study limits. Episodes are narrated by a synthetic AI voice, not by a human host. The Gains From Geebs coaching program is run by Kris Oddo in Denver, fully remote.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+      <itunes:name>Kris Oddo</itunes:name>
+      <itunes:email>kris@titanforgefit.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://gainsfromgeebs.com/podcast/science-digest/cover.png"/>
+    <itunes:category text="Health &amp; Fitness">
+      <itunes:category text="Fitness"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>How do you avoid losing muscle while dieting?</title>
+      <description>AI-narrated reading of the Geebs Science answer: Lift while you diet. In a 2025 meta-analysis of 25 randomized trials in adults with overweight or obesity, adding resistance exercise to dietary weight loss protected fat-free mass (SMD 0.40), increased fat-mass loss (SMD -0.36), and improved strength (SMD 2.36), while bodyweight loss was not meaningfully different (-0.32 kg between groups). Use those findings as a guide: keep lifting, hit a realistic protein floor, avoid crash dieting, and track strength instead of only scale weight.
+
+Full answer with peer-reviewed sources and honest study limits: https://gainsfromgeebs.com/science/questions/how-do-you-avoid-losing-muscle-while-dieting
+Science library: https://gainsfromgeebs.com/science
+Apply for coaching: https://gainsfromgeebs.com/apply
+
+This episode is narrated by a synthetic AI voice (edge-tts:en-US-AndrewNeural), not by a human host.</description>
+      <link>https://gainsfromgeebs.com/science/questions/how-do-you-avoid-losing-muscle-while-dieting</link>
+      <guid isPermaLink="false">geebs-science-digest-d928d07d-9790-4761-9faf-87130260570c</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://gainsfromgeebs.com/podcast/science-digest/audio/how-do-you-avoid-losing-muscle-while-dieting.mp3" length="646560" type="audio/mpeg"/>
+      <itunes:duration>1:47</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://gainsfromgeebs.com/podcast/science-digest/cover.png"/>
+    </item>
+    <item>
+      <title>Does poor sleep cause cravings?</title>
+      <description>AI-narrated reading of the Geebs Science answer: Poor sleep does not guarantee cravings, but sleep restriction can make appetite, snack intake, training quality, and decisions harder to control. The useful coaching move is to audit the sleep pattern before treating late-night cravings like a character flaw.
+
+Full answer with peer-reviewed sources and honest study limits: https://gainsfromgeebs.com/science/questions/does-poor-sleep-cause-cravings
+Science library: https://gainsfromgeebs.com/science
+Apply for coaching: https://gainsfromgeebs.com/apply
+
+This episode is narrated by a synthetic AI voice (edge-tts:en-US-AndrewNeural), not by a human host.</description>
+      <link>https://gainsfromgeebs.com/science/questions/does-poor-sleep-cause-cravings</link>
+      <guid isPermaLink="false">geebs-science-digest-74e0024b-876f-42b2-85a0-db152390544e</guid>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://gainsfromgeebs.com/podcast/science-digest/audio/does-poor-sleep-cause-cravings.mp3" length="528768" type="audio/mpeg"/>
+      <itunes:duration>1:28</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://gainsfromgeebs.com/podcast/science-digest/cover.png"/>
+    </item>
+  </channel>
+</rss>

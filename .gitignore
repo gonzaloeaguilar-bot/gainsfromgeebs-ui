@@ -1,0 +1,64 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+/test-results
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# private source material
+docs/gonzalo-imessage-testimonial-source.md
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# agent workspaces
+.claude/
+.ai/cache/
+.podcast-cache/
+.serena/
+
+# generated page registry — derived from data/pages/*.ts by scripts/generate-page-registry.mjs
+# untracked so parallel page branches never collide on it (regenerated in predev/prebuild)
+data/pages/index.ts
+
+# graphify AST cache — regenerable; committed blobs poisoned CTO-lane PRs fleet-wide (2026-09-09)
+graphify-out/
+tests/baselines/*/shots/
+tests/baselines/after/
+
+# Browser evidence belongs outside the source tree.
+/artifacts/blog-by-problem/
+.worktrees/

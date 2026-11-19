@@ -1,0 +1,1583 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geebs Goal Weight Forecast</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0b0a;
+      --panel: #151412;
+      --panel-2: #1d1a17;
+      --text: #f3eee5;
+      --muted: #b9afa1;
+      --line: #39332d;
+      --accent: #a11820;
+      --accent-soft: #d44c54;
+      --red: #9f2424;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 14% 8%, rgba(161, 24, 32, .16), transparent 28%),
+        radial-gradient(circle at 82% 22%, rgba(245, 241, 235, .055), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 48px;
+    }
+    header {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    .brand-lockup svg {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, .28);
+    }
+    .brand-meta {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .eyebrow {
+      color: var(--accent-soft);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(34px, 6vw, 72px);
+      line-height: .98;
+      letter-spacing: 0;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    h2, h3 { letter-spacing: 0; line-height: 1.15; }
+    p { color: var(--muted); margin: 0; }
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    .form-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+    }
+    .wizard-layout {
+      display: grid;
+      gap: 16px;
+      align-items: start;
+    }
+    .stepper {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 16px 0;
+    }
+    .step-pill {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      color: var(--muted);
+      padding: 10px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .step-pill[aria-current="step"] {
+      border-color: var(--accent);
+      color: var(--text);
+      background: rgba(161, 24, 32, .16);
+    }
+    .wizard-step {
+      display: grid;
+      gap: 14px;
+    }
+    .wizard-step[hidden] {
+      display: none;
+    }
+    .wizard-step h3 {
+      color: var(--text);
+      margin: 0;
+      font-size: 24px;
+    }
+    .wizard-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .forecast-panel[hidden] {
+      display: none;
+    }
+    .wizard-layout.is-forecast-hidden {
+      grid-template-columns: minmax(0, 720px);
+    }
+    @media (min-width: 860px) {
+      .grid-2, .wizard-layout { grid-template-columns: .92fr 1.08fr; align-items: start; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid-4 { grid-template-columns: repeat(4, 1fr); }
+      .form-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .form-grid .span-2 { grid-column: span 2; }
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+    }
+    .panel.alt { background: var(--panel-2); }
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .field-help {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.35;
+      text-transform: none;
+    }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      color: var(--text);
+      font: inherit;
+      padding: 12px 12px;
+      outline: none;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+    button, .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 800;
+      padding: 12px 16px;
+      text-decoration: none;
+    }
+    button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    summary {
+      cursor: pointer;
+      color: var(--text);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.15;
+      list-style-position: outside;
+    }
+    details .details-copy {
+      margin-top: 8px;
+    }
+    .stat {
+      min-height: 118px;
+      display: grid;
+      align-content: start;
+      gap: 7px;
+    }
+    .stat strong {
+      color: var(--text);
+      font-size: 34px;
+      line-height: 1;
+    }
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: #25221f;
+      overflow: hidden;
+    }
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+      transition: width .2s ease;
+    }
+    .week {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .check-row {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+    .check-row input { width: 22px; height: 22px; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .notice {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .035);
+      color: var(--muted);
+      margin-top: 12px;
+      padding: 12px;
+    }
+    .notice.good {
+      border-color: rgba(161, 24, 32, .55);
+      color: var(--text);
+    }
+    .notice.warn {
+      border-color: rgba(212, 76, 84, .7);
+      color: var(--text);
+    }
+    .small { font-size: 13px; }
+    .section-head {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .saved-weeks {
+      display: grid;
+      gap: 12px;
+    }
+    .saved-week {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+    .saved-week-main {
+      display: grid;
+      gap: 8px;
+    }
+    .saved-week-title {
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .saved-week-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .saved-week-meta span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 8px;
+    }
+    .saved-week-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .saved-week-actions button {
+      padding: 9px 12px;
+    }
+    .empty-state {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      padding: 14px;
+    }
+    .audit-output {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .forecast-chart {
+      width: 100%;
+      min-height: 280px;
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      overflow: hidden;
+    }
+    .forecast-chart svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 260px;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .legend i {
+      width: 18px;
+      height: 3px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+    .macro-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: 720px) {
+      .macro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    .macro-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      padding: 13px;
+    }
+    .macro-card strong {
+      color: var(--text);
+      display: block;
+      font-size: 24px;
+      line-height: 1.1;
+      margin-top: 5px;
+    }
+    .grocery-list {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .grocery-list li {
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+      padding-left: 10px;
+    }
+    .audit-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f0e0d;
+      padding: 14px;
+    }
+    .audit-item strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .copy-box {
+      min-height: 260px;
+      white-space: pre-wrap;
+    }
+    .file-input {
+      max-width: 280px;
+      padding: 10px;
+    }
+    @media (min-width: 720px) {
+      .saved-week {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+      }
+      .saved-week-actions {
+        justify-content: end;
+      }
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 28px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand-row">
+        <div class="brand-lockup" aria-label="Geebs Coaching">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Geebs Coaching logo">
+            <rect width="256" height="256" rx="54" fill="#0a0a0a"></rect>
+            <path d="M47 57c28-30 84-38 123-13 21 13 34 34 40 58h-45c-6-16-20-27-38-27-29 0-50 23-50 54 0 33 22 55 53 55 22 0 38-11 44-29h-52v-38h96v21c0 50-37 86-90 86-58 0-100-40-100-96 0-28 10-53 29-71Z" fill="#f5f1eb"></path>
+            <path d="M168 33c23 8 41 24 52 45l-38 17c-6-10-15-18-26-23l12-39Z" fill="#A11820"></path>
+          </svg>
+          <span>Geebs Coaching</span>
+        </div>
+        <div class="brand-meta">gainsfromgeebs.com</div>
+      </div>
+      <div class="eyebrow">Geebs Goal Weight Forecast</div>
+      <h1>Find how long your goal weight will actually take.</h1>
+      <p>Add your basic stats, goal weight, steps, lift days, and a few weekly execution signals. The forecast estimates your maintenance calories, macros, weeks to goal, when to adjust, and what groceries make the plan easier. No account, no app, no server save.</p>
+    </header>
+
+    <section id="wizardLayout" class="wizard-layout is-forecast-hidden">
+      <div class="panel">
+        <p class="eyebrow">Questionnaire</p>
+        <h2>Answer 3 quick steps.</h2>
+        <p class="small">You can calculate after the third step. The weekly check-in below is optional and only makes the forecast smarter over time.</p>
+        <div class="stepper" aria-label="Forecast questionnaire steps">
+          <button class="step-pill" type="button" data-step-jump="0" aria-current="step">1 Goal</button>
+          <button class="step-pill" type="button" data-step-jump="1">2 Body</button>
+          <button class="step-pill" type="button" data-step-jump="2">3 Week</button>
+        </div>
+
+        <div class="wizard-step" data-step="0">
+          <div>
+            <p class="eyebrow">Step 1 of 3</p>
+            <h3>What goal are we forecasting?</h3>
+            <p class="small">This is enough to estimate weeks to goal. Start weight is optional but helps show progress.</p>
+          </div>
+          <div class="form-grid">
+            <label>Goal
+              <select id="goal">
+                <option value="fat-loss">Fat loss</option>
+                <option value="recomp">Recomp</option>
+                <option value="lean-gain">Lean gain</option>
+              </select>
+            </label>
+            <label>Current weight
+              <input id="bodyweight" type="number" min="80" max="450" value="185">
+            </label>
+            <label>Goal weight
+              <input id="goalWeight" type="number" min="80" max="450" value="170">
+            </label>
+            <label>Start weight
+              <input id="startWeight" type="number" min="80" max="450" value="185">
+              <span class="field-help">Optional. Use current weight if you are starting today.</span>
+            </label>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" data-next-step>Next: body stats</button>
+            <button id="exampleBtn" class="secondary" type="button">Use example</button>
+          </div>
+        </div>
+
+        <div class="wizard-step" data-step="1" hidden>
+          <div>
+            <p class="eyebrow">Step 2 of 3</p>
+            <h3>What should calories be based on?</h3>
+            <p class="small">These fields power the maintenance and macro estimate. No activity-level guessing.</p>
+          </div>
+          <div class="form-grid">
+            <label>Sex
+              <select id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </label>
+            <label>Age
+              <input id="age" type="number" min="14" max="100" value="32">
+            </label>
+            <label>Height ft
+              <input id="heightFt" type="number" min="3" max="8" value="5">
+            </label>
+            <label>Height in
+              <input id="heightIn" type="number" min="0" max="11" value="10">
+            </label>
+          </div>
+          <div class="wizard-actions">
+            <button class="secondary" type="button" data-prev-step>Back</button>
+            <button type="button" data-next-step>Next: real week</button>
+          </div>
+        </div>
+
+        <div class="wizard-step" data-step="2" hidden>
+          <div>
+            <p class="eyebrow">Step 3 of 3</p>
+            <h3>What does a normal week look like?</h3>
+            <p class="small">Use normal steps and lift days, not the perfect week you wish you had.</p>
+          </div>
+          <div class="form-grid">
+            <label>Lift days
+              <input id="liftDays" type="number" min="1" max="7" value="4">
+            </label>
+            <label>Average steps
+              <input id="avgSteps" type="number" min="1000" max="30000" step="500" value="8000">
+              <span class="field-help">Use your normal daily average.</span>
+            </label>
+            <label>Current calories
+              <input id="currentCalories" type="number" min="0" max="6000" step="25" value="">
+              <span class="field-help">Optional. Leave blank if you do not track yet.</span>
+            </label>
+            <label>Sleep goal
+              <input id="sleepGoal" type="number" min="4" max="10" step=".5" value="7">
+            </label>
+            <label class="span-2">Biggest blocker
+              <select id="blocker">
+                <option value="not-sure">Not sure yet</option>
+                <option value="protein">Getting enough protein</option>
+                <option value="training">Making workouts happen</option>
+                <option value="steps">Moving enough outside the gym</option>
+                <option value="sleep">Sleep and recovery</option>
+                <option value="weekends">Weekends or eating out</option>
+                <option value="schedule">Work, travel, or schedule chaos</option>
+              </select>
+            </label>
+            <label class="span-2">Week starting
+              <input id="startDate" type="date">
+              <span class="field-help">Optional. Leave today's date if you just want to calculate.</span>
+            </label>
+          </div>
+          <div class="wizard-actions">
+            <button class="secondary" type="button" data-prev-step>Back</button>
+            <button id="calculateBtn" type="button">Calculate forecast</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="forecastPanel" class="panel alt forecast-panel" hidden>
+        <h2>This week's goal forecast</h2>
+        <div class="grid grid-3">
+          <div class="stat panel">
+            <span class="eyebrow">Time to goal</span>
+            <strong><span id="timeToGoal">--</span></strong>
+            <p class="small" id="goalPace">Log the week.</p>
+          </div>
+          <div class="stat panel">
+            <span class="eyebrow">Score</span>
+            <strong><span id="score">0</span>%</strong>
+            <p class="small" id="scoreLabel">Log the week.</p>
+          </div>
+          <div class="stat panel">
+            <span class="eyebrow">Progress</span>
+            <strong><span id="goalProgress">0</span>%</strong>
+            <p class="small" id="gameLevel">Level 1: start the streak.</p>
+          </div>
+        </div>
+        <div class="bar" style="margin-top:16px"><span id="scoreBar"></span></div>
+        <div class="forecast-chart" aria-label="Forecast chart">
+          <svg id="forecastChart" viewBox="0 0 680 300" role="img" aria-labelledby="chartTitle chartDesc">
+            <title id="chartTitle">Weight and calorie forecast</title>
+            <desc id="chartDesc">Projected body weight and calorie target over the goal timeline.</desc>
+          </svg>
+        </div>
+        <div class="legend">
+          <span><i style="background:#f3eee5"></i>Projected weight</span>
+          <span><i style="background:#d44c54"></i>Calorie target</span>
+        </div>
+        <div class="audit-output">
+          <div class="audit-item">
+            <strong>Calories and macros</strong>
+            <div class="macro-grid">
+              <div class="macro-card">
+                <span class="eyebrow">Target</span>
+                <strong><span id="targetCalories">--</span></strong>
+                <p class="small">kcal/day</p>
+              </div>
+              <div class="macro-card">
+                <span class="eyebrow">Protein</span>
+                <strong><span id="macroProtein">--</span>g</strong>
+                <p class="small">First target to hit.</p>
+              </div>
+              <div class="macro-card">
+                <span class="eyebrow">Carbs</span>
+                <strong><span id="macroCarbs">--</span>g</strong>
+                <p class="small">Fuel training.</p>
+              </div>
+              <div class="macro-card">
+                <span class="eyebrow">Fat</span>
+                <strong><span id="macroFat">--</span>g</strong>
+                <p class="small">Keep the floor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="audit-item">
+            <strong>Adjustment rule</strong>
+            <p id="adjustmentRule">Calculate once, then save a couple of real weeks before changing calories.</p>
+          </div>
+          <div class="audit-item">
+            <strong>Easy grocery list</strong>
+            <ul id="groceryList" class="grocery-list"></ul>
+          </div>
+        </div>
+        <div class="audit-output">
+          <div class="audit-item">
+            <strong>ETA read</strong>
+            <p id="etaRead">Add current weight and goal weight to estimate your timeline.</p>
+          </div>
+          <div class="audit-item">
+            <strong>This week's quest</strong>
+            <p id="weeklyQuest">Hit protein and complete the planned lift days first.</p>
+          </div>
+          <div class="audit-item">
+            <strong>What probably broke</strong>
+            <p id="auditRead">Log the week and the audit will call out the highest-leverage fix.</p>
+          </div>
+          <div class="audit-item">
+            <strong>Next week plan</strong>
+            <p id="nextWeekPlan">Start by logging protein, workouts, steps, and sleep for one real week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <details id="weeklyDetails" class="panel" style="margin-top:16px">
+      <summary>Optional: add this week's check-in</summary>
+      <p class="small details-copy">Skip this the first time if you just want the forecast. Save a week later to make the adjustment rule smarter.</p>
+      <div class="grid grid-4">
+        <label>Protein days hit
+          <input id="proteinDays" type="number" min="0" max="7" value="0">
+        </label>
+        <label>Workouts done
+          <input id="workoutsDone" type="number" min="0" max="7" value="0">
+        </label>
+        <label>Step days hit
+          <input id="stepDays" type="number" min="0" max="7" value="0">
+        </label>
+        <label>Sleep days hit
+          <input id="sleepDays" type="number" min="0" max="7" value="0">
+        </label>
+      </div>
+      <div class="week">
+        <div class="check-row">
+          <span>Logged bodyweight at least twice</span>
+          <input id="weighIns" type="checkbox">
+        </div>
+        <div class="check-row">
+          <span>Added weight, reps, or better form on at least one lift</span>
+          <input id="progressedLift" type="checkbox">
+        </div>
+        <div class="check-row">
+          <span>Wrote down the biggest blocker from this week</span>
+          <input id="reviewedBlocker" type="checkbox">
+        </div>
+      </div>
+      <label style="margin-top:16px">Notes
+        <textarea id="notes" placeholder="What got in the way? What needs to be easier next week?"></textarea>
+      </label>
+      <label style="margin-top:16px">Anonymous Reddit ETA check-in
+        <textarea id="redditCheckin" class="copy-box" readonly></textarea>
+      </label>
+      <div class="actions">
+        <button id="saveBtn" type="button">Save week</button>
+        <button id="copyRedditBtn" class="secondary" type="button">Copy check-in</button>
+        <button id="resetBtn" class="secondary" type="button">Reset log</button>
+      </div>
+      <p id="saveStatus" class="notice small" role="status" aria-live="polite">
+        On phone, open this in Safari or Chrome. If you opened it inside Files, Reddit, or a preview screen, saving can be blocked.
+      </p>
+    </details>
+
+    <section class="panel alt" style="margin-top:16px">
+      <div class="section-head">
+        <div>
+          <h2>Saved weeks</h2>
+          <p class="small">This is where your goal-weight game history lives. It stays on this browser or in the saved page link fallback.</p>
+        </div>
+      </div>
+      <div class="actions" style="margin-top:0;margin-bottom:14px">
+        <button id="exportBtn" class="secondary" type="button">Export backup</button>
+        <label class="button secondary" for="importFile">Import backup</label>
+        <input id="importFile" class="file-input" type="file" accept="application/json">
+      </div>
+      <div id="savedWeeks" class="saved-weeks" aria-live="polite"></div>
+    </section>
+
+    <footer>
+      Built by Geebs Coaching. Model notes: maintenance uses Mifflin-St Jeor math, protein targets stay high for training, and calorie changes wait for trend plus execution data. This is a planning tool, not medical advice. Your forecast data stays in this browser unless you export it. If the same blocker keeps stretching the ETA, apply at
+      <a href="https://gainsfromgeebs.com/apply?utm_source=html_tracker&utm_medium=offline_tool&utm_campaign=goal_tracker&utm_content=footer">gainsfromgeebs.com/apply</a>.
+    </footer>
+  </main>
+
+  <script>
+    const fields = [
+      "goal", "sex", "age", "startWeight", "bodyweight", "goalWeight", "heightFt", "heightIn",
+      "liftDays", "avgSteps", "currentCalories", "sleepGoal", "startDate",
+      "blocker", "proteinDays", "workoutsDone", "stepDays", "sleepDays", "weighIns",
+      "progressedLift", "reviewedBlocker", "notes"
+    ];
+    const key = "geebs_goal_tracker_v1";
+    const weeksKey = "geebs_goal_tracker_weeks_v1";
+    const hashPrefix = "saved=";
+    let savedWeeks = [];
+    let activeStep = 0;
+
+    function el(id) { return document.getElementById(id); }
+    function setText(id, value) {
+      const node = el(id);
+      if (node) node.textContent = value;
+    }
+    function number(id) {
+      const value = Number(el(id).value);
+      return Number.isFinite(value) ? value : 0;
+    }
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+    function lbToKg(lb) {
+      return lb * 0.45359237;
+    }
+    function inToCm(inches) {
+      return inches * 2.54;
+    }
+    function totalHeightInches() {
+      return (number("heightFt") * 12) + number("heightIn");
+    }
+    function bmr() {
+      const weightKg = lbToKg(number("bodyweight"));
+      const heightCm = inToCm(totalHeightInches());
+      const age = number("age");
+      if (!weightKg || !heightCm || !age) return 0;
+      const sexAdj = el("sex").value === "male" ? 5 : -161;
+      return Math.round((10 * weightKg) + (6.25 * heightCm) - (5 * age) + sexAdj);
+    }
+    function activityMultiplier() {
+      const steps = number("avgSteps");
+      const liftDays = clamp(number("liftDays"), 0, 7);
+      const stepAdd =
+        steps >= 12000 ? 0.26 :
+        steps >= 10000 ? 0.21 :
+        steps >= 8000 ? 0.16 :
+        steps >= 6000 ? 0.10 :
+        steps >= 4000 ? 0.05 : 0;
+      const liftAdd = Math.min(0.16, liftDays * 0.025);
+      return Math.round(clamp(1.2 + stepAdd + liftAdd, 1.2, 1.78) * 100) / 100;
+    }
+    function tdee() {
+      return Math.round(bmr() * activityMultiplier());
+    }
+    function calorieTarget() {
+      const maintenance = tdee();
+      if (!maintenance) return 0;
+      if (goalDirection() === "hold" || el("goal").value === "recomp") {
+        return Math.round(maintenance - 150);
+      }
+      if (goalDirection() === "gain" || el("goal").value === "lean-gain") {
+        return Math.round(maintenance + 200);
+      }
+      const deficit = clamp(Math.round(maintenance * 0.18), 300, 650);
+      return Math.max(Math.round(bmr()), maintenance - deficit);
+    }
+    function macroData() {
+      const calories = calorieTarget();
+      const goal = el("goal").value;
+      const proteinRate = goal === "lean-gain" ? 0.8 : goal === "recomp" ? 0.9 : 1.0;
+      const fatPct = goal === "lean-gain" ? 0.30 : goal === "recomp" ? 0.27 : 0.25;
+      const protein = Math.round(number("bodyweight") * proteinRate);
+      const fat = Math.max(35, Math.round((calories * fatPct) / 9));
+      const carbs = Math.max(0, Math.round((calories - (protein * 4) - (fat * 9)) / 4));
+      return { calories, protein, carbs, fat };
+    }
+    function proteinTarget() {
+      return macroData().protein || Math.round(number("bodyweight") * 0.8);
+    }
+    function formatWeight(value) {
+      return Math.round(value) + " lb";
+    }
+    function calculateScore() {
+      const plannedLifts = clamp(number("liftDays"), 1, 7);
+      const protein = clamp(number("proteinDays"), 0, 7) / 7;
+      const lifts = clamp(number("workoutsDone"), 0, plannedLifts) / plannedLifts;
+      const steps = clamp(number("stepDays"), 0, 7) / 7;
+      const sleep = clamp(number("sleepDays"), 0, 7) / 7;
+      const extras =
+        (el("weighIns").checked ? 0.08 : 0) +
+        (el("progressedLift").checked ? 0.08 : 0) +
+        (el("reviewedBlocker").checked ? 0.04 : 0);
+      return Math.round(clamp((protein * 0.32) + (lifts * 0.32) + (steps * 0.16) + (sleep * 0.12) + extras, 0, 1) * 100);
+    }
+    function nextFix() {
+      const plannedLifts = clamp(number("liftDays"), 1, 7);
+      if (el("blocker").value === "weekends") return "Weekend drift is the first fix. Plan one default meal before Friday.";
+      if (el("blocker").value === "schedule") return "Schedule chaos is the first fix. Pick the minimum plan you can hit on a bad week.";
+      if (number("proteinDays") < 5) return "Protein is the first fix. Make the first meal protein-heavy tomorrow.";
+      if (number("workoutsDone") < plannedLifts) return "Training consistency is the first fix. Cut the plan down before you skip it.";
+      if (number("sleepDays") < 4) return "Recovery is the first fix. Keep training, but stop pretending sleep does not count.";
+      if (!el("progressedLift").checked) return "Progression is the first fix. Add reps, load, control, or cleaner form next week.";
+      if (!el("reviewedBlocker").checked) return "Review the blocker. The plan fails where the week gets predictable.";
+      return "Good week. Repeat the boring pieces and progress one lift.";
+    }
+    function goalDirection() {
+      const bodyweight = number("bodyweight");
+      const goalWeight = number("goalWeight");
+      if (!bodyweight || !goalWeight || Math.abs(bodyweight - goalWeight) < 1) return "hold";
+      return goalWeight > bodyweight ? "gain" : "loss";
+    }
+    function progressToGoal() {
+      const start = number("startWeight");
+      const current = number("bodyweight");
+      const target = number("goalWeight");
+      if (!start || !current || !target || Math.abs(start - target) < 1) return 0;
+      const total = Math.abs(start - target);
+      const moved = Math.abs(start - current);
+      const directionOk = target < start ? current <= start : current >= start;
+      return Math.round(clamp(directionOk ? moved / total : 0, 0, 1) * 100);
+    }
+    function etaData() {
+      const bodyweight = number("bodyweight");
+      const goalWeight = number("goalWeight");
+      const score = calculateScore();
+      const direction = goalDirection();
+      const factor = score >= 85 ? 1 : score >= 70 ? 0.82 : score >= 50 ? 0.58 : 0.34;
+
+      if (!bodyweight || !goalWeight) {
+        return {
+          label: "--",
+          read: "Enter current weight and goal weight to estimate the timeline.",
+          pace: "No ETA yet.",
+          quest: "Start with current weight, goal weight, protein days, and workouts.",
+        };
+      }
+
+      const distance = Math.abs(bodyweight - goalWeight);
+      if (direction === "hold") {
+        return {
+          label: "Goal reached",
+          read: "You are within one pound of the scale target. The game now is holding it while training quality improves.",
+          pace: "Maintenance mode.",
+          quest: "Hold the weekly score above 80% and progress one lift.",
+        };
+      }
+
+      const target = calorieTarget();
+      const maintenance = tdee();
+      const calorieDelta = target && maintenance ? Math.abs(maintenance - target) : 0;
+      const caloriePace = calorieDelta ? (calorieDelta * 7) / 3500 : 0;
+      const lowRate = direction === "gain" ? 0.0012 : 0.003;
+      const highRate = direction === "gain" ? 0.003 : 0.007;
+      const lowPace = Math.max(bodyweight * lowRate * factor, caloriePace * 0.65 * factor);
+      const highPace = Math.max(lowPace, bodyweight * highRate * factor, caloriePace * 1.15 * factor);
+      const fastWeeks = Math.max(1, Math.ceil(distance / highPace));
+      const slowWeeks = Math.max(fastWeeks, Math.ceil(distance / lowPace));
+      const label = slowWeeks >= 9
+        ? (Math.round((fastWeeks / 4.345) * 10) / 10) + "-" + (Math.round((slowWeeks / 4.345) * 10) / 10) + " mo"
+        : fastWeeks + "-" + slowWeeks + " wk";
+      const pace = direction === "gain"
+        ? "+" + lowPace.toFixed(1) + " to +" + highPace.toFixed(1) + " lb/week"
+        : "-" + lowPace.toFixed(1) + " to -" + highPace.toFixed(1) + " lb/week";
+      const directionText = direction === "gain" ? "gain" : "loss";
+      return {
+        label,
+        read: "At this execution score, " + formatWeight(goalWeight) + " is roughly " + label + " away. Estimated " + directionText + " pace: " + pace + ". Better weekly consistency shortens the ETA before calories need to move.",
+        pace,
+        quest: nextWeekPlan(),
+      };
+    }
+    function averageSavedPace() {
+      if (savedWeeks.length < 2) return null;
+      const ordered = [...savedWeeks].sort((a, b) => String(a.weekOf).localeCompare(String(b.weekOf)));
+      const first = ordered[0];
+      const last = ordered[ordered.length - 1];
+      const firstWeight = Number(first.data.bodyweight);
+      const lastWeight = Number(last.data.bodyweight);
+      if (!firstWeight || !lastWeight || first.id === last.id) return null;
+      const days = Math.max(7, (new Date(last.weekOf) - new Date(first.weekOf)) / 86400000);
+      return ((lastWeight - firstWeight) / days) * 7;
+    }
+    function adjustmentRule() {
+      const score = calculateScore();
+      const pace = averageSavedPace();
+      const direction = goalDirection();
+      const currentCalories = number("currentCalories");
+      const target = calorieTarget();
+      const calorieLine = currentCalories
+        ? "You are logging around " + currentCalories + " kcal/day; forecast target is " + target + ". "
+        : "Start around " + target + " kcal/day and prove the week first. ";
+
+      if (savedWeeks.length < 2) {
+        return calorieLine + "Hold calories for 2 real saved weeks before changing them. Kris pattern: protein, steps, training, sleep, then adjust from trend data.";
+      }
+      if (score < 70) {
+        return calorieLine + "Do not cut calories yet. The first adjustment is execution: hit protein, complete lifts, get steps, and fix the blocker.";
+      }
+      if (direction === "loss") {
+        if (pace !== null && pace <= -number("bodyweight") * 0.01) {
+          return calorieLine + "Weight is moving fast. Hold calories or add 100-150 kcal from carbs if training performance is dropping.";
+        }
+        if (pace !== null && pace > -number("bodyweight") * 0.0025) {
+          return calorieLine + "If this is the second compliant week with no drop, adjust next week: reduce 100-150 kcal/day or add 1,500-2,500 daily steps.";
+        }
+        return calorieLine + "Trend is moving. Keep calories the same next week and chase repeatability.";
+      }
+      if (direction === "gain") {
+        if (pace !== null && pace < number("bodyweight") * 0.001) {
+          return calorieLine + "If lifts are not progressing after 2 compliant weeks, add 100-150 kcal around training, mostly carbs.";
+        }
+        if (pace !== null && pace > number("bodyweight") * 0.005) {
+          return calorieLine + "Gain is fast. Pull 100-150 kcal if waist is jumping or the look is getting softer.";
+        }
+        return calorieLine + "Gain pace is controlled. Keep calories steady and progress lifts.";
+      }
+      return calorieLine + "For recomp, hold 3-4 weeks and judge waist, photos, performance, and weight trend together.";
+    }
+    function forecastPoints() {
+      const current = number("bodyweight");
+      const target = number("goalWeight");
+      const eta = etaData();
+      const match = String(eta.label).match(/([\d.]+)(?:-[\d.]+)?\s*(wk|mo)/);
+      const weeks = match ? Math.max(4, Math.round(Number(match[1]) * (match[2] === "mo" ? 4.345 : 1))) : 12;
+      const steps = Math.min(24, Math.max(6, Math.ceil(weeks / 2)));
+      const points = [];
+      for (let i = 0; i <= steps; i += 1) {
+        const ratio = i / steps;
+        const week = Math.round(weeks * ratio);
+        const weight = current + ((target - current) * ratio);
+        points.push({ week, weight, calories: calorieTarget() });
+      }
+      return points;
+    }
+    function renderChart() {
+      const svg = el("forecastChart");
+      if (!svg) return;
+      const points = forecastPoints();
+      const weights = points.map((point) => point.weight);
+      const calories = points.map((point) => point.calories);
+      const minW = Math.min(...weights, number("goalWeight")) - 2;
+      const maxW = Math.max(...weights, number("bodyweight")) + 2;
+      const minC = Math.min(...calories, calorieTarget()) - 150;
+      const maxC = Math.max(...calories, tdee()) + 150;
+      const left = 54;
+      const right = 646;
+      const top = 28;
+      const bottom = 238;
+      const x = (index) => left + ((right - left) * (index / Math.max(1, points.length - 1)));
+      const yWeight = (value) => bottom - ((value - minW) / Math.max(1, maxW - minW)) * (bottom - top);
+      const yCalories = (value) => bottom - ((value - minC) / Math.max(1, maxC - minC)) * (bottom - top);
+      const weightPath = points.map((point, index) => x(index) + "," + yWeight(point.weight).toFixed(1)).join(" ");
+      const caloriePath = points.map((point, index) => x(index) + "," + yCalories(point.calories).toFixed(1)).join(" ");
+      svg.innerHTML = [
+        '<rect x="0" y="0" width="680" height="300" fill="#0f0e0d"></rect>',
+        '<line x1="' + left + '" y1="' + bottom + '" x2="' + right + '" y2="' + bottom + '" stroke="#39332d"></line>',
+        '<line x1="' + left + '" y1="' + top + '" x2="' + left + '" y2="' + bottom + '" stroke="#39332d"></line>',
+        '<text x="' + left + '" y="268" fill="#b9afa1" font-size="12">now</text>',
+        '<text x="' + (right - 64) + '" y="268" fill="#b9afa1" font-size="12">week ' + points[points.length - 1].week + '</text>',
+        '<text x="16" y="36" fill="#f3eee5" font-size="12">' + Math.round(maxW) + ' lb</text>',
+        '<text x="16" y="' + bottom + '" fill="#b9afa1" font-size="12">' + Math.round(minW) + ' lb</text>',
+        '<text x="' + (right - 88) + '" y="36" fill="#d44c54" font-size="12">' + Math.round(maxC) + ' cal</text>',
+        '<text x="' + (right - 88) + '" y="' + bottom + '" fill="#d44c54" font-size="12">' + Math.round(minC) + ' cal</text>',
+        '<polyline points="' + weightPath + '" fill="none" stroke="#f3eee5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>',
+        '<polyline points="' + caloriePath + '" fill="none" stroke="#d44c54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".95"></polyline>',
+        '<circle cx="' + x(points.length - 1) + '" cy="' + yWeight(points[points.length - 1].weight).toFixed(1) + '" r="6" fill="#f3eee5"></circle>',
+        '<text x="' + (left + 6) + '" y="18" fill="#b9afa1" font-size="12">Forecast, not a guarantee</text>',
+      ].join("");
+    }
+    function renderGroceryList() {
+      const list = el("groceryList");
+      const macros = macroData();
+      const proteinMeals = clamp(Math.round(macros.protein / 40), 3, 5);
+      const items = [
+        "Protein anchors: chicken, turkey, lean beef, tuna, eggs, Greek yogurt, cottage cheese, protein powder. Aim for " + proteinMeals + " protein hits/day.",
+        "Carb fuel: rice, potatoes, oats, tortillas, fruit, beans. Put more of these around hard training days.",
+        "Fat floor: olive oil, avocado, nuts, salmon, whole eggs. Keep portions measured when cutting.",
+        "Convenience saves the week: frozen vegetables, microwave rice, pre-cooked protein, low-cal sauces, shaker bottle."
+      ];
+      list.textContent = "";
+      for (const item of items) {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+      }
+    }
+    function gameLevel() {
+      const progress = progressToGoal();
+      const score = calculateScore();
+      if (progress >= 100) return "Level 5: goal reached. Hold the line.";
+      if (progress >= 75) return "Level 4: closing stretch.";
+      if (progress >= 40) return "Level 3: visible momentum.";
+      if (score >= 70) return "Level 2: streak building.";
+      return "Level 1: start the streak.";
+    }
+    function blockerLabel() {
+      const select = el("blocker");
+      return select.options[select.selectedIndex] ? select.options[select.selectedIndex].text : "Not sure yet";
+    }
+    function auditRead() {
+      const plannedLifts = clamp(number("liftDays"), 1, 7);
+      if (number("proteinDays") < 4) return "This does not look like a motivation problem first. It looks like the food structure is too loose, because protein missed most days.";
+      if (number("workoutsDone") < Math.min(3, plannedLifts)) return "The plan is probably too big for the current week. A smaller repeatable lifting schedule beats a perfect one you keep missing.";
+      if (number("stepDays") < 3 && el("goal").value === "fat-loss") return "Fat loss will feel harder than it should if movement outside the gym is inconsistent. Steps are the quiet lever here.";
+      if (number("sleepDays") < 3) return "Recovery is probably capping the week. Do not add more training until sleep is less chaotic.";
+      if (!el("progressedLift").checked && number("workoutsDone") >= plannedLifts) return "You showed up, but the training needs a progression target. Same workouts without progression turn into maintenance.";
+      if (el("blocker").value !== "not-sure") return "The blocker you picked is the place to simplify first: " + blockerLabel().toLowerCase() + ".";
+      return "The week is not broken everywhere. Pick one lever, make it easier to repeat, then review again in seven days.";
+    }
+    function nextWeekPlan() {
+      const plannedLifts = clamp(number("liftDays"), 1, 7);
+      const liftTarget = number("workoutsDone") < plannedLifts ? Math.max(3, Math.min(plannedLifts, number("workoutsDone") + 1)) : plannedLifts;
+      const proteinDays = number("proteinDays") < 5 ? 5 : 6;
+      const stepDays = el("goal").value === "lean-gain" ? Math.max(3, number("stepDays")) : Math.max(4, number("stepDays"));
+      const sleepDays = Math.max(4, number("sleepDays"));
+      return "Next week: hit protein " + proteinDays + "/7 days, lift " + liftTarget + " days, hit steps " + Math.min(stepDays, 7) + "/7 days, get " + Math.min(sleepDays, 7) + "/7 decent sleep nights, and progress one lift by reps, load, or cleaner form.";
+    }
+    function redditCheckinText() {
+      const goalText = el("goal").options[el("goal").selectedIndex].text;
+      const yesNo = (value) => value ? "yes" : "no";
+      const eta = etaData();
+      return [
+        "Can someone sanity-check my goal-weight ETA?",
+        "",
+        "Goal: " + goalText,
+        "Start weight: " + (number("startWeight") || "?") + " lb",
+        "Current weight: " + (number("bodyweight") || "?") + " lb",
+        "Goal weight: " + (number("goalWeight") || "?") + " lb",
+        "Estimated time to goal: " + eta.label,
+        "Progress to goal: " + progressToGoal() + "%",
+        "Planned lifting days: " + clamp(number("liftDays"), 1, 7),
+        "Workouts completed: " + clamp(number("workoutsDone"), 0, 7),
+        "Protein target: about " + proteinTarget() + "g/day",
+        "Protein days hit: " + clamp(number("proteinDays"), 0, 7) + "/7",
+        "Average steps: " + (number("avgSteps") || "?") + "/day",
+        "Step days hit: " + clamp(number("stepDays"), 0, 7) + "/7",
+        "Sleep target: " + (number("sleepGoal") || "?") + " hours",
+        "Sleep days hit: " + clamp(number("sleepDays"), 0, 7) + "/7",
+        "Forecast calories: " + (calorieTarget() || "?") + " kcal/day",
+        "Macros: " + macroData().protein + "g protein / " + macroData().carbs + "g carbs / " + macroData().fat + "g fat",
+        "Logged bodyweight 2x: " + yesNo(el("weighIns").checked),
+        "Progressed at least one lift: " + yesNo(el("progressedLift").checked),
+        "Biggest blocker: " + blockerLabel(),
+        "My notes: " + (String(el("notes").value || "").trim() || "none yet"),
+        "",
+        "Audit score: " + calculateScore() + "%",
+        "ETA read: " + eta.read,
+        "Suggested first fix: " + nextFix(),
+        "",
+        "Does this ETA look realistic, and what would you fix first?"
+      ].join("\n");
+    }
+    function render() {
+      const score = calculateScore();
+      const eta = etaData();
+      const macros = macroData();
+      setText("proteinTarget", proteinTarget());
+      el("score").textContent = score;
+      el("scoreBar").style.width = score + "%";
+      el("timeToGoal").textContent = eta.label;
+      el("goalPace").textContent = eta.pace;
+      el("goalProgress").textContent = progressToGoal();
+      el("gameLevel").textContent = gameLevel();
+      el("etaRead").textContent = eta.read;
+      el("weeklyQuest").textContent = eta.quest;
+      el("auditRead").textContent = auditRead();
+      el("nextWeekPlan").textContent = nextWeekPlan();
+      el("targetCalories").textContent = macros.calories ? macros.calories.toLocaleString() : "--";
+      el("macroProtein").textContent = macros.protein || "--";
+      el("macroCarbs").textContent = macros.carbs || "--";
+      el("macroFat").textContent = macros.fat || "--";
+      el("adjustmentRule").textContent = adjustmentRule();
+      renderGroceryList();
+      renderChart();
+      el("redditCheckin").value = redditCheckinText();
+      el("scoreLabel").textContent =
+        score >= 80 ? "Strong week." : score >= 60 ? "Good enough to build on." : "One fix at a time.";
+    }
+    function currentData() {
+      const data = {};
+      for (const id of fields) {
+        const node = el(id);
+        data[id] = node.type === "checkbox" ? node.checked : node.value;
+      }
+      data.savedAt = new Date().toISOString();
+      return data;
+    }
+    function setStatus(message, kind) {
+      const status = el("saveStatus");
+      status.textContent = message;
+      status.className = "notice small" + (kind ? " " + kind : "");
+    }
+    function trackToolEvent(eventName, params) {
+      if (typeof window.geebsTrackEvent !== "function") return;
+      window.geebsTrackEvent(eventName, Object.assign({ source: "offline_goal_forecast" }, params || {}));
+    }
+    function showWizardStep(index, shouldFocus) {
+      const steps = Array.from(document.querySelectorAll(".wizard-step"));
+      const pills = Array.from(document.querySelectorAll("[data-step-jump]"));
+      activeStep = clamp(Number(index), 0, steps.length - 1);
+
+      steps.forEach((step) => {
+        step.hidden = Number(step.dataset.step) !== activeStep;
+      });
+      pills.forEach((pill) => {
+        if (Number(pill.dataset.stepJump) === activeStep) {
+          pill.setAttribute("aria-current", "step");
+        } else {
+          pill.removeAttribute("aria-current");
+        }
+      });
+
+      if (shouldFocus) {
+        const firstField = steps[activeStep] && steps[activeStep].querySelector("select, input, button");
+        if (firstField) firstField.focus({ preventScroll: true });
+      }
+    }
+    function revealForecast(message, shouldScroll) {
+      const panel = el("forecastPanel");
+      panel.hidden = false;
+      el("wizardLayout").classList.remove("is-forecast-hidden");
+      render();
+      if (message) setStatus(message, "good");
+      if (shouldScroll) {
+        panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+    function storageWorks() {
+      try {
+        const testKey = key + "_test";
+        localStorage.setItem(testKey, "1");
+        localStorage.removeItem(testKey);
+        return true;
+      } catch {
+        return false;
+      }
+    }
+    function encodeData(data) {
+      return encodeURIComponent(JSON.stringify(data));
+    }
+    function decodeData(raw) {
+      return JSON.parse(decodeURIComponent(raw));
+    }
+    function normalizeWeeks(weeks) {
+      if (!Array.isArray(weeks)) return [];
+      return weeks
+        .filter((week) => week && typeof week === "object" && week.data)
+        .slice(0, 16);
+    }
+    function normalizeState(data) {
+      if (!data || typeof data !== "object") return { current: null, weeks: [] };
+      if ("current" in data || "weeks" in data) {
+        return {
+          current: data.current && typeof data.current === "object" ? data.current : null,
+          weeks: normalizeWeeks(data.weeks),
+        };
+      }
+      return { current: data, weeks: [] };
+    }
+    function saveToHash(state) {
+      try {
+        history.replaceState(null, "", "#" + hashPrefix + encodeData(state));
+        return true;
+      } catch {
+        try {
+          location.hash = hashPrefix + encodeData(state);
+          return true;
+        } catch {
+          return false;
+        }
+      }
+    }
+    function clearHashFallback() {
+      if (!location.hash || !location.hash.startsWith("#" + hashPrefix)) return;
+      try {
+        history.replaceState(null, "", location.pathname + location.search);
+      } catch {}
+    }
+    function getHashState() {
+      if (!location.hash || !location.hash.startsWith("#" + hashPrefix)) return null;
+      try {
+        return normalizeState(decodeData(location.hash.slice(hashPrefix.length + 1)));
+      } catch {
+        return null;
+      }
+    }
+    function applyData(data) {
+      for (const id of fields) {
+        if (!(id in data)) continue;
+        const node = el(id);
+        if (node.type === "checkbox") node.checked = Boolean(data[id]);
+        else node.value = data[id];
+      }
+    }
+    function persistState(current, weeks) {
+      let saved = false;
+      let usedFallback = false;
+
+      if (storageWorks()) {
+        try {
+          localStorage.setItem(key, JSON.stringify(current));
+          localStorage.setItem(weeksKey, JSON.stringify(weeks));
+          clearHashFallback();
+          saved = true;
+        } catch {
+          saved = false;
+        }
+      }
+
+      if (!saved) {
+        usedFallback = saveToHash({ current, weeks });
+        saved = usedFallback;
+      }
+
+      return { saved, usedFallback };
+    }
+    function formatDate(dateString) {
+      if (!dateString) return "No date";
+      const parts = String(dateString).split("-").map(Number);
+      if (parts.length !== 3 || parts.some((part) => !Number.isFinite(part))) return dateString;
+      const date = new Date(parts[0], parts[1] - 1, parts[2]);
+      return date.toLocaleDateString([], { month: "short", day: "numeric", year: "numeric" });
+    }
+    function formatSavedAt(isoString) {
+      const date = new Date(isoString);
+      if (Number.isNaN(date.getTime())) return "";
+      return date.toLocaleString([], {
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+      });
+    }
+    function weekId(data) {
+      return data.startDate || (data.savedAt || new Date().toISOString()).slice(0, 10);
+    }
+    function buildWeekEntry(data) {
+      return {
+        id: weekId(data),
+        weekOf: data.startDate || weekId(data),
+        savedAt: data.savedAt,
+        score: calculateScore(),
+        proteinTarget: proteinTarget(),
+        calories: calorieTarget(),
+        macros: macroData(),
+        timeToGoal: etaData().label,
+        progress: progressToGoal(),
+        pace: averageSavedPace(),
+        nextFix: nextFix(),
+        data,
+      };
+    }
+    function renderSavedWeeks() {
+      const list = el("savedWeeks");
+      list.textContent = "";
+
+      if (savedWeeks.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state small";
+        empty.textContent = "No saved weeks yet. Fill the weekly log and tap Save week. A saved row will show up here immediately.";
+        list.appendChild(empty);
+        return;
+      }
+
+      for (const week of savedWeeks) {
+        const article = document.createElement("article");
+        article.className = "saved-week";
+
+        const main = document.createElement("div");
+        main.className = "saved-week-main";
+
+        const title = document.createElement("div");
+        title.className = "saved-week-title";
+        title.textContent = "Week of " + formatDate(week.weekOf);
+        main.appendChild(title);
+
+        const meta = document.createElement("div");
+        meta.className = "saved-week-meta";
+        const metaItems = [
+          "Score " + week.score + "%",
+          "Protein " + (week.data.proteinDays || "0") + "/7",
+          "Workouts " + (week.data.workoutsDone || "0") + "/" + (week.data.liftDays || "0"),
+          "Target " + week.proteinTarget + "g",
+          "Calories " + (week.calories || "not set"),
+          "ETA " + (week.timeToGoal || "not projected"),
+          "Progress " + (Number.isFinite(week.progress) ? week.progress : 0) + "%",
+        ];
+        for (const item of metaItems) {
+          const pill = document.createElement("span");
+          pill.textContent = item;
+          meta.appendChild(pill);
+        }
+        main.appendChild(meta);
+
+        const fix = document.createElement("p");
+        fix.className = "small";
+        fix.textContent = week.nextFix;
+        main.appendChild(fix);
+
+        const notes = String(week.data.notes || "").trim();
+        if (notes) {
+          const notePreview = document.createElement("p");
+          notePreview.className = "small";
+          notePreview.textContent = notes.length > 110 ? notes.slice(0, 107) + "..." : notes;
+          main.appendChild(notePreview);
+        }
+
+        const savedAt = formatSavedAt(week.savedAt);
+        if (savedAt) {
+          const timestamp = document.createElement("p");
+          timestamp.className = "small";
+          timestamp.textContent = "Saved " + savedAt;
+          main.appendChild(timestamp);
+        }
+
+        const actions = document.createElement("div");
+        actions.className = "saved-week-actions";
+
+        const loadButton = document.createElement("button");
+        loadButton.type = "button";
+        loadButton.className = "secondary";
+        loadButton.dataset.action = "load-week";
+        loadButton.dataset.weekId = week.id;
+        loadButton.textContent = "Load";
+        actions.appendChild(loadButton);
+
+        const deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.className = "secondary";
+        deleteButton.dataset.action = "delete-week";
+        deleteButton.dataset.weekId = week.id;
+        deleteButton.textContent = "Delete";
+        actions.appendChild(deleteButton);
+
+        article.appendChild(main);
+        article.appendChild(actions);
+        list.appendChild(article);
+      }
+    }
+    function saveWeek() {
+      const data = currentData();
+      const id = weekId(data);
+      const updatedExisting = savedWeeks.some((week) => week.id === id);
+      const entry = buildWeekEntry(data);
+      savedWeeks = [entry, ...savedWeeks.filter((week) => week.id !== id)].slice(0, 16);
+      const result = persistState(data, savedWeeks);
+
+      revealForecast("", false);
+      renderSavedWeeks();
+      trackToolEvent("goal_tracker_week_saved", {
+        updated_existing: updatedExisting,
+        storage_fallback: result.usedFallback,
+      });
+
+      if (result.saved && result.usedFallback) {
+        setStatus((updatedExisting ? "Updated" : "Saved") + " this week below and in this page link. Keep this tab open or bookmark it.", "good");
+      } else if (result.saved) {
+        const time = new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+        setStatus((updatedExisting ? "Updated" : "Saved") + " this week below to this browser at " + time + ".", "good");
+      } else {
+        setStatus("Saving is blocked in this viewer. Open the tracker in Safari or Chrome, then tap Save week again.", "warn");
+      }
+    }
+    function load() {
+      const today = new Date().toISOString().slice(0, 10);
+      el("startDate").value = today;
+      let loadedFromHash = false;
+      let loadedExistingData = false;
+      try {
+        const data = JSON.parse(localStorage.getItem(key) || "{}");
+        if (Object.keys(data).length > 0) {
+          applyData(data);
+          loadedExistingData = true;
+        }
+        savedWeeks = normalizeWeeks(JSON.parse(localStorage.getItem(weeksKey) || "[]"));
+      } catch {}
+      const hashState = getHashState();
+      if (hashState) {
+        if (hashState.current) applyData(hashState.current);
+        savedWeeks = hashState.weeks;
+        loadedFromHash = true;
+        loadedExistingData = Boolean(hashState.current);
+      }
+      showWizardStep(0, false);
+      render();
+      renderSavedWeeks();
+      if (loadedExistingData) {
+        el("forecastPanel").hidden = false;
+        el("wizardLayout").classList.remove("is-forecast-hidden");
+      }
+      if (loadedFromHash) {
+        setStatus("Loaded saved data from this page link. Tap Save week after changes.", "good");
+      }
+    }
+    function resetLog() {
+      for (const id of ["proteinDays", "workoutsDone", "stepDays", "sleepDays"]) el(id).value = 0;
+      for (const id of ["weighIns", "progressedLift", "reviewedBlocker"]) el(id).checked = false;
+      el("notes").value = "";
+      const data = currentData();
+      const result = persistState(data, savedWeeks);
+      render();
+      renderSavedWeeks();
+      trackToolEvent("goal_tracker_log_reset");
+      if (result.saved) {
+        setStatus("Current log reset. Saved weeks are still below.", "good");
+      } else {
+        setStatus("Reset worked on screen, but saving is blocked in this viewer. Open in Safari or Chrome.", "warn");
+      }
+    }
+    async function copyRedditCheckin() {
+      const text = el("redditCheckin").value;
+      try {
+        await navigator.clipboard.writeText(text);
+        setStatus("Copied anonymous ETA check-in. Paste it into Reddit without adding links or a pitch.", "good");
+        trackToolEvent("goal_tracker_reddit_checkin_copied", { method: "clipboard" });
+      } catch {
+        el("redditCheckin").focus();
+        el("redditCheckin").select();
+        setStatus("Copy is blocked in this viewer. Select the check-in text and copy it manually.", "warn");
+        trackToolEvent("goal_tracker_reddit_checkin_copy_blocked");
+      }
+    }
+    function exportBackup() {
+      const payload = {
+        version: 4,
+        exportedAt: new Date().toISOString(),
+        current: currentData(),
+        weeks: savedWeeks,
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "geebs-goal-weight-forecast-backup.json";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      setStatus("Backup exported. Keep that file if you want to move browsers or devices.", "good");
+      trackToolEvent("goal_tracker_backup_exported", { weeks: savedWeeks.length });
+    }
+    function importBackup(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const state = normalizeState(JSON.parse(String(reader.result || "{}")));
+          if (!state.current && state.weeks.length === 0) throw new Error("empty");
+          if (state.current) applyData(state.current);
+          savedWeeks = state.weeks;
+          const result = persistState(currentData(), savedWeeks);
+          revealForecast("", false);
+          renderSavedWeeks();
+          setStatus(result.saved ? "Backup imported." : "Imported on screen, but saving is blocked in this viewer.", result.saved ? "good" : "warn");
+          trackToolEvent("goal_tracker_backup_imported", { weeks: savedWeeks.length });
+        } catch {
+          setStatus("Could not import that backup file.", "warn");
+        }
+      };
+      reader.readAsText(file);
+    }
+    function loadSavedWeek(id) {
+      const week = savedWeeks.find((item) => item.id === id);
+      if (!week) return;
+      applyData(week.data);
+      revealForecast("", false);
+      el("weeklyDetails").open = true;
+      setStatus("Loaded week of " + formatDate(week.weekOf) + ". Edit it or tap Save week to update it.", "good");
+    }
+    function deleteSavedWeek(id) {
+      const week = savedWeeks.find((item) => item.id === id);
+      savedWeeks = savedWeeks.filter((item) => item.id !== id);
+      const result = persistState(currentData(), savedWeeks);
+      renderSavedWeeks();
+      if (result.saved) {
+        setStatus("Deleted " + (week ? "week of " + formatDate(week.weekOf) : "saved week") + ".", "good");
+      } else {
+        setStatus("Deleted on screen, but saving is blocked in this viewer. Open in Safari or Chrome.", "warn");
+      }
+    }
+    function useExample() {
+      el("goal").value = "fat-loss";
+      el("sex").value = "male";
+      el("age").value = "32";
+      el("startWeight").value = "205";
+      el("bodyweight").value = "200";
+      el("goalWeight").value = "180";
+      el("heightFt").value = "5";
+      el("heightIn").value = "10";
+      el("liftDays").value = "4";
+      el("avgSteps").value = "8500";
+      el("currentCalories").value = "2300";
+      el("proteinDays").value = "6";
+      el("workoutsDone").value = "4";
+      el("stepDays").value = "5";
+      el("sleepDays").value = "4";
+      el("weighIns").checked = true;
+      el("progressedLift").checked = true;
+      el("reviewedBlocker").checked = true;
+      el("notes").value = "Example: travel made meals harder, but training happened.";
+      el("weeklyDetails").open = true;
+      showWizardStep(2, false);
+      revealForecast("Example loaded. Edit any number, then tap Calculate forecast or Save week.", true);
+      trackToolEvent("goal_tracker_example_loaded");
+    }
+    for (const id of fields) {
+      document.addEventListener("input", (event) => {
+        if (event.target && event.target.id === id) render();
+      });
+      document.addEventListener("change", (event) => {
+        if (event.target && event.target.id === id) render();
+      });
+    }
+    el("saveBtn").addEventListener("click", saveWeek);
+    el("calculateBtn").addEventListener("click", () => {
+      revealForecast("Forecast updated. Save the week if you want this trend to count next time.", true);
+      trackToolEvent("goal_tracker_forecast_calculated", {
+        goal: el("goal").value,
+        direction: goalDirection(),
+      });
+    });
+    el("exampleBtn").addEventListener("click", useExample);
+    document.querySelectorAll("[data-next-step]").forEach((button) => {
+      button.addEventListener("click", () => showWizardStep(activeStep + 1, true));
+    });
+    document.querySelectorAll("[data-prev-step]").forEach((button) => {
+      button.addEventListener("click", () => showWizardStep(activeStep - 1, true));
+    });
+    document.querySelectorAll("[data-step-jump]").forEach((button) => {
+      button.addEventListener("click", () => showWizardStep(Number(button.dataset.stepJump), true));
+    });
+    el("copyRedditBtn").addEventListener("click", copyRedditCheckin);
+    el("exportBtn").addEventListener("click", exportBackup);
+    el("importFile").addEventListener("change", (event) => importBackup(event.target.files && event.target.files[0]));
+    el("resetBtn").addEventListener("click", resetLog);
+    el("savedWeeks").addEventListener("click", (event) => {
+      const button = event.target;
+      if (!(button instanceof HTMLButtonElement)) return;
+      const id = button.dataset.weekId;
+      if (!id) return;
+      if (button.dataset.action === "load-week") loadSavedWeek(id);
+      if (button.dataset.action === "delete-week") deleteSavedWeek(id);
+    });
+    load();
+  </script>
+</body>
+</html>

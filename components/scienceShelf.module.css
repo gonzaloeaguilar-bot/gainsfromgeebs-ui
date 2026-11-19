@@ -1,0 +1,240 @@
+/* The science library, drawn as a library: one shelf per theme, every study a
+   book standing on it. Pure CSS — no JavaScript ships for this. */
+
+.shelf {
+  margin-top: 26px;
+}
+
+.shelfHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 14px;
+}
+
+.shelfLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cloud-text);
+}
+
+.shelfCount {
+  font-size: 13px;
+  color: var(--mute2);
+}
+
+.shelfLink {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--bone);
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 75, 75, 0.6);
+  text-underline-offset: 4px;
+}
+
+/* The board the books stand on. The books overhang it slightly at the top when
+   they lift, so the row keeps its own padding. */
+.board {
+  position: relative;
+  margin-top: 10px;
+  padding: 14px 2px 0;
+  border-bottom: 3px solid rgba(245, 241, 235, 0.16);
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 6px 14px -8px rgba(0, 0, 0, 0.9);
+}
+
+/* The dark gap behind the books: a shelf has depth. */
+.board::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 3px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.15) 46%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- a book, seen spine-on ---------- */
+
+.book {
+  position: relative;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Set per book so no two are the same size, the way a real shelf looks. */
+  width: var(--spine-width, 34px);
+  height: var(--spine-height, 190px);
+  padding: 9px 0;
+  border-radius: 2px 2px 1px 1px;
+  text-decoration: none;
+  color: rgba(245, 241, 235, 0.92);
+  background: linear-gradient(
+    100deg,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(0, 0, 0, 0) 16%,
+    rgba(255, 255, 255, 0.07) 32%,
+    rgba(0, 0, 0, 0) 62%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  var(--spine-color, #3a2422);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+    0 2px 6px -2px rgba(0, 0, 0, 0.8);
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.7, 0.3, 1),
+    box-shadow 180ms ease;
+}
+
+/* Pulling one off the shelf. */
+.book:hover,
+.book:focus-visible {
+  transform: translateY(-14px) rotate(-1.2deg);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+    0 14px 22px -10px rgba(0, 0, 0, 0.95);
+  z-index: 2;
+}
+
+.book:focus-visible {
+  outline: 2px solid var(--cloud-text);
+  outline-offset: 2px;
+}
+
+/* Foil bands at head and foot of the spine. */
+.band {
+  width: 78%;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 210, 122, 0.15),
+    rgba(255, 210, 122, 0.75),
+    rgba(255, 210, 122, 0.15)
+  );
+  flex: 0 0 auto;
+}
+
+.spineText {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  overflow: hidden;
+  max-height: 100%;
+  padding: 6px 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.spineYear {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  /* 0.6 alpha measured 4.07:1 on the lightest cloth, under the 4.5 bar for
+     text this size. */
+  color: rgba(245, 241, 235, 0.78);
+  flex: 0 0 auto;
+}
+
+/* ---------- the display copy, stood face-out at the end of the shelf ---------- */
+
+.faceOut {
+  position: relative;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  width: 138px;
+  height: 248px;
+  margin-left: 10px;
+  padding: 12px 12px 14px;
+  border-radius: 2px 4px 4px 2px;
+  border-left: 4px solid rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  color: var(--bone);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(0, 0, 0, 0.18) 60%
+  ),
+  var(--spine-color, #3a2422);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+    0 6px 14px -6px rgba(0, 0, 0, 0.9);
+  transition: transform 180ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.faceOut:hover,
+.faceOut:focus-visible {
+  transform: translateY(-10px);
+}
+
+.faceOut:focus-visible {
+  outline: 2px solid var(--cloud-text);
+  outline-offset: 2px;
+}
+
+.faceOutKicker {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 210, 122, 0.85);
+}
+
+.faceOutTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.faceOutGo {
+  font-size: 11.5px;
+  color: rgba(245, 241, 235, 0.72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book,
+  .faceOut {
+    transition: none;
+  }
+
+  .book:hover,
+  .book:focus-visible,
+  .faceOut:hover,
+  .faceOut:focus-visible {
+    transform: none;
+    /* Keep a non-motion affordance so the hover state still reads. */
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 210, 122, 0.8),
+      0 2px 6px -2px rgba(0, 0, 0, 0.8);
+  }
+}
