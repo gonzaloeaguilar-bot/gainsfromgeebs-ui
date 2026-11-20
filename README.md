@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gains From Geebs — Website UI Repository
 
-## Getting Started
+This repository controls the frontend UI/UX of `gainsfromgeebs.com` so Kris (`krisoddo`) and Claude can update copy, photos, layouts, and visual design directly — without touching backend systems, secrets, or tracking.
 
-First, run the development server:
+## Quick Start for Claude
+Tell Claude:
+> "Read `CLAUDE.md` first, create a new branch from `main`, make [describe your change], and open a Pull Request."
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How Publishing Works (Self-Serve)
+1. **Create a branch** from `main` (direct pushes to `main` are blocked).
+2. **Edit UI/UX files:** `app/`, `components/`, `content/`, and `public/`.
+3. **Open a Pull Request** into `main`.
+4. **Wait 1–2 minutes** for `platform-integrity-gate` to turn green and click the automatic **Vercel Preview URL** posted on the PR to review on phone and desktop.
+5. **Publish live:** Once `platform-integrity-gate` is green and you like the preview, click **Merge pull request** on GitHub. It builds and deploys automatically.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Locked Files (Do Not Modify)
+Changes to these files require `@gonzaloeaguilar-bot` approval because they keep lead capture, booking, search/AI attribution, and backend APIs connected:
+- `vercel.json` (routes `/api/*` and `/apply*` to the private platform backend)
+- `package.json`, `next.config.*`
+- `.github/*`, `scripts/verify-ui-integrity.mjs`
+- `app/layout.tsx`, `components/GoogleAnalytics.tsx`, `analytics-legacy-map.json`, `app/robots.ts`, `app/sitemap.ts`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Never add `.env` files, API routes, or secrets to this repository. See [`CLAUDE.md`](./CLAUDE.md) for full instructions.

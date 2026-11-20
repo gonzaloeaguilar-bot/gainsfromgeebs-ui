@@ -5,6 +5,14 @@
     {
       "source": "/api/:path*",
       "destination": "https://gainsfromgeebs-site.vercel.app/api/:path*"
+    },
+    {
+      "source": "/apply",
+      "destination": "https://gainsfromgeebs-site.vercel.app/apply"
+    },
+    {
+      "source": "/apply/:path*",
+      "destination": "https://gainsfromgeebs-site.vercel.app/apply/:path*"
     }
   ]
 }
